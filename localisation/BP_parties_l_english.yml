@@ -1,0 +1,23 @@
+﻿l_english:
+
+DNZ_democratic_party:0 "SDP"
+DNZ_democratic_party_long:0 "Sozialdemokratische Partei der Freien Stadt Danzig"
+DNZ_neutrality_party:0 "Zentrum"
+DNZ_neutrality_party_long:0 "Zentrumspartei der Freien Stadt Danzig"
+DNZ_fascism_party:0 "NSDAP - Danzig"
+DNZ_fascism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei" 
+DNZ_communism_party:0 "DDVP"
+DNZ_communism_party_long:0 "Deutsch-Danziger Volkspartei"
+
+RKU_democratic_party:0 "UPDP"
+RKU_democratic_party_long:0 "Ukrainian People's Democratic Party"
+RKU_neutrality_party:0 "UNSU"
+RKU_neutrality_party_long:0 "Ukrainian National-State Union"
+RKU_fascism_party:0 "NSDAP"
+RKU_fascism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei" 
+RKU_communism_party:0 "CPU"
+RKU_communism_party_long:0 "Communist Party of Ukraine"
+RKU_oun_b:0 "OUN (b)"
+RKU_oun_b_long:0 "Orhanizatsiya Ukrayins'kykh Natsionalistiv"
+RKU_oun_m:0 "OUN (m)"
+RKU_oun_m_long:0 "Orhanizatsiya Ukrayins'kykh Natsionalistiv"

@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+		
+		USA_anti_war_indignation = {
+			allowed = {
+				original_tag = USA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = USA_anti_war
+		
+			modifier = {
+				war_support_weekly = -0.01
+				army_org_factor = -0.05
+				mobilization_speed = -0.25
+				training_time_army_factor = -0.25
+			}
+	
+		}
+	}
+}	

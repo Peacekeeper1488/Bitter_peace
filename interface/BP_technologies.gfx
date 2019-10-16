@@ -1,0 +1,480 @@
+spriteTypes = {	
+
+	### GERMANY - GFX from AXIS DLC ###
+	
+	SpriteType = {
+		name = "GFX_GER_improved_light_td_medium" #2d art was mixed up, quick fix
+		texturefile = "gfx/interface/technologies/ger_basic_light_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_basic_light_td_medium"
+		texturefile = "gfx/interface/technologies/ger_improved_light_td.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_basic_light_art_medium"
+		texturefile = "gfx/interface/technologies/ger_light_tank_artillery_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_basic_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/ger_light_tank_aa_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_improved_light_art_medium"
+		texturefile = "gfx/interface/technologies/ger_improved_light_art.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_basic_medium_td_medium"
+		texturefile = "gfx/interface/technologies/ger_basic_medium_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_basic_medium_art_medium"
+		texturefile = "gfx/interface/technologies/ger_basic_medium_art.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/ger_improved_medium_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/ger_improved_medium_art.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/ger_heavy_tank_artillery_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_advanced_medium_art_medium"
+		texturefile = "gfx/interface/technologies/ger_medium_tank_artillery_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_improved_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/ger_improved_medium_spaa.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_basic_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/ger_medium_tank_aa_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_advanced_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/ger_medium_tank_aa_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/ger_advanced_medium_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_basic_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/ger_heavy_tank_destroyer_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_improved_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/ger_improved_heavy_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_advanced_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/ger_advanced_heavy_td.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_modern_spaa_medium"
+		texturefile = "gfx/interface/technologies/ger_modern_tank_aa_1.dds"
+	}
+
+	### GENERAL - GOVERMENT EQUIPMENT ###
+	
+	SpriteType = {
+		name = "GFX_german_2d_motorized_rocket_unit_medium"
+		texturefile = "gfx/interface/technologies/GER_motorized_rocket_unit.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_2_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_1_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_3_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_1_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_axis.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_german_2d_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_axis.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/GER_mechanized_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/GER_mechanized_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/GER_mechanized_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_infantry3_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_infantry2_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_german_2d_infantry1_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_german_2d_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_equipment_1.dds"
+	}	
+	
+	### GENERAL - GOVERMENT TANKS ####
+	
+	SpriteType = {
+		name = "GFX_german_2d_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/ger_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/ger_imp_light_tank.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_german_2d_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/ger_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/ger_basic_main_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/ger_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/ger_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/ger_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_german_2d_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ger_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ger_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ger_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ger_superheavy_tank.dds"
+	}
+
+	### GENERAL - GOVERMENT TANKS FROM DLC ####
+
+	SpriteType = {
+		name = "GFX_german_2d_improved_light_td_medium" #2d art was mixed up, quick fix
+		texturefile = "gfx/interface/technologies/ger_basic_light_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_basic_light_td_medium"
+		texturefile = "gfx/interface/technologies/ger_improved_light_td.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_basic_light_art_medium"
+		texturefile = "gfx/interface/technologies/ger_light_tank_artillery_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_german_2d_basic_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/ger_light_tank_aa_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_improved_light_art_medium"
+		texturefile = "gfx/interface/technologies/ger_improved_light_art.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_basic_medium_td_medium"
+		texturefile = "gfx/interface/technologies/ger_basic_medium_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_basic_medium_art_medium"
+		texturefile = "gfx/interface/technologies/ger_basic_medium_art.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/ger_improved_medium_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/ger_improved_medium_art.dds"
+	}
+	SpriteType = {
+		name = "GFX_german_2d_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/ger_heavy_tank_artillery_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_german_2d_advanced_medium_art_medium"
+		texturefile = "gfx/interface/technologies/ger_medium_tank_artillery_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_improved_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/ger_improved_medium_spaa.dds"
+	}
+	SpriteType = {
+		name = "GFX_german_2d_basic_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/ger_medium_tank_aa_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_advanced_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/ger_medium_tank_aa_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/ger_advanced_medium_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_basic_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/ger_heavy_tank_destroyer_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_improved_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/ger_improved_heavy_td.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_advanced_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/ger_advanced_heavy_td.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_german_2d_modern_spaa_medium"
+		texturefile = "gfx/interface/technologies/ger_modern_tank_aa_1.dds"
+	}
+	
+	### GENERAL - GOVERMENT AIRCRAFTS ###
+
+	SpriteType = {
+		name = "GFX_german_2d_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/GER_early_bomber.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/GER_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_german_2d_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/GER_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_german_2d_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/GER_tactical_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_german_2d_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/GER_strategic_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_german_2d_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/GER_strategic_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_german_2d_CAS2_medium"
+		texturefile = "gfx/interface/technologies/GER_CAS2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_CAS3_medium"
+		texturefile = "gfx/interface/technologies/GER_CAS3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_german_2d_cv_CAS3_medium"
+		texturefile = "gfx/interface/technologies/GER_cv_CAS3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/GER_heavy_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/GER_heavy_fighter2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_german_2d_fighter3_medium"
+		texturefile = "gfx/interface/technologies/GER_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/GER_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/GER_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/GER_naval_bomber3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/GER_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_CAS1_medium"
+		texturefile = "gfx/interface/technologies/GER_CAS1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/GER_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_fighter2_medium"
+		texturefile = "gfx/interface/technologies/GER_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_fighter1_medium"
+		texturefile = "gfx/interface/technologies/GER_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_german_2d_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/GER_early_fighter.dds"
+	}
+	
+	### GENERAL - GOVERMENT MTG DLC ###
+	
+	SpriteType = {
+		name = "GFX_german_2d_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/ger_amphibious_tank_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/ger_amphibious_tank_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_amphibious_mechanized_infantry_medium"
+		texturefile = "gfx/interface/technologies/ger_amphibious_mech_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_german_2d_amphibious_mechanized_infantry_2_medium"
+		texturefile = "gfx/interface/technologies/ger_amphibious_mech_2.dds"
+	}
+	
+}

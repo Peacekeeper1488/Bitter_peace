@@ -1,0 +1,699 @@
+﻿###############################################################################################################
+#### Bitter Peace Ukrainian Events ############################################################################
+###############################################################################################################
+
+add_namespace = BP_RKU
+
+# Coop with Ukrainian nationalist's
+country_event = {
+	id = BP_RKU.1
+	title = BP_RKU.1.t
+	desc = BP_RKU.1.d
+	picture = GFX_report_event_rku_ukrainian_nationalist
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		has_government = fascism
+		OR  = {
+			CZE  = { 
+				AND = {
+					exists = no
+					GER = { has_full_control_of_state = 9 }
+				}
+				is_subject_of = GER
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = BP_RKU.1.a
+		add_political_power = 20
+	}
+}
+# The OUN split
+country_event = {
+	id = BP_RKU.2
+	title = BP_RKU.2.t
+	desc = BP_RKU.2.d
+	picture = GFX_report_event_rku_split_of_oun
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER	
+		has_government = fascism
+		date > 1940.4.1
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = BP_RKU.2.a
+		add_political_power = -20
+	}
+}
+# Proclamation of the Ukrainian State
+country_event = {
+	id = BP_RKU.3
+	title = BP_RKU.3.t
+	desc = BP_RKU.3.d
+	picture = GFX_report_event_rku_proclamation_of_the_ukrainian_state
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER	
+		has_government = fascism
+		date > 1940.4.1
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = BP_RKU.3.a
+		add_political_power = -100
+		custom_effect_tooltip = RKU_oun_b_banned
+		set_global_flag = RKU_bandera_was_arested
+	}
+	option = {
+		name = BP_RKU.3.b
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+		custom_effect_tooltip = RKU_oun_b_supported
+		set_global_flag = RKU_germanization_was_rejected		
+	}
+	option = {
+		name = BP_RKU.3.c
+		add_political_power = -200
+		custom_effect_tooltip = RKU_oun_b_question_was_postponed
+	}	
+}
+# Proclamation of the National Rada
+country_event = {
+	id = BP_RKU.4
+	title = BP_RKU.4.t
+	desc = BP_RKU.4.d
+	picture = GFX_report_event_rku_proclamation_of_national_rada
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER	
+		has_government = fascism
+		RKU = {
+			focus_progress = {
+				focus = RKU_oun_m
+				progress > 0.3
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = BP_RKU.4.a
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+		custom_effect_tooltip = RKU_oun_m_banned
+		set_global_flag = RKU_melnik_was_arested	
+	}
+	option = {
+		name = BP_RKU.4.b	
+		add_political_power = -50
+		custom_effect_tooltip = RKU_oun_m_supported
+		set_global_flag = RKU_germanization_was_rejected
+		set_global_flag = RKU_bandera_was_arested
+	}	
+}
+# Babi Yar
+country_event = {
+	id = BP_RKU.5
+	title = BP_RKU.5.t
+	desc = BP_RKU.5.d
+	picture = GFX_report_event_rku_babi_yar
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RKU		
+		has_full_control_of_state = 202
+		has_completed_focus = RKU_anti_jew_actions
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = BP_RKU.5.a
+		add_timed_idea = { idea = RKU_babi_yar days = 31 }
+	}
+	option = {
+		name = BP_RKU.5.b
+		add_political_power = -50
+	}
+}
+# Destruction of Dneprostroi Dam
+country_event = {
+	id = BP_RKU.6
+	title = BP_RKU.6.t
+	
+	desc = { 
+		text = BP_RKU.6.d_germany
+		trigger = {
+			OR = {
+				tag = GER
+				tag = RKU
+			}
+		}
+	}
+	desc = {
+		text = BP_RKU.6.d_ussr
+		trigger = {
+			tag = SOV
+		}
+	}
+	
+	desc = BP_RKU.6.d
+	picture = GFX_report_event_rku_damaged_dneprostroi_dam
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BP_RKU.6.a
+		effect_tooltip = {
+			226 = { #Dnepropetrovsk
+				add_province_modifier = {
+					static_modifiers = { flooded }
+					province = {
+						id = 11437
+						id = 11422
+						id = 453
+					}
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+			}
+			200 = {	#Zaporozhe
+				add_province_modifier = {
+					static_modifiers = { flooded }
+					province = {
+						id = 11405
+						id = 588
+					}
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+		}
+	}
+}
+# OUN (b)
+country_event = {
+	id = BP_RKU.7
+	title = BP_RKU.7.t
+	desc = BP_RKU.7.d
+	picture = GFX_report_event_rku_oun_b
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BP_RKU.7.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Stepan Bandera"
+			desc = ""
+			picture = "gfx/leaders/RKU/Portrait_Ukraine_Stepan_Bandera.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology				
+			traits = {
+			
+			}
+		}	
+		set_party_name = {
+			ideology = fascism 
+			long_name = RKU_oun_b_long
+			name = RKU_oun_b
+		}
+		swap_ideas = {
+			remove_idea = RKU_german_occupy_administration
+			add_idea = RKU_oun_bandera_government
+		}
+		GER = { 
+			set_autonomy = {
+				target = RKU
+				autonomy_state = autonomy_reichsprotectorate
+			}
+		}
+	}
+}
+# OUN (m)
+country_event = {
+	id = BP_RKU.8
+	title = BP_RKU.8.t
+	desc = BP_RKU.8.d
+	picture = GFX_report_event_rku_oun_m
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BP_RKU.8.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Andriy Melnik"
+			desc = ""
+			picture = "gfx/leaders/RKU/Portrait_Ukraine_Andriy_Melnik.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology				
+			traits = {
+			
+			}
+		}
+		set_party_name = {
+			ideology = fascism 
+			long_name = RKU_oun_m_long
+			name = RKU_oun_m
+		}
+		swap_ideas = {
+			remove_idea = RKU_german_occupy_administration
+			add_idea = RKU_oun_melnic_government
+		}
+		GER = { 
+			set_autonomy = {
+				target = RKU
+				autonomy_state = autonomy_reichsprotectorate
+			}
+		}
+	}
+}
+# Ukrainian State - GER
+country_event = {
+	id = BP_RKU.9
+	title = BP_RKU.9.t
+	desc = BP_RKU.9.d
+	picture = GFX_report_event_rku_ukrainian_state
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BP_RKU.9.a
+        add_opinion_modifier = { target = RKU modifier = RKU_loyal_servant }
+		RKU = { add_opinion_modifier = { target = GER modifier = RKU_loyal_servant } }	
+		custom_effect_tooltip = RKU_loyal_servant
+	}
+}
+# Greater Ukraine - GER
+country_event = {
+	id = BP_RKU.10
+	title = BP_RKU.10.t
+	desc = BP_RKU.10.d
+	picture = GFX_report_event_rku_great_ukraine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BP_RKU.10.a
+		
+	}
+}
+# Citizenship for Ostarbeiter's
+country_event = {
+	id = BP_RKU.11
+	title = BP_RKU.11.t
+	desc = BP_RKU.11.d
+	picture = GFX_report_event_rku_ostarbeiter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BP_RKU.11.a
+		add_timed_idea = {
+			idea = RKU_citizenship_for_ostarbeiters
+			days = 365
+		}
+	}
+}
+# Exploitation of Dneproges
+country_event = {
+	id = BP_RKU.12
+	title = BP_RKU.12.t
+	desc = BP_RKU.12.d
+	picture = GFX_report_event_rku_exploitation_of_dneproges
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RKU
+		has_completed_focus = RKU_dnipro_hes_dam
+		OR = {
+			has_global_flag = moscow_theatry
+			has_global_flag = victory_in_west_siberia
+		}
+	}
+	
+	option = {
+		if = {
+			limit = {
+				NOT = { has_idea = RKU_dnepr_dam_is_fine }
+			}
+			add_ideas = RKU_dnepr_dam_is_fine
+		}
+		name = BP_RKU.12.a
+		196 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex 
+				level = 2
+				instant_build = yes
+			}
+		}
+		200 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex 
+				level = 1
+				instant_build = yes
+			}
+		}
+		226 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex 
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+# Germanization Path
+country_event = {
+	id = BP_RKU.13
+	title = BP_RKU.13.t
+	desc = BP_RKU.13.d
+	picture = GFX_report_event_ger_gotenland_phase4
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BP_RKU.13.a
+		add_ideas = {
+			RKU_arest_oun_b	
+			RKU_arest_oun_m
+			RKU_communist_underground_idea
+		}
+		hidden_effect = {
+			set_party_name = {
+				ideology = neutrality 
+				long_name = RKU_oun_m_long
+				name = RKU_oun_m
+			}
+			create_country_leader = {
+				name = "Andriy Melnik"
+				desc = ""
+				picture = "gfx/leaders/RKU/Portrait_Ukraine_Andriy_Melnik.dds"
+				expire = "1965.1.1"
+				ideology = despotism  				
+				traits = {
+				
+				}
+			}
+		}
+	}
+}
+# Reintegration of Galicia
+country_event = {
+	id = BP_RKU.14
+	title = BP_RKU.14.t
+	desc = BP_RKU.14.d
+	picture = GFX_report_event_rku_galicia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = BP_RKU.14.a
+		effect_tooltip = {
+			RKU = {
+				transfer_state = 91
+				transfer_state = 89
+			}
+		}
+	}
+}
+# Ukraine ask about Transnistria - GER
+country_event = {
+	id = BP_RKU.15
+	title = BP_RKU.15.t
+	desc = BP_RKU.15.d
+	picture = GFX_report_event_rku_transnistria
+
+	is_triggered_only = yes
+	
+	option = {
+		name = BP_RKU.15.a
+		ai_chance = { factor = 20 }
+		RKU = {
+			set_country_flag = rku_ger_say_yes
+			country_event = { days = 1 id = BP_RKU.16 }
+		}
+		ROM = { 
+			add_opinion_modifier = { target = GER modifier = HUN_renegade } 
+			add_opinion_modifier = { target = RKU modifier = HUN_renegade } 
+		}
+	}
+	option = {
+		name = BP_RKU.15.b
+		ai_chance = { factor = 80 }
+		RKU = {
+			set_country_flag = rku_ger_say_no		
+			country_event = { days = 1 id = BP_RKU.16 }
+		}
+	}
+}
+# Ukraine ask about Transnistria - German answer
+country_event = {
+	id = BP_RKU.16	
+	title = BP_RKU.16.t
+	
+	desc = { 
+		text = BP_RKU.16.d_ger_say_yes
+		trigger = {
+			has_country_flag = rku_ger_say_yes
+		}
+	}
+	desc = {
+		text = BP_RKU.16.d_ger_say_no
+		trigger = {
+			has_country_flag = rku_ger_say_no
+		}
+	}
+	
+	picture = GFX_report_event_rku_transnistria
+
+	is_triggered_only = yes	
+	
+	option = {
+		name = BP_RKU.16.a
+		trigger = {
+			has_country_flag = rku_ger_say_yes
+		}	
+		if = {
+			limit = {
+				not = {
+					owns_state = 198
+				}
+			}
+			transfer_state = 198
+		}
+		if = {
+			limit = {
+				not = {
+					owns_state = 192
+				}
+			}
+			transfer_state = 192
+		}
+		add_stability = 0.1
+		add_state_claim = 80
+		add_state_claim = 766
+		clr_country_flag = rku_ger_say_yes
+	}
+	option = {
+		name = BP_RKU.16.b
+		trigger = {
+			RKU = { has_country_flag = rku_ger_say_no }
+		}
+		clr_country_flag = rku_ger_say_no
+		add_stability = -0.1
+	}
+}
+# Ukraine ask about Carpathian Ruthenia - GER
+country_event = {
+	id = BP_RKU.17
+	title = BP_RKU.17.t
+	desc = BP_RKU.17.d
+	picture = GFX_report_event_rku_carpathian_rusiniya
+
+	is_triggered_only = yes
+	
+	option = {
+		name = BP_RKU.17.a
+		ai_chance = { factor = 20 }
+		RKU = {
+			set_country_flag = rku_ger_say_yes
+			country_event = { days = 1 id = BP_RKU.18 }
+		}
+		HUN = { 
+			add_opinion_modifier = { target = GER modifier = HUN_renegade } 
+			add_opinion_modifier = { target = RKU modifier = HUN_renegade }
+		}
+	}
+	option = {
+		name = BP_RKU.17.b
+		ai_chance = { factor = 80 }
+		RKU = {
+			set_country_flag = rku_ger_say_no		
+			country_event = { days = 1 id = BP_RKU.18 }
+		}
+	}
+}
+# Ukraine ask about Carpathian Ruthenia - German answer
+country_event = {
+	id = BP_RKU.18	
+	title = BP_RKU.18.t
+	
+	desc = { 
+		text = BP_RKU.18.d_ger_say_yes
+		trigger = {
+			has_country_flag = rku_ger_say_yes
+		}
+	}
+	desc = {
+		text = BP_RKU.18.d_ger_say_no
+		trigger = {
+			has_country_flag = rku_ger_say_no
+		}
+	}
+	
+	picture = GFX_report_event_rku_carpathian_rusiniya
+
+	is_triggered_only = yes	
+	
+	option = {
+		name = BP_RKU.18.a
+		trigger = {
+			has_country_flag = rku_ger_say_yes
+		}	
+		if = {
+			limit = {
+				not = {
+					owns_state = 73
+				}
+			}
+			transfer_state = 73
+		}
+		add_political_power = -50
+		add_stability = 0.1
+		clr_country_flag = rku_ger_say_yes
+	}
+	option = {
+		name = BP_RKU.18.b
+		trigger = {
+			RKU = { has_country_flag = rku_ger_say_no }
+		}
+		clr_country_flag = rku_ger_say_no
+		add_stability = -0.1
+	}
+}
+# Ukraine ask about Crimea - GER
+country_event = {
+	id = BP_RKU.19
+	title = BP_RKU.19.t
+	desc = BP_RKU.19.d
+	picture = GFX_report_event_rku_krim
+
+	is_triggered_only = yes
+	
+	option = {
+		name = BP_RKU.19.a
+		ai_chance = { factor = 20 }
+		RKU = {
+			set_country_flag = rku_ger_say_yes
+			country_event = { days = 1 id = BP_RKU.20 }
+		}
+	}
+	option = {
+		name = BP_RKU.19.b
+		ai_chance = { factor = 80 }
+		RKU = {
+			set_country_flag = rku_ger_say_no		
+			country_event = { days = 1 id = BP_RKU.20 }
+		}
+	}
+}
+# Ukraine ask about Crimea - German answer
+country_event = {
+	id = BP_RKU.20	
+	title = BP_RKU.20.t
+	
+	desc = { 
+		text = BP_RKU.20.d_ger_say_yes
+		trigger = {
+			has_country_flag = rku_ger_say_yes
+		}
+	}
+	desc = {
+		text = BP_RKU.20.d_ger_say_no
+		trigger = {
+			has_country_flag = rku_ger_say_no
+		}
+	}
+	
+	picture = GFX_report_event_rku_krim
+
+	is_triggered_only = yes	
+	
+	option = {
+		name = BP_RKU.20.a
+		trigger = {
+			has_country_flag = rku_ger_say_yes
+		}	
+		if = {
+			limit = {
+				not = {
+					owns_state = 137
+				}
+			}
+			transfer_state = 137
+		}
+		clr_country_flag = rku_ger_say_yes
+	}
+	option = {
+		name = BP_RKU.20.b
+		trigger = {
+			RKU = { has_country_flag = rku_ger_say_no }
+		}
+		clr_country_flag = rku_ger_say_no
+	}
+}

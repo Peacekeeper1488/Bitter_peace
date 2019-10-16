@@ -1,0 +1,123 @@
+spriteTypes = { 
+
+	SpriteType = { 
+		name = "GFX_ukrainian_state" 
+		texturefile = "gfx/interface/goals/GFX_ukrainian_state.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_great_ukraine" 
+		texturefile = "gfx/interface/goals/GFX_great_ukraine.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_racial_decrees" 
+		texturefile = "gfx/interface/goals/GFX_racial_decrees.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_ounm" 
+		texturefile = "gfx/interface/goals/GFX_ounm.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_ukrainian_national_army" 
+		texturefile = "gfx/interface/goals/GFX_ukrainian_national_army.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_ukrainian_insurgent_army" 
+		texturefile = "gfx/interface/goals/GFX_ukrainian_insurgent_army.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_SS_division_galichina" 
+		texturefile = "gfx/interface/goals/GFX_SS_division_galichina.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_get_rid_of_bandera" 
+		texturefile = "gfx/interface/goals/GFX_get_rid_of_bandera.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_ounb" 
+		texturefile = "gfx/interface/goals/GFX_ounb.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_plast" 
+		texturefile = "gfx/interface/goals/GFX_plast.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_bread_basketof_europe" 
+		texturefile = "gfx/interface/goals/GFX_bread_basketof_europe.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_germanization" 
+		texturefile = "gfx/interface/goals/GFX_germanization.dds" 
+	}
+	
+	SpriteType = { 
+		name = "GFX_proclamation_to_the_peoples_of_russia" 
+		texturefile = "gfx/interface/goals/GFX_proclamation_to_the_peoples_of_russia.dds" 
+	} 
+	
+	SpriteType = { 
+		name = "GFX_anti_jew_actions" 
+		texturefile = "gfx/interface/goals/GFX_anti_jew_actions.dds" 
+	}
+
+	SpriteType = {
+	    name = "GFX_kz"
+	    texturefile = "gfx/interface/goals/GFX_kz.dds"			
+	}
+	
+	SpriteType = {
+	    name = "GFX_hj"
+	    texturefile = "gfx/interface/goals/GFX_hj.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_get_rid_of_melnyk"
+	    texturefile = "gfx/interface/goals/GFX_get_rid_of_melnyk.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_gestapo"
+		texturefile = "gfx/interface/goals/GFX_gestapo.dds"		
+	}
+	
+	SpriteType = {
+		name = "GFX_lebensraum"
+		texturefile = "gfx/interface/goals/GFX_lebensraum.dds"		
+	}
+	
+	SpriteType = {
+	    name = "GFX_get_rid_kovpak"
+	    texturefile = "gfx/interface/goals/GFX_get_rid_kovpak.dds"			
+	}
+	
+	SpriteType = {
+	    name = "GFX_ukr_reichsgau"
+	    texturefile = "gfx/interface/goals/GFX_ukr_reichsgau.dds"			
+	}
+	
+	SpriteType = {
+	    name = "GFX_Dnipro_HES"
+	    texturefile = "gfx/interface/goals/GFX_Dnipro_HES.dds"			
+	}
+
+	SpriteType = {
+	    name = "GFX_agroprogram_rku"
+	    texturefile = "gfx/interface/goals/GFX_agroprogram_rku.dds"			
+	}
+	
+	SpriteType = {
+	    name = "GFX_the_great_black_menace"
+	    texturefile = "gfx/interface/goals/GFX_the_great_black_menace.dds"			
+	}
+
+}

@@ -1,0 +1,269 @@
+﻿l_german:
+
+#################################################################################################################################
+# Danzing #######################################################################################################################
+#################################################################################################################################
+
+danzig_ist_deutsch:0 "Danzig ist Deutsch"
+danzig_ist_deutsch_desc:0 "§WNeue Regel: £trigger_yes Kann Ruf in den Krieg ablehnen§!\nDie Stadt Danzig besteht aus einer Mehrheit der deutschen. Sie wollen nur mit dem Deutschen Reich wiedervereinigt werden. Obwohl Kommunalpolitiker versuchen, diese Stimmung unter Kontrolle zu halten...vorerst..."
+
+DNZ_generic_democratic_reformer:0 "Hermann Rauschning"
+DNZ_generic_fascist_demagogue:0 "Wilhelm von Wnuck"
+DNZ_generic_communist_revolutionary:0 "Richard Müller"
+DNZ_albert_forster:0 "Albert Forster"
+DNZ_edmund_beyl:0 "Edmund Beyl"
+DNZ_helmut_froboss:0 "Helmut Froböss" 
+DNZ_helmut_froboss2:0 "Helmut Froböss"
+danzigerwerft:0 "Danzigerwerft"
+
+#################################################################################################################################
+# USSR ##########################################################################################################################
+#################################################################################################################################
+
+SOV_sacred_war:0 "Der Heilige Krieg" 
+SOV_sacred_war_desc:0 "Die Faschisten und ihre Leute haben der Sowjetunion den Krieg erklärt und strömen über die Grenzen in unsere Dörfer! Sie müssen gestoppt werden! "
+ 
+SOV_sacred_war2:0 "Der Heilige Krieg"
+SOV_sacred_war2_desc:0 "Der faschistische Abschaum dringt tiefer und tiefer in das Herz unseres Mutterlandes. Dörfer, Siedlungen und Städte liegen auf der Spur verwüstet. Sie werden dafür bezahlen ... "
+  
+SOV_sacred_war3:0 "Der Heilige Krieg"
+SOV_sacred_war3_desc:0 "Der Feind steht vor den Toren! Unsere ruhmreiche Nation wackelt am Rande des Zusammenbruchs, und alle müssen für ihr Zuhause, für ihre Familien, für ihre Existenz kämpfen! Za Rodinu, vperyod! "
+
+SOV_sour_loser_ussr:0 "Bitterer Frieden" 
+SOV_sour_loser_ussr_desc:0 "Wir wurden besiegt - unsere größten Städte liegen jetzt entweder in der Kontrolle des Feindes oder rauchen Ruinen. Wir mögen jetzt auf den Knien sein, aber eines Tages werden wir den Kampf zu ihrem Land, zu ihren Leuten tragen und ihr Blut nehmen ... "
+
+SOV_stalin_dead:0 "Demoralisierte Armee"
+SOV_stalin_dead_desc:0 "Als Folge des jüngsten Schocks sind unsere Truppen furchtbar demoralisiert und können nicht mit normaler Effizienz kämpfen"
+
+SOV_civilian_incoming:0 "Flüchtlingsstrom"
+SOV_civilian_incoming_desc:0 ""
+ 
+#################################################################################################################################
+# Iraq ##########################################################################################################################
+#################################################################################################################################
+
+IRQ_british_influense:0 "Britischer Einfluss"
+IRQ_british_influense_desc:0 "1920 gründeten die osmanen Vilayets Mosul, Basra und Bagdad den Staat Irak. Die Konferenz des Völkerbundes stellte ihn unter die provisorische Verwaltung Großbritanniens. Etwa im selben Jahr wurde der Irak ölreich. Die Briten hatten keinen Wunsch, das Land zu verlassen, mussten dies spätestens 1930. Die anglo-französischen Konzerne übernahmen allmählich alle Ölfelder und die wirkliche Macht im Land. Die Regierung und König Ghazi des Irak regierten nur auf einer technischen Grundlage. In der Tat wurde alles von den Vertretern Londons entschieden. Dieser Zustand wurde durch den Anglo-Irakischen Vertrag von 1930 konsolidiert."
+ 
+#################################################################################################################################
+# Switzerland ###################################################################################################################
+#################################################################################################################################
+
+SWI_national_redoubt:0 "National Redoubt"
+SWI_national_redoubt_desc:0 "Die National Redoubt, auch die Swiss Redoubt, ist ein Verteidigungsplan, der von der Schweizer Regierung Ende des 19. Jahrhunderts entwickelt wurde, um Angriffe aus dem Ausland abzuwehren. Zu Beginn des Zweiten Weltkrieges wurde der Plan erweitert und verfeinert, um der potenziellen Invasion des nationalsozialistischen Deutschland entgegenzuwirken, die zwar geplant war, aber nie stattgefunden hat. Der Begriff "Redoute" bezieht sich ursprünglich auf ein seit den 1880er Jahren errichtetes Befestigungssystem zum Schutz der Zentralschweiz als befestigtes Gebiet für den Rückzug der Schweizer Armee. Es war ein Komplex von Befestigungen in den Alpen nach dem Vorbild "Ost-West" mit den drei Hauptfestungen: Saint-Maurice, Saint Gotthard und Sargans. Diese Festungen verteidigten in erster Linie die Alpenpassagen zwischen Deutschland und Italien und deckten nicht das dicht besiedelte industrielle Innere der Schweiz ab. Die Binnengebiete standen unter dem Schutz von Festungen, "Borderline" und "Army Line" - eine bedeutende, aber nicht unüberwindbare. Im Gegenteil, der Gebäudekomplex ist völlig uneinnehmbar, was dem Angreifer nicht die Möglichkeit gibt, die Alpen durch Passpässe oder Eisenbahntunnel von Norden nach Süden zu überqueren. Diese Strategie bestand darin, jede Invasion einzudämmen und sie wegen der Unmöglichkeit der Nutzung der Schweizer Verkehrsinfrastruktur bedeutungslos zu machen."
+
+SWI_conscription:0 "Schweizerische Mobilisierung" 
+SWI_conscription_desc:0 "Als so kleines Land verfügen wir nicht über genügend Mannstärke, um ausschließlich durch Freiwillige zu gewinnen. Jeder Mann im Kampfzeitalter muss seinen Teil dazu beitragen. "
+ 
+#################################################################################################################################
+# Germany #######################################################################################################################
+#################################################################################################################################
+
+GER_crystal_night:0 "Kristallnacht"
+GER_crystal_night_desc:0 "Fensterfronten zersprangen, Laden ,Geschäfte und Synagogen in Brand gesetzt - haben wir das getan? " 
+
+GER_TUR_pact:0 "Deutsch-Türkischer Vertrag"
+GER_TUR_pact_desc:0 "Der deutsch-türkische Vertrag erleichterte Deutschland Angriff auf die UdSSR und erlaubt ihr, dass die Neutralität der Türkei zu Lasten der Interessen der UdSSR und anderer Freizügigkeit ist. Die Türkei versorgte Deutschland mit wertvollen Rohstoffen, insbesondere Chrom, und verletzte Verbindungen von Deutschland die Unterschriften in Montreux unterzeichneten Übereinkommen über die Meerenge, die auf Territorium aktivistische faschistische Propaganda und Spionage erlaubten."
+
+GER_barbarossa_challenge:0 "Logistische Herausforderungen"
+GER_barbarossa_challenge_desc:0 ""
+
+GER_spoils_from_east:0 "Beute aus den Osten"
+GER_spoils_from_east_desc:0 "Unsere östlichen Offensiven haben uns große Belohnungen eingebracht, nicht nur in gebieten, sondern auch in Vorräten und anderen Gütern."
+
+GER_logistic_costs:0 "Logistikkosten"
+GER_logistic_costs_desc:0 ""
+
+GER_logistic_costs1:0 "Logistikkosten"
+GER_logistic_costs1_desc:0 ""
+
+GER_logistic_costs2:0 "Logistikkosten"
+GER_logistic_costs2_desc:0 ""
+
+GER_logistic_costs3:0 "Logistikkosten"
+GER_logistic_costs3_desc:0 ""
+
+GER_grosraumwirtschaft1:0 "Großraumwirtschaft"
+GER_grosraumwirtschaft1_desc:0 "Deutschland ist dazu bestimmt, das Zentrum Europas zu werden. Unsere Infrastruktur wird den Westen und den Osten verbinden, den Süden und den Norden."
+
+GER_grosraumwirtschaft2:0 "Großraumwirtschaft" 
+GER_grosraumwirtschaft2_desc:0 "Deutschland ist dazu bestimmt, das Zentrum Europas zu werden. Unsere Infrastruktur wird den Westen und den Osten verbinden, den Süden und den Norden."
+
+GER_soviet_exodus:0 "Bevölkerung Exodus"
+GER_soviet_exodus_desc:0 ""
+
+reichskommissar:0 "Reichskommissar"
+reichskommissar_desc:0 "\n \nDer Titel des Reichskommissars wurde von Adolf Hitler im Zweiten Weltkrieg an mehrere Nazi-Gouverneure in mehreren besetzten Ländern verliehen. Die Reichskommissare waren die obersten zivilen Behörden in ihren zugewiesenen Gebieten, meist mit diktatorischen und repressiven Methoden.\n \n"
+
+reinhard_heydrich:0 "Reinhard Heydrich"
+reinhard_heydrich_desc:0 "HHHH, Himmlers Hirn heißt Heydrich\n \nReinhard Heydrich war ein hochrangiges Mitglied der NSDAP. Er war der Leiter des Reichssicherheitshauptamts einschliesslich des Sicherheitsdienstes, der geheimen Staatspolizei und der Kriminalpolizei sowie stellvertretender Reichsprotektor von Böhmen und Mähren"
+heydrich_was_killed:0 "Heydrich wurde getötet"
+
+hangman:0 "Henker"
+
+#################################################################################################################################
+# RK Netherlands ################################################################################################################
+#################################################################################################################################
+
+anton_mussert:0 "Anton Mussert"
+anton_mussert_desc:0 "The founder of the National-Socialist Movement in the Netherlands (NSB). During the German occupation of the country, the "Leider" (leader), became the head of the puppet government. After the war he was captured by the allies and executed."
+net_leider:0 "Leader of the NSB"
+ 
+#################################################################################################################################
+# RK Ukraine ####################################################################################################################
+#################################################################################################################################
+ 
+RKU_german_occupy_administration:0 "Koch's Administration"
+RKU_german_occupy_administration_desc:0 "After the expulsion of the Bolsheviks from the Ukraine, we need to organize an effective political and administrative management of these areas to ensure reliable, economic rear for the Reich."
+
+RKU_anti_jew_pogroms:0 "Jewish Pogrom's"
+RKU_anti_jew_pogroms_desc:0 "The destruction of the Jewish population was made possible thanks to the complicity of local Ukrainian residents. The Germans would not have been able to reach the destroyed communities themselves, especially those in remote villages and villages.\n \nLviv pogroms occurred on June 30-July 2 and July 25-29, 1941 during Operation Barbarossa. Ukrainian nationalists and the Ukrainian militia created by them killed six thousand Jews during the Lviv pogroms.\n \nThe reason for the pogroms was the fact that the Commissars of Jewish origin were responsible for the execution of prisoners. Ukrainian nationalists also helped the German security police and Einsatzgruppen. They made lists of people dangerous to the authorities, handed over to the security police and helped to make arrests and mass shootings (in Stanislav, Vladimir-Volyn, Lutsk) as well as in Zhitomir and Kiev."
+
+RKU_german_occupy_administration_germanization:0 "German Occupation Administration"
+RKU_german_occupy_administration_germanization_desc:0 "It is not in the interests of the Reich to negotiate with representatives of the conquered peoples.\n \n "Lebensraum" on the East should belong only to the Germans, and we will not share it with anyone!"
+
+RKU_RSHA:0 "Department of RSHA"
+RKU_RSHA_desc:0 "The implementation of the policy of Germanization in Ukraine requires the formation of a specialized Department of the security police, which is able to ensure the implementation of the New Order."
+
+RKU_security_service_idea:0 "Security Service"
+RKU_security_service_idea_desc:0 "To ensure the security of the State, it is necessary to form its own Department, which would replace the German security police, SD and Gestapo."
+
+RKU_oun_bandera_government:0 "Government of Stepan Bandera"
+
+RKU_oun_melnic_government:0 "Government of Andrey Melnik"
+
+RKU_racial_decrees_idea:0 "Racial Decrees"
+RKU_racial_decrees_idea_desc:0 "In coordinating our actions with Germany, we are forced to issue a number of Anti-Jewish and Anti-Roma laws that would significantly reduce the participation of these peoples in social, economic and political life. In exchange, we can get a lot of favor from the Germans."
+
+RKU_arest_oun_b:0 "Problems with OUN (b)" 
+RKU_arest_oun_b_desc:0 "Despite the fact that a significant part of the Bandera wing of the OUN went over to our side, after the establishment of our government, Bandera himself with his associates took a confrontational position in relation to our regime. It is necessary to arrest opposition groups, otherwise they will revolt"
+
+RKU_arest_oun_m:0 "Problems with OUN (m)" 
+RKU_arest_oun_m_desc:0 "Despite the fact that a significant part of the Melnikov wing of the OUN came over to our side, after the establishment of our government, Melnik himself with his associates took a confrontational position towards our regime. It is necessary to arrest opposition groups, otherwise they will revolt"
+
+RKU_communist_underground:0 "Communist Guerrillas"
+RKU_communist_underground_desc:0 "The implementation of plans for Germanization intensified the activities of Pro-Communist guerrilla groups"
+
+RKU_german_propaganda_idea:0 "German Propaganda"
+RKU_german_propaganda_idea_desc:0 "For the effective management of public opinion of the population it is necessary to establish strong control over radio, print and all media yet did not do our ideological enemies inside and outside"
+
+RKU_ukrainian_propaganda:0 "Chamber of People's Education"
+RKU_ukrainian_propaganda_desc:0 "Having formed a relatively independent government, we can begin to form a specialized Department that would form a more profitable information agenda in society"
+
+RKU_ukrainian_constitution_idea:0 "Ukrainian Constitution"
+RKU_ukrainian_constitution_idea_desc:0 "For strengthen the foundations of our reign it is necessary to form a regulatory document, laying the foundations of our statehood"
+
+RKU_national_mobilization_idea:0 "People's Mobilization "
+RKU_national_mobilization_idea_desc:0 "It is vital to mobilize and prepare our people for the national liberation war using propaganda and administrative tools"
+
+RKU_restoration_of_kolkhoz_system_idea:0 "Restoration of Kolkhoz system"
+RKU_restoration_of_kolkhoz_system_idea_desc:0 "The collective farm system is economically inefficient. At the same time, in a dilapidated country, we must use all possible economic methods for the economic recovery of the region"
+
+RKU_slave_economic_system_idea:0 "Slave Economic System"
+RKU_slave_economic_system_idea_desc:0 "For ensuring economic needs of the Reich, we must form an economic system focused on the maximum exploitation of local population, industrial and mineral resources, despite the fact that this will put the locals in the rank of second-class people"
+
+RKU_balanced_economic_system_idea:0 "Balanced Economic System"
+RKU_balanced_economic_system_idea_desc:0 "We can create an economic system that will make it possible to exploit human and productive resources less harshly. On the one hand - it will reduce the likelihood of resistance of local residents, and on the other - will increase their more effective involvement in our production hierarchy"
+
+RKU_ostarbeiter_down:0 "Exported Labor Force"
+RKU_ostarbeiter_down_desc:0 "The departure of albuterol will reduce our production and economic potential, at least for a while..."
+
+RKU_schutzmannschaft_idea:0 "Schutzmannschaft"
+RKU_schutzmannschaft_idea_desc:0 ""
+
+RKU_ukrainian_liberation_army_idea:0 "Ukrainian Liberation Army"
+RKU_ukrainian_liberation_army_idea_desc:0 "ULA was a volunteer formation created from prisoners of the Soviet army of Ukrainian nationality, and was subordinate to the Wehrmacht"
+
+RKU_rearmament_idea:0 "Rearmament"
+RKU_rearmament_idea_desc:0 "The military situation pushes us to increase military production and the formation of professional staff"
+
+RKU_war_academy_idea:0 "Ivan Bohun Military Academy"
+RKU_war_academy_idea_desc:0 "We would like to see talented generals at the helm of our armed forces, and for this we need to expand the military Academy"
+
+RKU_coastal_wall_idea:0 "Coastal Defense"
+RKU_coastal_wall_idea_desc:0 ""
+
+RKU_abwer_idea:0 "Abwehr's Intelligence School"
+RKU_abwer_idea_desc:0 "With the deployment of military operations, German intelligence began to expand the network of reconnaissance and sabotage schools for the training of skilled agents. Agents for training were recruited mainly among prisoners of war, the Anti-Soviet element defected to the Germans, and Anti-Soviet citizens remaining in the occupied territory of the USSR"
+
+RKU_hj_idea:0 "Hitlerjugend"
+RKU_hj_idea_desc:0 "Policy of Germanization requires the education of the most racially-valuable representatives of the Ukrainian people in the ideals of national socialism"
+
+RKU_plast_idea:0 "Plast"
+RKU_plast_idea_desc:0 "Ukrainian Scout movement type that occurred following the European youth movements in 1911 on the territory of Ukraine, which was at that time part of Austria-Hungary. For the formation of Patriotic spirit it is necessary to restore the movement, which would be analogous to the German «Hitlerjugend», but with Ukrainian national connotation"
+
+RKU_ukrainian_national_army_idea:0 "Ukrainian National Army"
+RKU_ukrainian_national_army_idea_desc:0 "After the formation of the Ukrainian government in the country began to return to Ukrainian political exiles, including former officers of the UNR and ZUNR, which is actively join to the new formation of the Ukrainian army"
+
+RKU_ukrainian_insurgent_army_idea:0 "Ukrainian Insurgent Army"
+RKU_ukrainian_insurgent_army_idea_desc:0 "Underground military organization, armed wing of the OUN. Acted in the territories that were part of the Governor-General (Galicia, Kholmshchina), reichskomissariat Ukraine (Volyn), and Romanian Transnistria (Transnistria, Northern Bukovina).Some groups operate on the territory of Eastern Ukraine, the Donbas, and even in the Kuban"
+
+RKU_hilfspolizei_idea:0 "Hilfspolizei" 
+RKU_hilfspolizei_idea_desc:0 "In the occupied territories auxiliary police were formed, usually from volunteers, prisoners of war (primarily in large cities) and the local population. Similar police organizations existed in all occupied countries. Distinguished by a significant variety of forms of organization"
+
+RKU_acquire_licenses_idea:0 "License Acquisition"
+RKU_acquire_licenses_idea_desc:0  "In the aviation technology, we are noticeably inferior to other countries. It is necessary to think about the acquisition of licenses for the production of the most innovative aircraft in our country"
+
+RKU_tank_licenses_idea:0 "Tank License"
+RKU_tank_licenses_idea_desc:0 "Instead of spending already limited resources to develop their own tanks, it will be much more efficient to produce foreign models under license"
+
+RKU_local_development:0 "Domestic Development"
+RKU_local_development_desc:0 "We will rely on the domestic aircraft industry to provide the troops with aircraft"
+
+RKU_german_science_cooperation_idea:0 "German Scientific Cooperation"
+RKU_german_science_cooperation_idea_desc:0 "For the development of our technological capacity, we could attract in our research centre for German experts to conduct joint projects, which significantly accelerated our progress in different fields of science and technology" 
+
+RKU_agroprogram:0 "Agrarian Program"
+RKU_agroprogram_desc:0 "The expansion of food programs will help to ensure the import of food to Germany, and at the same time to meet our own needs"
+
+RKU_volksdeutsche:0 "German Colonists"
+RKU_volksdeutsche_desc:0 "«We, national socialists, deliberately puts an end to all foreign policy before the war. We want to return to the point where our old development ended 600 years ago. We want to suspend the eternal German drive to the South and West of Europe and definitely point the finger towards the territories located in the East. We finally break with the colonial and trade policy of the pre-war period and consciously move to the policy of conquering new lands in Europe. When we talk about the conquest of new lands in Europe, we, of course, can mean primarily only Russia and those marginal States that are subordinate to it.» A. Hitler"
+
+RKU_demographic_program_idea:0 "Demographic Program"
+RKU_demographic_program_idea_desc:0 "The exportation of labor, military and civilian losses have led to a significant decrease in the population of our country. We need to launch state benefits to stimulate the birth rate to compensate for our demographic losses"
+
+RKU_economic_department_idea:0 "Chamber of Economic Policy"
+RKU_economic_department_idea_desc:0 "Further development of the economic sphere of the state requires the creation of a specialized Department that would deal with relevant issues at a more specialized level"
+
+RKU_ukranization_idea:0 "Ukrainization of Public Life"
+RKU_ukranization_idea_desc:0 "Centuries of Russian presence and the Soviet cultural revolution contributed to the significant displacement of the Ukrainian language from public life, leaving it widely used only in the countryside. To enlist the support of Ukrainians need to expand the use of the Ukrainian language in early school, some educational institutions, grassroots administration, press and cultural life"
+
+RKU_black_sea_dominance_designer:0 "Odessa Sea Port"
+RKU_black_sea_dominance_designer_desc:0 ""
+
+RKU_Opposition_forces:0 "Opposition Forces"
+RKU_Opposition_forces_desc:0 "After the formation of the government, opposition forces formed in the socio-political environment, which conduct massive propaganda against our regime" 
+
+RKU_dnepr_dam_is_fine:0 "Exploitation of DneproGES"
+RKU_dnepr_dam_is_fine_desc:0 "The rapid breakthrough of the German armed forces were allowed to take a significant portion of the Soviet troops near Dnepropetrovsk captured. Military success was convertible into economic: as it turned out, the Soviets were ordered to blow up Dneprostroi Dam. But the rapid breakthrough and rout of the Red Army in the region have prevented the disaster. We will be able to use the dam to provide energy for our economic needs"
+ 
+RKU_babi_yar:0 "Hinrichtungen in Babi Jar"
+RKU_babi_yar_desc:0 "
+
+RKU_citizenship_for_ostarbeiters:0 "Integration of Ostarbeiters"
+RKU_citizenship_for_ostarbeiters_desc:0 ""
+
+#################################################################################################################################
+# Japan #########################################################################################################################
+#################################################################################################################################
+
+JAP_investments1:0 "Japanisch-Chinesische Kooperation"
+JAP_investments1_desc:0 "Die Zusammenarbeit mit dem neuen China wird für uns beide von großem Nutzen sein - wir bauen sie nach unserem Bild auf, und sie  werden beginnen, sich vom Krieg zu erholen."
+
+JAP_investments2:0 "Japanisch-Chinesische Kooperation"
+JAP_investments2_desc:0 "Die Zusammenarbeit mit dem neuen China wird für uns beide von großem Nutzen sein - wir bauen sie nach unserem Bild auf, und sie  werden beginnen, sich vom Krieg zu erholen."
+
+JAP_investments3:0 "Japanisch-Chinesische Kooperation"
+JAP_investments3_desc:0 "Die Zusammenarbeit mit dem neuen China wird für uns beide von großem Nutzen sein - wir bauen sie nach unserem Bild auf, und sie  werden beginnen, sich vom Krieg zu erholen."
+
+JAP_investments4:0 "Japanisch-Chinesische Kooperation"
+JAP_investments4_desc:0 "Die Zusammenarbeit mit dem neuen China wird für uns beide von großem Nutzen sein - wir bauen sie nach unserem Bild auf, und sie  werden beginnen, sich vom Krieg zu erholen."
+
+JAP_investments5:0 "Japanisch-Chinesische Kooperation"
+JAP_investments5_desc:0 "Die Zusammenarbeit mit dem neuen China wird für uns beide von großem Nutzen sein - wir bauen sie nach unserem Bild auf, und sie  werden beginnen, sich vom Krieg zu erholen."
+
+JAP_investments6:0 "Japanisch-Chinesische Kooperation"
+JAP_investments6_desc:0 "Die Zusammenarbeit mit dem neuen China wird für uns beide von großem Nutzen sein - wir bauen sie nach unserem Bild auf, und sie  werden beginnen, sich vom Krieg zu erholen."
+
+USA_anti_war_indignation:0 "Unzufriedenheit mit Beteiligung am Krieg"
+USA_anti_war_indignation_desc:0 "Traditionell neigt unser Land zum Isolationismus, und zuerst waren wir nicht in Eile, am zweiten Weltkrieg teilzunehmen, begrenzt auf die wirtschaftliche Unterstützung des Vereinigten Königreichs, Chinas und der UdSSR. Jetzt, da wir in den Krieg gezwungen sind, wird die amerikanische Gesellschaft vom Krieg erschüttert, es wird Zeit brauchen, bis wir diese Krise überwinden."

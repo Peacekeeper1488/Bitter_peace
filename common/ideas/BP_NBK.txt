@@ -1,0 +1,128 @@
+	political_advisor = {		
+		john_beckett = {
+
+			
+			allowed = {
+				original_tag = NBK
+			}
+			available = {
+			
+			}
+			
+			traits = { fascist_demagouge }
+		}		
+		
+		archibald_maule_ramsay = {
+
+			
+			allowed = {
+				original_tag = NBK
+			}
+			available = {
+				
+			}
+			
+			traits = { smooth_talking_charmer }
+		}		
+       
+	
+		hastings_russell = {
+
+			
+			allowed = {
+				original_tag = NBK
+			}
+			available = {
+				
+				
+			}
+			
+			traits = { financial_expert }
+		}		
+	
+		george_pitt_rivers = {
+
+			
+			allowed = {
+				original_tag = NBK
+			}
+			available = {
+				
+				
+			}
+			
+			traits = { prince_of_terror }
+		}		
+	
+		alexander_raven_thomson = {
+
+			
+			allowed = {
+				original_tag = NBK
+			}
+			available = {
+				
+				
+			}
+			
+			traits = { ideological_crusader }
+		}		
+		
+		henry_williamson = {
+
+			
+			allowed = {
+				original_tag = NBK
+			}
+			available = {
+				
+				
+			}
+			
+			traits = { compassionate_gentleman }
+		}		
+		
+		william_joyce = {
+
+			
+			allowed = {
+				original_tag = NBK
+			}
+			available = {
+				
+				
+			}
+			
+			traits = { backroom_backstabber }
+		}	
+	
+		jeffry_hamm = {
+
+			
+			allowed = {
+				original_tag = NBK
+			}
+			available = {
+				
+				
+			}
+			
+			traits = { silent_workhorse }
+		}		
+		
+		neil_francis_hawkins = {
+
+			
+			allowed = {
+				original_tag = NBK
+			}
+			available = {
+				OR = {
+					has_government = fascism
+					has_country_flag = GER_reinstated_nazi_leadership
+				}
+			}
+			
+			traits = { quatermaster_general }
+		}		
+	}

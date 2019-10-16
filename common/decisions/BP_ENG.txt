@@ -1,0 +1,167 @@
+#####################################################################################################
+# Bitter Peace English Decisions ####################################################################
+#####################################################################################################
+
+#####################################################################################################
+# Operations ########################################################################################
+#####################################################################################################
+
+operations = {
+	#### Operation Valentine ####
+	ENG_operation_valentine = {
+
+		icon = generic_operation
+
+		fire_only_once = yes
+		cost = 10	
+		
+		available = {
+			has_government = democratic
+			has_war_with = GER
+			DEN = {
+				OR = {
+					AND = {
+						has_war_with = GER
+						has_capitulated = yes 
+					}
+					is_subject_of = GER
+				}
+			}
+		}
+		
+		visible = {
+			tag = ENG
+			has_war_with = GER
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		complete_effect = {
+			if = {
+				limit = { 
+					OR = {
+						GER  = { 
+							owns_state = 337 
+						}						
+						DEN = { 
+							owns_state = 337 
+						}
+					}
+				}
+				transfer_state = 337
+			}		
+			if = {
+				limit = { 
+					OR = {
+						GER  = { 
+							owns_state = 101 
+						}						
+						DEN = { 
+							owns_state = 101 
+						}
+					}
+				}
+				transfer_state = 101
+			}
+		}
+	}
+	#### Operation Fork ####
+	operation_fork = {
+
+		icon = generic_operation
+
+		fire_only_once = yes
+		cost = 10
+
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			has_government = democratic
+			has_war_with = GER
+			ICE = { exists = yes }
+			DEN = {
+				OR = {
+					AND = {
+						has_war_with = GER
+						has_capitulated = yes 
+					}
+					is_subject_of = GER
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+			tag = ENG
+			has_war_with = GER
+			ICE = { exists = yes }
+			NOT = { ICE = { is_in_faction_with = ROOT } }
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				transfer_state = 100
+				add_popularity = { ideology = democratic popularity = -0.05 }				
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				declare_war_on = { target = ICE type = puppet_wargoal_focus }
+				add_popularity = { ideology = democratic popularity = -0.05 }
+			}
+		}
+	}
+}
+#####################################################################################################
+# Colonial Policy ###################################################################################
+#####################################################################################################
+
+ENG_colonial_policy_category = {
+	ENG_british_burma = {
+
+		icon = eng_install_government
+
+		fire_only_once = yes
+		cost = 0
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			NOT = { country_exists = BRM }
+		}
+		
+		visible = {
+			has_completed_focus = uk_empire_focus
+			date > 1937.4.10
+		    is_puppet = no
+			has_government = democratic
+			RAJ = {
+				exists = yes
+				is_puppet_of = ENG
+				has_full_control_of_state = 288
+				has_full_control_of_state = 640
+			}
+	    }
+
+		ai_will_do = {
+			factor = 10
+		}	
+
+		complete_effect = {
+			country_event = { id = BP_england.1 }
+		}
+	}
+}

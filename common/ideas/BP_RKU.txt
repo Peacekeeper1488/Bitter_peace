@@ -1,0 +1,1598 @@
+ideas = {
+
+	country = {
+
+	    RKU_german_occupy_administration = {
+			
+		    allowed = {
+			    original_tag = RKU
+		    }
+
+		    allowed_civil_war = {
+			    has_government = fascism
+		    }
+			
+			picture = generic_pp_unity_bonus
+
+		    removal_cost = -1
+			
+		    modifier = {
+                political_power_factor = 0.05				
+		    }
+	    }
+		
+		RKU_anti_jew_pogroms  = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			picture = juden
+			
+			modifier = {
+				monthly_population = -0.1
+			}
+		}
+		
+		RKU_german_occupy_administration_germanization = {
+			
+		    allowed = {
+			    original_tag = RKU
+		    }
+
+		    allowed_civil_war = {
+			    has_government = fascism
+		    }
+			
+			picture = generic_pp_unity_bonus
+
+		    removal_cost = -1
+			
+		    modifier = {
+			    drift_defence_factor = -0.15
+				stability_factor = -0.1
+				war_support_factor = -0.1
+                political_power_factor = 0.1
+	            conscription_factor = -0.1					
+		    }
+		}
+		
+		RKU_RSHA = {
+			
+		    allowed = {
+			    original_tag = RKU
+		    }
+
+		    allowed_civil_war = {
+			    has_government = fascism
+		    }
+			
+			picture = gestapo
+
+		    removal_cost = -1
+			
+		    modifier = {
+				stability_factor = 0.05
+                drift_defence_factor = 0.15	
+                foreign_subversive_activites = -0.15 
+				subversive_activites_upkeep = -0.1				
+		    }
+		}
+		
+		RKU_security_service_idea = {
+			
+		    allowed = {
+			    original_tag = RKU
+		    }
+
+		    allowed_civil_war = {
+			    has_government = fascism
+		    }
+			
+			picture = generic_spy_intel
+
+		    removal_cost = -1
+			
+		    modifier = {
+				stability_factor = 0.05
+                drift_defence_factor = 0.15	
+                foreign_subversive_activites = -0.15           				
+		    }
+		}
+			
+		RKU_oun_bandera_government = {
+			
+		    allowed = {
+			    original_tag = RKU
+		    }
+
+		    allowed_civil_war = {
+			    has_government = fascism
+		    }
+			
+			picture = generic_pp_unity_bonus
+
+		    removal_cost = -1
+			
+		    modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.1
+                political_power_factor = 0.05
+                drift_defence_factor = 0.15
+                subjects_autonomy_gain = 0.5				
+		    }
+		}
+		
+		RKU_oun_melnic_government = {
+			
+		    allowed = {
+			    original_tag = RKU
+		    }
+
+		    allowed_civil_war = {
+			    has_government = fascism
+		    }
+			
+			picture = generic_pp_unity_bonus
+
+		    removal_cost = -1
+			
+		    modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+                political_power_factor = 0.05
+                drift_defence_factor = 0.1				
+		    }
+		}
+	
+        RKU_racial_decrees_idea = {
+			
+		    allowed = {
+			    original_tag = RKU
+		    }
+
+		    allowed_civil_war = {
+			    has_government = fascism
+		    }
+			
+			picture = juden
+
+		    removal_cost = -1
+			
+		    modifier = {
+                political_power_factor = 0.03	
+		    }
+		}
+		
+		RKU_arest_oun_b = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = upa_rebellion
+			
+			modifier = {
+				stability_factor = -0.1
+				drift_defence_factor = -0.15
+				monthly_population = -0.02
+				neutrality_drift = 0.02
+			}
+		}
+		
+		RKU_arest_oun_b_0 = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = upa_rebellion
+			
+			modifier = {
+				stability_factor = -0.05
+				drift_defence_factor = -0.05
+				monthly_population = -0.01
+			}
+		}
+		
+		RKU_arest_oun_m = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = oun_unrest
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				drift_defence_factor = -0.05
+				neutrality_drift = 0.01
+			}
+		}
+		
+		RKU_communist_underground_idea = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = communist_partizans
+			
+			modifier = {
+				stability_factor = -0.1
+				monthly_population = -0.03
+				drift_defence_factor = -0.15
+				communism_drift = 0.05
+			}
+		}
+
+		RKU_communist_underground_0 = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = communist_partizans
+			
+			modifier = {
+				stability_factor = -0.05
+				monthly_population = -0.01
+				drift_defence_factor = -0.05
+				communism_drift = 0.01
+			}
+		}
+	
+		RKU_german_propaganda_idea = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				drift_defence_factor = 0.1
+			}
+		}
+		
+		RKU_ukrainian_propaganda = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = generic_morale_bonus
+			
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.1
+				drift_defence_factor = 0.15
+				fascism_drift = 0.01
+			}
+		}
+		
+		RKU_ukrainian_constitution_idea = {
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+			    political_power_factor = 0.03
+			}
+		}
+		
+		RKU_national_mobilization_idea = {      
+            
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+                production_factory_max_efficiency_factor = 0.1
+                line_change_production_efficiency_factor = 0.1	
+                production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+                industry_repair_factor = 0.2
+				training_time_army_factor = -0.05
+				mobilization_speed = 0.05				
+			}
+		}
+			
+		RKU_restoration_of_kolkhoz_system_idea	= {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				industry_repair_factor = 0.1
+			}
+		}
+		
+		RKU_slave_economic_system_idea = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+                stability_factor = -0.1
+				drift_defence_factor = -0.15
+				consumer_goods_factor = -0.10
+				local_resources_factor = 0.20
+				production_speed_infrastructure_factor = 0.2
+			    production_speed_industrial_complex_factor = 0.1
+				industry_repair_factor = 0.2
+			}
+		}
+		
+		RKU_balanced_economic_system_idea = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+			    production_factory_max_efficiency_factor = 0.1
+                line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				political_power_factor = -0.05
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				industry_repair_factor = 0.1
+			}
+		} 
+		
+		RKU_ostarbeiter_down = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = great_depression
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			    production_speed_industrial_complex_factor = -0.05
+				consumer_goods_factor = 0.05
+				monthly_population = -0.05				
+			}
+		}
+
+        RKU_schutzmannschaft_idea = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = generic_intel_bonus
+			
+			modifier = {
+		        resistance_tick_auto = -0.25
+				enemy_partisan_effect = -0.05
+				drift_defence_factor = 0.05
+			}
+		}
+		
+		RKU_ukrainian_liberation_army_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_war_preparation
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.03
+			    army_morale_factor = 0.03
+				training_time_army_factor = -0.05
+				mobilization_speed = 0.05
+			}
+		}
+		
+	    RKU_rearmament_idea = {
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			picture = generic_hun_secret_rearmament
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.005
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		RKU_war_academy_idea = {
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			picture = generic_army_war_college
+			
+			removal_cost = -1
+			
+			modifier = {
+                command_power_gain = 0.2
+				army_leader_cost_factor = -0.5
+				max_command_power = 5
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.03
+			}
+		}
+		
+		RKU_abwer_idea = {
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+			
+			picture = generic_spy_intel
+			
+			modifier = {
+			    encryption_factor = 0.01
+				decryption_factor = 0.01
+				recon_factor = 0.02
+				partisan_effect = 0.1 #10% more partisan effects
+			}
+		}
+		
+		RKU_hj_idea = {
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = hj
+			
+			modifier = {
+				conscription_factor = 0.1
+				training_time_factor = -0.1
+				drift_defence_factor = 0.15
+			}
+		}
+		
+		RKU_plast_idea = {
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+                conscription = 0.02
+			}
+		}
+		
+		RKU_ukrainian_national_army_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_war_preparation
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = 0.06
+			    army_morale_factor = 0.06
+				training_time_army_factor = -0.1
+				mobilization_speed = 0.1
+				land_reinforce_rate = 0.03
+				
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+		}
+		
+		RKU_ukrainian_insurgent_army_idea = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+		        partisan_effect = 0.2 #20% more partisan effects
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_org_Factor = 0.03
+			    army_morale_factor = 0.03
+				training_time_army_factor = -0.1
+				mobilization_speed = 0.1
+			}
+		}
+		
+        RKU_hilfspolizei_idea = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = generic_intel_bonus
+			
+			modifier = {
+		        resistance_tick_auto = -0.5
+		        enemy_partisan_effect = -0.1
+				drift_defence_factor = 0.1
+			}
+		}
+
+        RKU_acquire_licenses_idea = {
+
+			picture = generic_license_production
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				license_air_purchase_cost = -0.25
+				license_production_speed = 0.25
+				license_tech_difference_speed = 0.25
+			}
+		}
+
+        RKU_local_development_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				cv_fighter_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				cv_CAS_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				cv_nav_bomber_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				nav_bomber_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				strat_bomber_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+
+			modifier = {
+				air_ace_generation_chance_factor = 0.10
+			}
+		}
+		
+		RKU_agroprogram = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_agrarian_society
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		RKU_agro_appendage_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_agrarian_society
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		RKU_volksdeutsche = {
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_prc_low_popular_support3
+			
+			modifier = {
+				monthly_population = 0.05
+				political_power_factor = -0.03
+			}
+		}
+		
+		RKU_demographic_program_idea = {
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_prc_low_popular_support3
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				monthly_population = 0.1
+				political_power_factor = -0.05
+			}
+		}
+		
+        RKU_economic_department_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_man_five_year_plan_industry
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+                line_change_production_efficiency_factor = 0.1	
+                production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.1
+                industry_repair_factor = 0.1
+			}
+		}
+	
+        RKU_ukranization_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_fascism_drift_2	
+			
+			removal_cost = -1
+			
+			modifier = {
+			    stability_factor = 0.05
+                war_support_factor = 0.05
+			}
+		}
+		
+		RKU_dnepr_dam_is_fine = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = ast_all_in
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		
+		RKU_babi_yar = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			picture = babi_yar
+			
+			modifier = {
+				monthly_population = -0.05
+			}
+		}
+
+		RKU_citizenship_for_ostarbeiters = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = citizenship_for_ostarbeiters
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.01
+				monthly_population = 0.03				
+			}
+		}
+		
+    }
+
+	political_advisor = {
+	
+		bp_heinrich_himmler = {
+
+			picture = bp_heinrich_himmler
+		
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+				has_government = fascism
+                NOT = { has_completed_focus = RKU_oun_b }		
+			}
+			
+			traits = { supporter_of_volunteer_legions }
+		}
+		
+		bp_joseph_goebbels = {
+		
+			picture = bp_joseph_goebbels
+			
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+				has_government = fascism
+				has_completed_focus = RKU_germanization		
+			}
+			
+			traits = { minister_of_public_enlightenment_and_propaganda }
+
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		bp_german_goering = {
+		
+		    picture = bp_hermann_goering
+			
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+				has_government = fascism
+                NOT = { has_completed_focus = RKU_ukrainian_national_council }
+			}
+			
+			traits = { beauftragter_fur_den_vierjahresplan }
+			
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		mykola_stsiborskyi = {
+		
+		    picture = mykola_stsiborskyi
+			
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+				has_government = fascism
+                has_completed_focus = RKU_oun_m
+			}
+			
+			traits = { supporter_of_corporatism }
+			
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+        alfred_rosenberg = {
+		
+		    picture = alfred_rosenberg
+			
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_completed_focus = RKU_ukrainian_national_council }
+			}
+			
+			traits = { ideologist_of_the_NSDAP }
+			
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		hans_adolf_prutzmann = {
+		
+		    picture = gans_adolf_pryuttsman
+			
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+				has_government = fascism
+                NOT = { has_completed_focus = RKU_ukrainian_national_council } 
+				NOT = { has_idea = friedrich_cranebitter  }
+			}
+			
+			traits = { security_police_chief }
+			
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+        friedrich_cranebitter = {
+		
+		    picture = friedric_kranebitter
+			
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+				has_government = fascism
+                NOT = { has_completed_focus = RKU_ukrainian_national_council } 
+				NOT = { has_idea = hans_adolf_prutzmann }
+			}
+			
+			traits = { security_police_chief2 }
+			
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+        andrey_sheptytsky = {
+		
+		    picture = andrey_sheptytsky
+			
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+				has_government = fascism
+                has_completed_focus = RKU_ukrainian_national_council
+                NOT = { has_idea = stepan_rudnickiy }				
+			}
+			
+			traits = { the_spiritual_leader_of_the_nation }
+			
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		stepan_rudnickiy = {
+		
+		    picture = stepan_rudnickiy
+			
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+				has_government = fascism
+                has_completed_focus = RKU_ukrainian_national_council
+                NOT = { has_idea = andrey_sheptytsky }					
+			}
+			
+			traits = { racist_ideologist }
+			
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+        yaroslav_stetsko = {
+		
+		    picture = yaroslav_stetsko
+			
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+				has_government = fascism
+                has_completed_focus = RKU_oun_b 			
+			}
+			
+			traits = { supporter_of_ukrainian_independence }
+			
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		volodymyr_kubiyovych = {
+		
+		    picture = volodymyr_kubiyovych
+			
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+				has_government = fascism
+				has_completed_focus = RKU_ukrainian_national_council   
+			}
+			
+			traits = { public_figure }
+			
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		dmytro_dontsov = {
+
+			picture = dmytro_dontsov
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				has_completed_focus = RKU_ukrainian_national_council
+			}
+			
+			traits = { nationalist_theorist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	    kost_levytsky = {
+		
+		    picture = kost_levytsky
+		
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+                has_completed_focus = RKU_ukrainian_national_council
+			}
+			
+			traits = { democratic_reformer }
+
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		bp_nikita_khrushchev = {
+		
+			picture = bp_nikita_khrushchev
+		
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				NOT = { has_country_flag = purged_khrushchev }
+				NOT = { has_country_flag = counter_purge }
+                has_completed_focus = RKU_ukrainian_national_council
+			}
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+	}
+	
+	theorist = {
+	
+	    pavel_shandruk_theorist = {
+		
+			picture = pavel_shandruk
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				has_completed_focus = RKU_ukrainian_liberation_army
+			}
+			
+		    research_bonus = {
+				land_doctrine = 0.1
+			}
+
+			traits = { pavel_shandruk_theorist }
+		}
+   
+        vladimir_savchenko_belsky_theorist = {
+		
+		    picture = vladimir_savchenko_belsky
+	
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				has_completed_focus = RKU_ukrainian_liberation_army
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.1
+			}
+			
+			traits = { naval_theorist }
+		}
+         
+        viktor_pavlenko_theorist = {
+		
+		    picture = viktor_pavlenko
+	
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				has_completed_focus = RKU_ukrainian_liberation_army
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.1
+			}
+			
+			traits = { air_warfare_theorist }
+		}		
+    }		
+	
+	high_command = {
+	    
+        roman_shukhevych = {
+		
+			picture = roman_shukhevych
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				has_government = fascism
+				has_completed_focus = RKU_ukrainian_insurgent_army
+			}
+
+			traits = { field_commander }
+		}
+		
+        mikhail_omelyanovich_pavlenko = {
+		
+			picture = mikhail_omelyanovich_pavlenko
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				has_completed_focus = RKU_ukrainian_liberation_army
+			}
+
+			traits = { army_regrouping_2 }
+		}
+
+		alexander_zhakhovsky = {
+		
+			picture = alexander_zhakhovsky
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+                has_completed_focus = RKU_theoretical_air_efforts
+			}
+
+			traits = { air_close_air_support_2 }
+		}
+		
+		arkady_welsh = {
+		
+			picture = arkady_welsh
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+                has_completed_focus = RKU_ukrainian_liberation_army
+			}
+
+			traits = { army_logistics_2 }
+		}
+		
+		alexander_kovalenko = {
+		
+			picture = alexander_kovalenko
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+                has_completed_focus = RKU_restauration
+			}
+			
+			traits = { navy_fleet_logistics_2 }
+		}
+     
+        pavel_tereshchenko = {
+		
+			picture = pavel_tereshchenko
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+                has_completed_focus = RKU_ukrainian_liberation_army
+			}
+			
+			traits = { army_chief_drill_4 }
+		}
+
+        theodore_christensen = {
+		
+			picture = teodor_khristensen
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+			    has_government = fascism
+                has_completed_focus = RKU_ukrainian_liberation_army
+		        NOT = { has_completed_focus = RKU_ukrainian_national_council }
+			}
+			
+			traits = { army_chief_drill_5 }
+		}	
+	}
+
+    # MILITARY
+	
+	army_chief = {
+	
+		pavel_shandruk = {
+
+			picture = pavel_shandruk
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				has_completed_focus = RKU_ukrainian_liberation_army
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		pavel_dyachenko = {
+
+			picture = pavel_dyachenko 
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				has_completed_focus = RKU_ukrainian_liberation_army
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		roman_sushko = {
+		
+			picture = roman_sushko
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+                has_completed_focus = RKU_ukrainian_liberation_army
+			}
+			
+			traits = { army_chief_organizational_2 }
+		}
+		
+		otto_wachter = {
+		
+			picture = otto_wechter
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+			    has_government = fascism
+				has_completed_focus = RKU_ukrainian_liberation_army
+                NOT = { has_completed_focus = RKU_oun_b  }
+			}
+			
+			traits = { army_chief_drill_2 }
+		}
+	
+	}
+	
+	air_chief = {
+	
+	    vasily_yanchenko = {
+	
+			picture = vasily_yanchenko
+		
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+			    has_completed_focus = RKU_theoretical_air_efforts
+			}						
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	
+        viktor_pavlenko = {
+		
+		    picture = viktor_pavlenko
+			
+			allowed = {
+				original_tag = RKU
+			}
+
+			available = {
+			    has_completed_focus = RKU_theoretical_air_efforts
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	
+	navy_chief = {
+      
+        svyatoslav_shramchenko = {
+		
+		    picture = svyatoslav_shramchenko
+	
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+			    has_completed_focus = RKU_restauration
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+
+        vladimir_savchenko_belsky = {
+		
+		    picture = vladimir_savchenko_belsky
+	
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+			    has_completed_focus = RKU_restauration
+			}
+			
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}	
+	}
+
+	aircraft_manufacturer = {	
+		
+		designer = yes
+		
+		charz = {
+		
+			picture = charz
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				has_completed_focus = RKU_local_development
+				controls_state = 221
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { aircraft_repair_workshop }
+		}		
+	}
+	
+    naval_manufacturer = { 			
+		
+		designer = yes
+
+		RKU_black_sea_shipping_company = {
+			
+			picture = black_sea_shipping_company
+
+			cost = 100
+
+			allowed = {		
+				original_tag = RKU
+			}
+
+			available = {				
+				has_completed_focus = RKU_black_sea_dominance
+				controls_state = 192
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { coastal_defence_naval_manufacturer  }
+			
+			modifier = {
+
+			}
+		}
+	} 	
+}

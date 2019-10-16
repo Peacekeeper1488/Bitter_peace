@@ -1,0 +1,104 @@
+﻿l_english:
+
+GER_SS_units_tech:0 "Waffen-SS Troops"
+GER_SS_units_tech_desc:0 "Enables the recruitment of elite Waffen-SS troops.\nAlso Allgemeine-SS anti-partisan units that are strong in defensive abilities, but weak attackers."
+
+group_schutzstaffel_infantry_title:0 "SS Infantry Battalions"
+group_schutzstaffel_mobile_title:0 "SS Mobile Battalions"
+group_schutzstaffel_armor_title:0 "SS Panzer Battalions"
+#####################################################################
+SS_police:0 "SS-Allgemeine"
+SS_police_desc:0 "Anti-partisan unit. Troops specialising in defense against partisan activity. Strong against partisans, but weak attackers."
+SS_marine:0 "SS-Marine"
+SS_mountaineers:0 "SS-Gebirgsjäger"
+SS_paratrooper:0 "SS-Fallschirmjäger"
+#####################################################################
+SS_infantry0:0 "SS-Infanterie"
+SS_anti_air_brigade0:0 "SS-Flugabwehr"
+SS_artillery_brigade0:0 "SS-Artillerie"
+SS_rocket_artillery_brigade0:0 "SS-Raketenartillerie"
+SS_anti_tank_brigade0:0 "SS-Panzerabwehr"
+#####################################################################
+SS_cavalry0:0 "SS-Kavallerie"
+SS_motorized0:0 "SS-Motorisiert"
+SS_mot_anti_air_brigade0:0 "SS-Motorisierte Flugabwehr"
+SS_mot_artillery_brigade0:0 "SS-Motorisierte Artillerie"
+SS_mot_rocket_artillery_brigade0:0 "SS-LKW-gezogene Raketenartillerie
+SS_mot_anti_tank_brigade0:0 "SS-Motorisierte Panzerabwehr"
+SS_mechanized0:0 "SS-Pz.Grenadier"
+#####################################################################
+SS_light_armor0:0 "SS-Leichter Panzer"
+SS_light_sp_anti_air_brigade0:0 "SS-Leichter Flugabwehrpanzer"
+SS_light_sp_artillery_brigade0:0 "SS-Leichte Selbstfahrlafette"
+SS_light_tank_destroyer_brigade0:0 "SS-Leichter Jagdpanzer"
+#####################################################################
+SS_medium_armor0:0 "SS-Mittlerer Panzer"
+SS_medium_sp_anti_air_brigade0:0 "SS-Mittlere Flugabwehrpanzer"
+SS_medium_sp_artillery_brigade0:0 "SS-Mittlere Selbstfahrlafette"
+SS_medium_tank_destroyer_brigade0:0 "SS-Mittlerer Jagdpanzer"
+#####################################################################
+SS_heavy_armor0:0 "SS-Schwerer Panzer"
+SS_heavy_sp_anti_air_brigade0:0 "SS-Schwerer Flugabwehrpanzer"
+SS_heavy_sp_artillery_brigade0:0 "SS-Schwere Selbstfahrlafette"
+SS_heavy_tank_destroyer_brigade0:0 "SS-Schwerer Jagdpanzer"
+#####################################################################
+SS_super_heavy_armor0:0 "SS-Schwergewichts Panzer"
+SS_super_heavy_sp_anti_air_brigade0:0 "SS-Überschwerer Flugabwehrpanzer"
+SS_super_heavy_sp_artillery_brigade0:0 "SS-Überschwere Selbstfahrlafette"
+SS_super_heavy_tank_destroyer_brigade0:0 "SS-Überschwerer Jagdpanzer"
+#####################################################################
+SS_modern_armor0:0 "SS-Moderner Panzer"
+SS_modern_sp_anti_air_brigade0:0 "SS-Moderner Flugabwehrpanzer"
+SS_modern_sp_artillery_brigade0:0 "SS-Moderne Selbstfahrlafette"
+SS_modern_tank_destroyer_brigade0:0 "SS-Moderner Jagdpanzer"
+#####################################################################
+#####################################################################
+#####################################################################
+SS_infantry1:0 "SS-Infanterie"
+SS_anti_air_brigade1:0 "SS-Flugabwehr"
+SS_artillery_brigade1:0 "SS-Artillerie"
+SS_rocket_artillery_brigade1:0 "SS-Raketenartillerie"
+SS_anti_tank_brigade1:0 "SS-Panzerabwehr"
+#####################################################################
+SS_cavalry1:0 "SS-Kavallerie"
+SS_motorized1:0 "SS-Motorisiert"
+SS_mot_anti_air_brigade1:0 "SS-Motorisierte Flugabwehr"
+SS_mot_artillery_brigade1:0 "SS-Motorisierte Artillerie"
+SS_mot_rocket_artillery_brigade1:0 "SS-LKW-gezogene Raketenartillerie"
+SS_mot_anti_tank_brigade1:0 "SS-Motorisierte Panzerabwehr"
+SS_mechanized1:0 "SS-Pz.Grenadier"
+#####################################################################
+SS_light_armor1:0 "SS-Leichter Panzer"
+SS_light_sp_anti_air_brigade1:0 "SS-Leichter Flugabwehrpanzer"
+SS_light_sp_artillery_brigade1:0 "SS-Leichte Selbstfahrlafette"
+SS_light_tank_destroyer_brigade1:0 "SS-Leichter Jagdpanzer"
+#####################################################################
+SS_medium_armor1:0 "SS-Mittlerer Panzer"
+SS_medium_sp_anti_air_brigade1:0 "SS-Mittlere Flugabwehrpanzer"
+SS_medium_sp_artillery_brigade1:0 "SS-Mittlere Selbstfahrlafette"
+SS_medium_tank_destroyer_brigade1:0 "SS-Mittlerer Jagdpanzer"
+#####################################################################
+SS_heavy_armor1:0 "SS-Schwerer Panzer"
+SS_heavy_sp_anti_air_brigade1:0 "SS-Schwerer Flugabwehrpanzer"
+SS_heavy_sp_artillery_brigade1:0 "SS-Schwere Selbstfahrlafette"
+SS_heavy_tank_destroyer_brigade1:0 "SS-Schwerer Jagdpanzer"
+#####################################################################
+SS_super_heavy_armor1:0 "SS-Schwergewichts Panzer"
+SS_super_heavy_sp_anti_air_brigade1:0 "SS-Überschwerer Flugabwehrpanzer"
+SS_super_heavy_sp_artillery_brigade1:0 "SS-Überschwere Selbstfahrlafette" 
+SS_super_heavy_tank_destroyer_brigade1:0 "SS-Überschwerer Jagdpanzer"
+#####################################################################
+SS_modern_armor1:0 "SS-Moderner Panzer"
+SS_modern_sp_anti_air_brigade1:0 "SS-Moderner Flugabwehrpanzer"
+SS_modern_sp_artillery_brigade1:0 "SS-Moderne Selbstfahrlafette"  
+SS_modern_tank_destroyer_brigade1:0 "SS-Moderner Jagdpanzer"
+#####################################################################
+
+BP_SS_recruitment_galizien:0 "14. Waffen-Grenadier-Division der SS (galizische Nr. 1)"
+
+BP_ss_recruitment_event.1.t:0 "14. Waffen-Grenadier-Division der SS (galizische Nr. 1)"
+BP_ss_recruitment_event.1.d:0 "The 14th Waffen Grenadier Division of the SS (1st Galician) was a military formation initially made up of volunteers from the region of Galicia with a Ukrainian ethnic background but later also incorporated Slovaks, Czechs and Dutch volunteers and officers. The division was formed in 1943 and was part of the SS forces of Nazi Germany, it was largely destroyed in the battle of Brody, reformed and saw action in Slovakia, Yugoslavia and Austria. In April 1945, it was formally incorporated into the Ukrainian National Army, which was subordinate to the Ukrainian National Committee. The division surrendered to the Western Allies by 10 may 1945."
+BP_ss_recruitment_event.1.a:0 "Create"
+BP_ss_recruitment_event.1.b:0 "Allow the OKW to recruit a small number of specialists and support personnel."
+BP_ss_recruitment_event.1.c:0 "Create"
+BP_ss_recruitment_event.1.e:0 "Better to ask Germans care about formation..."

@@ -1,0 +1,46 @@
+technology_sharing_group = {
+	id = RKs_research_group
+	name = RKs_research_group
+	desc = RKs_research_group_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+	categories = { }
+
+    available = {
+		OR = {
+			tag = PGG
+			tag = GOT
+			tag = RKA
+			tag = RKB
+			tag = RKD
+			tag = RKH
+			tag = RKK
+			tag = RKM
+			tag = RKN
+			tag = RKO
+			tag = RKS
+			tag = RKT
+			tag = RKU
+			tag = RKV
+			tag = RKW	
+		}
+    	is_subject_of = GER
+    }
+}
+
+technology_sharing_group = {
+	id = RKU_joint_air_development_group
+	name = RKU_joint_air_development_group
+	desc = RKU_joint_air_development_group_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+	categories = { air_equipment }
+
+    available = {
+    	is_in_faction_with = RKU
+    }
+}

@@ -1,0 +1,16 @@
+##############################
+#### BITTER PEACE ENGLAND ####
+##############################
+
+ENG_colonial_policy_category = {
+
+	icon = GFX_decision_category_eng_imperial_conference
+
+	allowed = {
+		tag = ENG
+	}
+
+	visible = {
+		has_completed_focus = uk_empire_focus
+	}
+}

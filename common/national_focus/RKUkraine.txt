@@ -1,0 +1,3770 @@
+focus_tree = { 
+	id = RKU_focus
+
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 10 
+			tag = RKU 
+		} 
+	} 
+	
+	default = no
+
+	continuous_focus_position = { x = 0 y = 1450 }
+
+####
+
+	focus = { 
+		id = RKU_german_administration
+		icon = GFX_focus_generic_self_management
+		x = 16
+		y = 0
+		cost = 5
+		available_if_capitulated = yes 
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {                                          
+			
+		}
+
+        completion_reward = {
+		    add_ideas = RKU_german_occupy_administration		
+		}			
+	}
+
+	focus = { 
+		id = RKU_anti_jew_actions
+		icon = GFX_anti_jew_actions
+		prerequisite = { focus = RKU_german_administration }
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_german_administration 
+		ai_will_do = { 
+			factor = 1
+		} 
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+			add_timed_idea = {
+			idea = RKU_anti_jew_pogroms 
+	        days = 90
+			}
+		} 
+	}	
+
+	focus = { 
+		id = RKU_german_propaganda
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = RKU_anti_jew_actions }
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_anti_jew_actions  
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			
+		}
+
+        completion_reward = {
+		    add_ideas = RKU_german_propaganda_idea			
+		}			
+	}
+	
+	focus = { 
+        id = RKU_ukranization
+		icon = GFX_ukrainian_state
+		prerequisite = { focus = RKU_german_propaganda }
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_german_propaganda  
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			
+		}
+
+        completion_reward = {
+		    add_ideas = RKU_ukranization_idea
+            add_popularity = { ideology = fascism popularity = 0.05 }
+            add_autonomy_ratio = {
+				value = 0.1
+				localization = RKU_ukranization_idea
+			}			
+		}
+	}
+	
+	focus = { 
+		id = RKU_ukrainian_central_committee
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = RKU_ukranization }
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_ukranization 
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			
+			has_completed_focus = RKU_ostarbeiter
+			has_completed_focus = RKU_agroprogram
+			has_completed_focus = RKU_ukrainian_liberation_army
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = RKU_ukranization_idea
+			}
+		}		
+	} 
+	
+	focus = { 
+		id = RKU_ukrainian_national_council
+		icon = GFX_goal_generic_national_unity 
+		prerequisite = { focus = RKU_ukrainian_central_committee }
+	    mutually_exclusive = { focus = RKU_germanization }
+		x = 6
+		y = 1
+		cost = 2
+		available_if_capitulated = yes 
+		relative_position_id = RKU_ukrainian_central_committee 
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			NOT = {
+				AND = {
+					has_global_flag = RKU_melnik_was_arested 
+					has_global_flag = RKU_bandera_was_arested
+				}
+			}
+		}
+
+        completion_reward = {
+			custom_effect_tooltip = RKU_legitimization
+			set_capital = 202
+			hidden_effect = {
+				RKU = { 
+					add_state_core = 94		
+					add_state_core = 93
+					add_state_core = 199				
+					add_state_core = 201
+					add_state_core = 194					
+					add_state_core = 202
+					add_state_core = 203				
+					add_state_core = 197
+					add_state_core = 226
+					add_state_core = 227				
+					add_state_core = 228
+					add_state_core = 221
+					add_state_core = 259
+					add_state_core = 193			
+					add_state_core = 225							
+					#Don-Volga to Ukraine
+					if = { 
+						limit = { 
+							GER = { NOT = { has_country_flag = rkd1 } }
+						}
+						add_state_core = 258		
+						add_state_core = 218						
+						add_state_core = 245
+						add_state_core = 265					
+						add_state_core = 260
+						add_state_core = 239				
+						add_state_core = 257	
+						add_state_core = 217
+					}	
+					#Tanistria to Ukraine if Romania not in Axis		
+					if = { 
+						limit = {
+							NOT = {
+								ROM = { is_in_faction_with = GER }
+							}				
+						}
+						add_state_core = 198
+						add_state_core = 192		
+					}	
+					#Bessarabia to Ukraine if Romania not exist or not friendly
+					if = {
+						limit = {
+							ROM = { 
+								OR = {
+									exists = no
+									has_war_with = GER 
+								}
+							}	
+							SOV = { 
+								owns_state = 78
+								owns_state = 766
+								owns_state = 80
+							}
+						}
+						add_state_core = 78
+						add_state_core = 766
+						add_state_core = 80
+					}
+				}
+				every_state = {
+					remove_core_of = UKR
+				}
+			}
+		}     		
+	}
+	
+    focus = { 
+		id = RKU_oun_m
+		icon = GFX_ounm 
+		prerequisite = { focus = RKU_ukrainian_national_council }
+	    mutually_exclusive = { focus = RKU_oun_b }
+		x = -2
+		y = 1
+		cost = 3
+		available_if_capitulated = yes 
+		relative_position_id = RKU_ukrainian_national_council
+		
+		ai_will_do = { 
+			factor = 1
+		}
+
+		available = {
+			NOT = { has_global_flag = RKU_melnik_was_arested }
+		}
+
+        completion_reward = {
+			country_event = { id = BP_RKU.8 }		
+        }					
+	}
+	
+	focus = { 
+		id = RKU_oun_b
+		icon = GFX_ounb
+		prerequisite = { focus = RKU_ukrainian_national_council }
+	    mutually_exclusive = { focus = RKU_oun_m }
+		x = 2
+		y = 1
+		cost = 3
+		available_if_capitulated = yes 
+		relative_position_id = RKU_ukrainian_national_council 
+		
+		ai_will_do = { 
+			factor = 1
+		}
+
+		available = {
+			NOT = { has_global_flag = RKU_bandera_was_arested }
+		}
+
+        completion_reward = {
+			country_event = { id = BP_RKU.7 }	
+        }		
+	}
+		
+	focus = { 
+		id = RKU_ukrainian_national_army
+		icon = GFX_ukrainian_national_army
+		prerequisite = { focus = RKU_oun_m }
+		x = 0
+		y = 1
+		relative_position_id = RKU_oun_m
+		cost = 5
+		available_if_capitulated = no 
+		ai_will_do = { 
+			factor = 1
+		} 
+		completion_reward = {
+			swap_ideas = {
+		        remove_idea = RKU_ukrainian_liberation_army_idea
+		        add_idea = RKU_ukrainian_national_army_idea
+			}
+
+            # Balance research bonus for 2 techs under land_doctrine	
+			army_experience = 25
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+            }				
+		}		
+	}
+	
+	focus = { 
+		id = RKU_reintegration_transnistria_and_bukovina
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = RKU_ukrainian_national_army }
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes 
+		relative_position_id = RKU_ukrainian_national_army 
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+		    has_completed_focus = RKU_reintegration_of_galicia
+			has_completed_focus = RKU_ukrainian_constitution
+			
+			RKU = { 
+				is_in_faction_with = GER
+			}
+		}
+		
+		completion_reward = {
+			add_state_core = 192
+			add_state_core = 198 
+			GER = {
+				country_event = { id = BP_RKU.15 }  
+			}
+		}
+	}
+	
+	focus = { 
+		id = RKU_reintegration_carpathian_ukraine
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = RKU_reintegration_transnistria_and_bukovina }
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes 
+		relative_position_id = RKU_reintegration_transnistria_and_bukovina 
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+		    
+			RKU = { 
+				is_in_faction_with = GER
+			}
+		}
+		
+		completion_reward = {
+			add_state_core = 73
+			GER = { country_event = { days = 1 id = BP_RKU.17 }	}	
+		}
+	}
+	
+	focus = { 
+		id = RKU_crimean_question
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = RKU_reintegration_carpathian_ukraine }
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes 
+		relative_position_id = RKU_reintegration_carpathian_ukraine 
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  		    
+			RKU = { 
+				is_in_faction_with = GER
+			}
+		}
+		completion_reward = {
+			GER = { country_event = { days = 1 id = BP_RKU.19 }	}	
+		}
+	}
+	
+	focus = { 
+		id = RKU_ukrainian_state
+		icon = GFX_ukrainian_state
+		prerequisite = { focus = RKU_crimean_question }
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes 
+		relative_position_id = RKU_crimean_question 
+		ai_will_do = { 
+			factor = 1
+		}
+		
+        completion_reward = {
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = RKU_ukrainian_state	
+			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_satellite } }
+			hidden_effect = {
+				GER = {
+					country_event = { id = BP_RKU.9 }  
+				}		
+			}
+        }	
+	}
+	
+	focus = {
+		id = RKU_national_mobilization
+	    icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = RKU_oun_b }
+		x = 2
+		y = 2
+		cost = 5
+		relative_position_id = RKU_oun_b
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+	    completion_reward = {	
+		    add_ideas = RKU_national_mobilization_idea
+		}			
+	}	
+	
+	focus = { 
+		id = RKU_ukrainian_insurgent_army
+		icon = GFX_ukrainian_insurgent_army
+		prerequisite = { focus = RKU_oun_b }
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_oun_b
+		ai_will_do = { 
+			factor = 1
+		} 
+		
+		completion_reward = {
+		    add_ideas = RKU_ukrainian_insurgent_army_idea	
+		}					
+	}
+	
+	focus = { 
+		id = RKU_security_service
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = RKU_ukrainian_insurgent_army }
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = no
+		relative_position_id = RKU_ukrainian_insurgent_army
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			
+		}
+
+	    completion_reward = {				
+		    add_ideas = RKU_security_service_idea
+		}		
+	}
+	
+	focus = { 
+		id = RKU_arest_melnyk
+		icon = GFX_get_rid_of_melnyk
+		prerequisite = { focus = RKU_security_service }
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_security_service
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			
+		}
+
+        completion_reward = {
+			add_timed_idea = {
+			idea = RKU_arest_oun_m	
+			days = 90
+            }
+			hidden_effect = {
+				set_party_name = {
+					ideology = neutrality 
+					long_name = RKU_oun_m_long
+					name = RKU_oun_m
+				}
+				create_country_leader = {
+					name = "Andriy Melnik"
+					desc = ""
+					picture = "gfx/leaders/RKU/Portrait_Ukraine_Andriy_Melnik.dds"
+					expire = "1965.1.1"
+					ideology = despotism  				
+					traits = {
+					
+					}
+				}
+			}
+        }		
+	}
+	
+	focus = { 
+		id = RKU_proclamation_to_the_peoples_of_russia
+		icon = GFX_proclamation_to_the_peoples_of_russia
+		prerequisite = { focus = RKU_arest_melnyk }
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_arest_melnyk
+		ai_will_do = { 
+			factor = 1
+		} 
+		
+		completion_reward = {
+		    add_political_power = 150
+            add_manpower = 25000
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = RKU_proclamation_to_the_peoples_of_russia
+			}			
+		}					
+	}
+	
+	focus = { 
+		id = RKU_great_ukraine
+		icon = GFX_great_ukraine
+		prerequisite = { focus = RKU_proclamation_to_the_peoples_of_russia }
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes 
+		relative_position_id = RKU_proclamation_to_the_peoples_of_russia 
+		ai_will_do = { 
+			factor = 1
+		}
+	
+		will_lead_to_war_with = GER
+		
+        completion_reward = {
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = RKU_great_ukraine
+			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }			
+			if = {
+				limit = {
+					is_in_faction_with = GER
+				}
+				leave_faction = yes
+			}
+			custom_effect_tooltip = RKU_bandera_claim
+			hidden_effect = {
+				GER = {
+					country_event = { id = BP_RKU.10 }  
+				}
+				if = {
+					random_country = {
+						limit = {
+							controls_state = 91 
+							controls_state = 89
+							controls_state = 793					
+						}
+						RKU = {
+							create_wargoal = {
+								type = take_core_state 
+								target = PREV
+								generator = { 91 89 793 }
+							}
+							hidden_effect = {
+								add_state_core = 91	
+								add_state_core = 89
+								add_state_core = 793
+							}
+						}
+					}
+				}
+				if = {
+					random_country = {
+						limit = {
+							controls_state = 73					
+						}
+						RKU = {
+							create_wargoal = {
+								type = take_core_state 
+								target = PREV
+								generator = { 73 }
+							}
+							hidden_effect = {
+								add_state_core = 73	
+							}
+						}
+					}
+				}
+				if = {
+					random_country = {
+						limit = {
+							controls_state = 137				
+						}
+						RKU = {
+							create_wargoal = {
+								type = take_core_state 
+								target = PREV
+								generator = { 137 }
+							}
+							hidden_effect = {
+								add_state_core = 137	
+							}					
+						}
+					}
+				}
+				if = {
+					random_country = {
+						limit = {
+							controls_state = 192 
+							controls_state = 198 
+						}
+					}
+					RKU = {
+						create_wargoal = {
+							type = take_core_state 
+							target = PREV
+							generator = { 192 198 }
+						}
+						hidden_effect = {
+							add_state_core = 192	
+							add_state_core = 198
+							add_state_claim = 80
+							add_state_claim = 78
+							add_state_claim = 766
+						}
+					}
+				}
+				if = {
+					random_country = {
+						limit = {
+							controls_state = 234
+							controls_state = 238
+							controls_state = 235					
+						}
+						RKU = {
+							create_wargoal = {
+								type = take_claimed_state  
+								target = PREV
+								generator = { 234 238 235 }
+							}
+							hidden_effect = {
+								add_state_claim = 234	
+								add_state_claim = 238
+								add_state_claim = 235
+							}
+						}
+					}
+				}
+			}
+        }	
+	}
+
+	focus = { 
+		id = RKU_ukrainian_propaganda
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = RKU_ukrainian_national_army focus = RKU_ukrainian_insurgent_army }
+		x = 2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_ukrainian_national_army 
+		ai_will_do = { 
+			factor = 1
+		}
+		
+        completion_reward = {
+		    swap_ideas = {
+			    remove_idea = RKU_german_propaganda_idea
+		        add_idea = RKU_ukrainian_propaganda
+			}
+            add_autonomy_ratio = {
+				value = 0.1
+				localization = RKU_ukrainian_propaganda
+			}			
+		}		
+	}
+	
+	focus = { 
+		id = RKU_reintegration_of_galicia
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = RKU_ukrainian_propaganda }
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_ukrainian_propaganda 
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			RKU = { 
+				tag = RKU
+				is_in_faction_with = GER
+			}
+		}
+		
+		completion_reward = {
+		    add_war_support = 0.1
+			transfer_state = 91
+			transfer_state = 89
+			add_state_core = 793
+			hidden_effect = {
+				add_state_core = 91
+				add_state_core = 89
+			}
+			GER = {
+				country_event = { id = BP_RKU.14 }  
+			}
+		}
+	}
+	
+	focus = { 
+		id = RKU_ukrainian_constitution
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = RKU_reintegration_of_galicia }
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_reintegration_of_galicia
+		ai_will_do = { 
+			factor = 1
+		}
+		
+	    available = {
+			
+			OR = {
+		        has_completed_focus = RKU_racial_decrees
+			    has_completed_focus = RKU_national_mobilization
+			}
+		}
+		
+        completion_reward = {
+            add_ideas = RKU_ukrainian_constitution_idea 
+            add_autonomy_ratio = {
+				value = 0.1
+				localization = RKU_ukrainian_constitution
+			}			
+		}		
+	}
+	
+	focus = { 
+		id = RKU_germanization
+		icon = GFX_germanization
+		prerequisite = { focus = RKU_ukrainian_central_committee }
+		mutually_exclusive = { focus = RKU_ukrainian_national_council }
+		x = -6
+		y = 1
+		cost = 10
+		available_if_capitulated = yes 
+		relative_position_id = RKU_ukrainian_central_committee
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			NOT = { has_global_flag = RKU_germanization_was_rejected }
+		}
+
+        completion_reward = {				
+			country_event = BP_RKU.13
+			swap_ideas = {
+			    remove_idea = RKU_german_occupy_administration
+		        add_idea = RKU_german_occupy_administration_germanization
+			}
+		}				
+	}
+
+    focus = {
+		id = RKU_hilfspolizei
+	    icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = RKU_germanization focus = RKU_ukrainian_national_council }
+		x = 6
+		y = 1
+		cost = 5
+		relative_position_id = RKU_germanization 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {  
+			
+			OR = {
+				has_completed_focus = RKU_oun_m
+                has_completed_focus = RKU_germanization
+		    }
+		}
+
+		available_if_capitulated = yes
+		
+	    completion_reward = {	
+			swap_ideas = {
+		        remove_idea = RKU_schutzmannschaft_idea
+		        add_idea = RKU_hilfspolizei_idea
+			}
+		}			
+	}
+	
+	focus = {
+		id = RKU_ss_division_galichina
+	    icon = GFX_SS_division_galichina
+		prerequisite = { focus = RKU_hilfspolizei }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RKU_hilfspolizei 
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {  			
+
+		}
+		
+		available_if_capitulated = yes
+
+		bypass = {
+			GER  = {
+				has_country_flag = ss_division_galizien_created
+			}
+		}
+		
+		completion_reward = {
+			country_event = BP_ss_recruitment_event.1 
+		}	
+	}
+	
+	focus = {
+		id = RKU_autobahn_2
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RKU_germanization }
+		x = 3
+		y = 1
+		relative_position_id = RKU_germanization
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+
+		available = {  
+		    has_full_control_of_state = 93
+            has_full_control_of_state = 199
+            has_full_control_of_state = 201
+            has_full_control_of_state = 202	
+            has_full_control_of_state = 203	
+            has_full_control_of_state = 259
+            has_full_control_of_state = 226	
+            has_full_control_of_state = 200
+            has_full_control_of_state = 196			
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = RKU_autobahn_tt_2
+			hidden_effect = {
+				93 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}			
+				199 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				201 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				202 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				203 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				259 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				226 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				200 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				196 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}		
+		}
+	}
+	
+	focus = { 
+		id = RKU_slave_economic_system
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		prerequisite = { focus = RKU_autobahn_2 }
+		mutually_exclusive = { focus = RKU_balanced_economic_system }
+		x = -1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_autobahn_2
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			
+		}
+
+	    completion_reward = {				
+			swap_ideas = {
+		        remove_idea = RKU_restoration_of_kolkhoz_system_idea
+		        add_idea = RKU_slave_economic_system_idea
+			}
+		}		
+	}
+	
+	focus = { 
+		id = RKU_balanced_economic_system
+		icon = GFX_goal_continuous_non_factory_construct
+		prerequisite = { focus = RKU_autobahn_2 }
+		mutually_exclusive = { focus = RKU_slave_economic_system }
+		x = 1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_autobahn_2
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			
+		}
+
+	    completion_reward = {				
+			swap_ideas = {
+		        remove_idea = RKU_restoration_of_kolkhoz_system_idea
+		        add_idea = RKU_balanced_economic_system_idea
+			}
+		}		
+	}
+
+	focus = { 
+		id = RKU_general_plan_ost
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = RKU_germanization }
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes 
+		relative_position_id = RKU_germanization
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			
+		}
+
+	    completion_reward = {				
+			custom_effect_tooltip = GER_ukranian_germanization_not_finished
+		}	
+	}
+	
+	focus = { 
+		id = RKU_ostarbeiter_2
+	    icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = RKU_general_plan_ost }
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_general_plan_ost
+		ai_will_do = { 
+			factor = 1
+		}
+
+		available = {  
+			
+		}		
+		
+		completion_reward = {
+			add_political_power = 150
+			add_timed_idea = {
+				idea = RKU_ostarbeiter_down
+				days = 365
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_kz_2
+		icon = GFX_kz
+		dynamic = yes
+		prerequisite = { focus = RKU_general_plan_ost }
+		available = {  
+					
+		}		
+		x = -1
+		y = 1
+		relative_position_id = RKU_general_plan_ost
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+		
+		available_if_capitulated = no
+
+		complete_tooltip = {		
+			every_state = {
+				limit = { has_state_flag = GER_industrial_effort_2_2IC }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+
+		completion_reward = {
+		    add_popularity = { ideology = fascism popularity = -0.05 }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2_2IC
+			}
+		}
+	}
+	
+	focus = { 
+		id = RKU_lebensraum
+		icon = GFX_lebensraum
+		prerequisite = { focus = RKU_kz_2  focus = RKU_ostarbeiter_2 }
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes 
+		relative_position_id = RKU_kz_2
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+	    available = {
+			
+			has_completed_focus = RKU_reichsgau
+			has_completed_focus = RKU_racial_decrees
+			has_completed_focus = RKU_kz_2
+			has_completed_focus = RKU_ostarbeiter_2
+		}
+		
+	    completion_reward = {				
+		    add_ideas = RKU_volksdeutsche
+		}		
+	}
+	
+	focus = { 
+		id = RKU_rsha_department
+		icon = GFX_gestapo
+		prerequisite = { focus = RKU_germanization }
+		x = -5
+		y = 1
+		cost = 10
+		available_if_capitulated = yes 
+		relative_position_id = RKU_germanization
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			
+		}
+
+	    completion_reward = {				
+		    add_ideas = RKU_RSHA
+		}		
+	}
+	
+	focus = { 
+		id = RKU_demand_oun_upa
+	    icon = GFX_focus_generic_anti_fascist_diplomacy
+		prerequisite = { focus = RKU_rsha_department }
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_rsha_department
+		ai_will_do = { 
+			factor = 1
+		}
+
+		available = {  
+			
+		}		
+		
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = -0.05 }
+			swap_ideas = {
+				remove_idea = RKU_arest_oun_b
+				add_idea = RKU_arest_oun_b_0
+			}
+		}
+	}
+	
+	focus = { 
+		id = RKU_get_rid_of_bandera
+		icon = GFX_get_rid_of_bandera
+		prerequisite = { focus = RKU_demand_oun_upa }
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_demand_oun_upa
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+		
+		}
+		
+		completion_reward = {
+			remove_ideas = RKU_arest_oun_b_0	
+		}
+	}
+	
+	focus = { 
+		id = RKU_get_rid_of_melnyk
+		icon = GFX_get_rid_of_melnyk
+		prerequisite = { focus = RKU_demand_oun_upa }
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_demand_oun_upa
+		
+		ai_will_do = { 
+			factor = 1
+		}
+
+		completion_reward = {
+			remove_ideas = RKU_arest_oun_m	
+		}		
+	}
+
+	focus = { 
+		id = RKU_communist_underground
+	    icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = RKU_rsha_department }
+		x = 2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_rsha_department
+		ai_will_do = { 
+			factor = 1
+		}
+
+		available = {  
+			
+		}		
+		
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = -0.05 }
+			swap_ideas = {
+				remove_idea = RKU_communist_underground_idea
+				add_idea = RKU_communist_underground_0
+			}
+		}
+	}
+	
+	focus = { 
+		id = RKU_get_rid_kovpak
+	    icon = GFX_get_rid_kovpak
+		prerequisite = { focus = RKU_communist_underground }
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_communist_underground
+		ai_will_do = { 
+			factor = 1
+		}
+
+		available = {  
+			
+		}
+		completion_reward = {
+			remove_ideas = RKU_communist_underground_0	
+		}
+	}
+	
+	focus = { 
+		id = RKU_reichsgau
+	    icon = GFX_ukr_reichsgau
+		prerequisite = { focus = RKU_get_rid_kovpak focus = RKU_get_rid_of_bandera focus = RKU_get_rid_of_melnyk}
+		x = -2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_get_rid_kovpak
+		ai_will_do = { 
+			factor = 1
+		}
+
+		available = {  
+			
+			has_completed_focus = RKU_get_rid_of_bandera
+		    has_completed_focus = RKU_get_rid_of_melnyk
+			has_completed_focus = RKU_get_rid_kovpak
+		}		
+		
+		completion_reward = {
+		    add_popularity = { ideology = fascism popularity = 1.0 }
+            add_political_power = 150			
+		}
+	}
+
+	focus = { 
+		id = RKU_arest_bandera
+		icon = GFX_get_rid_of_bandera
+		prerequisite = { focus = RKU_oun_m }
+		x = -2
+		y = 2
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_oun_m
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			
+		}
+
+        completion_reward = {
+			add_timed_idea = {
+				idea = RKU_arest_oun_b	
+				days = 90
+            }
+			hidden_effect = {
+				set_party_name = {
+					ideology = neutrality 
+					long_name = RKU_oun_b_long
+					name = RKU_oun_b
+				}
+				create_country_leader = {
+					name = "Stepan Bandera"
+					desc = ""
+					picture = "gfx/leaders/RKU/Portrait_Ukraine_Stepan_Bandera.dds"
+					expire = "1965.1.1"
+					ideology = despotism  				
+					traits = {
+					
+					}
+				}
+			}
+        }		
+	}
+	
+	focus = { 
+		id = RKU_racial_decrees
+		icon = GFX_racial_decrees
+		prerequisite = { focus = RKU_arest_bandera focus = RKU_slave_economic_system focus = RKU_balanced_economic_system}
+		x = -2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_arest_bandera
+		
+		available = {  
+			
+		}
+		
+		ai_will_do = { 
+			factor = 1
+		}
+
+        completion_reward = {	
+            add_ideas = RKU_racial_decrees_idea
+        }					
+	}
+	
+	focus = { 
+		id = RKU_take_ostarbeiter_citizenship
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = RKU_racial_decrees }
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes 
+		relative_position_id = RKU_racial_decrees
+		
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		available = {  
+			
+		}
+
+	    completion_reward = {				
+		    add_political_power = 150
+			GER = { country_event = BP_RKU.11 }
+		}		
+	}
+
+    focus = { 
+		id = RKU_integrate_war_economy
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RKU_take_ostarbeiter_citizenship } 
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes 
+		relative_position_id = RKU_take_ostarbeiter_citizenship
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = RKU_war_economy
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = RKU_war_economy
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = RKU_war_economy
+			}		
+		}
+	}
+	
+	focus = { 
+	    id = RKU_restoration_of_kolkhoz_system
+	    icon = GFX_goal_tfv_saf_support_ossebrandwag
+	    prerequisite = { focus = RKU_anti_jew_actions } 
+		x = 10
+	    y = 1
+        cost = 5
+	    available_if_capitulated = yes 
+	    relative_position_id = RKU_anti_jew_actions  
+	    ai_will_do = { 
+		factor = 1
+	    } 
+		
+		completion_reward = {
+		    add_ideas = RKU_restoration_of_kolkhoz_system_idea		
+		}
+	}
+	
+	focus = {
+		id = RKU_kz
+		icon = GFX_kz
+		dynamic = yes
+		prerequisite = { focus = RKU_restoration_of_kolkhoz_system }
+		available = {  
+			
+		}
+		x = -2
+		y = 1
+		relative_position_id = RKU_restoration_of_kolkhoz_system
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+		
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = GER_industrial_effort_2_2IC }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+		add_popularity = { ideology = fascism popularity = -0.05 }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2_2IC
+			}		
+		}
+	}
+	
+	focus = { 
+		id = RKU_ostarbeiter
+	    icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = RKU_kz }
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_kz
+		ai_will_do = { 
+			factor = 1
+		}
+
+		available = {  
+			
+		}		
+		
+		completion_reward = {
+			add_political_power = 150
+			add_timed_idea = {
+				idea = RKU_ostarbeiter_down
+				days = 365
+			}
+		}
+
+        completion_reward = {	
+			GER = {
+				add_opinion_modifier = { target = ROOT modifier = RKU_align_germany }
+			}	
+		}		
+	}
+	
+	focus = { 
+		id = RKU_war_economy
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RKU_restoration_of_kolkhoz_system } 
+		x = 2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_restoration_of_kolkhoz_system 
+		ai_will_do = { 
+			factor = 1
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {	
+					has_war_support < 0.5
+				}
+				add_war_support = 0.1
+			}
+			if = {
+				limit = {
+					has_idea = war_economy
+				}
+				add_political_power = 150
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = war_economy }
+				}
+				add_ideas = war_economy
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = RKU_war_economy
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = RKU_war_economy
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_german_science_cooperation
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = RKU_war_economy }
+		x = -2
+		y = 1
+		relative_position_id = RKU_war_economy
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {  
+			RKU = { 
+				tag = RKU
+				is_in_faction_with = GER
+			}
+
+		}
+
+		bypass = {
+			OR = {
+				NOT = { 
+					is_subject_of = GER 
+				}
+				has_war_with = GER
+			}
+		}		
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_tech_sharing_group = RKs_research_group
+			GER = {
+				add_to_tech_sharing_group = RKs_research_group
+			}
+		}
+	}
+	
+    focus = {
+		id = RKU_extra_tech_slot
+		icon = GFX_focus_research2
+		prerequisite = { focus = RKU_german_science_cooperation }
+		x = 0
+		y = 1
+		relative_position_id = RKU_german_science_cooperation
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {  
+			OR = {
+				has_completed_focus = RKU_oun_b
+				has_completed_focus = RKU_oun_m
+			}
+		}		
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+    focus = {
+		id = RKU_dnipro_hes_dam 
+		icon = GFX_Dnipro_HES
+		prerequisite = { focus = RKU_war_economy }
+		x = 0
+		y = 1
+		relative_position_id = RKU_war_economy
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+
+		available = {  
+			has_full_control_of_state = 226
+			has_full_control_of_state = 196
+            has_full_control_of_state = 200	
+		}
+	
+		completion_reward = {
+			if = {
+				limit = {
+					has_global_flag = destruction_of_dneprostroi_dam
+				}	
+				clr_global_flag = destruction_of_dneprostroi_dam
+				226 = { #Dnepropetrovsk
+					remove_province_modifier = {
+						static_modifiers = { flooded }
+						province = {
+						id = 11437
+						id = 11422
+						id = 453
+						id = 9419
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				200 = {	#Zaporozhe
+					remove_province_modifier = {
+						static_modifiers = { flooded }
+						province = {
+							id = 11405
+							id = 588
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				196 = {	#Kherson
+					remove_province_modifier = {
+						static_modifiers = { flooded }
+						province = {
+							id = 3573
+							id = 11715
+							id = 737
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = destruction_of_dneprostroi_dam }
+				}
+				add_ideas = RKU_dnepr_dam_is_fine
+			}
+		}
+	}
+
+    focus = {
+		id = RKU_donetsk_dnieper_economic_region
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = RKU_dnipro_hes_dam }
+		x = 0
+		y = 1
+		relative_position_id = RKU_dnipro_hes_dam
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {  
+			has_full_control_of_state = 226
+			has_full_control_of_state = 200
+			has_full_control_of_state = 227
+			has_full_control_of_state = 228
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			226 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+			200 = {
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+			}
+			200 = {
+				add_resource = {
+					type = aluminium
+					amount = 10
+				}
+			}
+			227 = {
+				add_resource = {
+					type = chromium
+					amount = 4
+				}
+			}
+			227 = {
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+			}
+			228 = {
+				add_resource = {
+					type = chromium
+					amount = 4
+				}
+			}
+			228 = {
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = RKU_economic_department
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = RKU_donetsk_dnieper_economic_region }
+		x = 0
+		y = 1
+		relative_position_id = RKU_donetsk_dnieper_economic_region
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {  
+		    OR = {
+		        has_completed_focus = RKU_oun_m
+			    has_completed_focus = RKU_oun_b
+			}
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = RKU_economic_department_idea
+		}
+	}
+
+	focus = {
+		id = RKU_autobahn
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RKU_economic_department }
+		x = 0
+		y = 1
+		relative_position_id = RKU_economic_department
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+
+		available = {  
+			has_full_control_of_state = 202
+            has_full_control_of_state = 203
+            has_full_control_of_state = 226 
+            has_full_control_of_state = 200	
+            has_full_control_of_state = 227
+            has_full_control_of_state = 228					
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = RKU_autobahn_tt
+			hidden_effect = {
+				202 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}			
+				203 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				226 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				200 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				227 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				228 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}		
+		}
+	}	
+	
+    focus = {
+		id = RKU_development_oil_fields_in_ukraine
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = RKU_war_economy }
+		x = 8
+		y = 1
+		relative_position_id = RKU_war_economy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {  
+		    has_completed_focus = RKU_extra_tech_slot 
+			has_full_control_of_state = 225
+			has_full_control_of_state = 259
+			has_full_control_of_state = 221
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			225 = {
+				add_resource = {
+					type = oil
+					amount = 2
+				}
+			}
+			259 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+			}
+			221 = {
+				add_resource = {
+					type = oil
+					amount = 3
+				}
+			}
+		}
+	}
+	
+    focus = {
+		id = RKU_synthetic_oil
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = RKU_development_oil_fields_in_ukraine }
+		x = 0
+		y = 1
+		relative_position_id = RKU_development_oil_fields_in_ukraine
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {  
+			has_full_control_of_state = 202
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_coal_liquidization
+				bonus = 0.5
+				uses = 2
+				category = synth_resources
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 202
+				}
+				202 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}		
+	}
+	
+	focus = {
+		id = RKU_oil_in_drohobych
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = RKU_synthetic_oil }
+		x = 0
+		y = 1
+		relative_position_id = RKU_synthetic_oil
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {  
+			has_full_control_of_state = 91
+			has_full_control_of_state = 89
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_full_control_of_state = 91
+				}
+				91 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}		
+		completion_reward = {
+			89 = {
+				add_resource = {
+					type = oil
+					amount = 6
+				}
+			}
+		}		
+	}
+
+    focus = {
+		id = RKU_agroprogram
+	    icon = GFX_agroprogram_rku
+		prerequisite = { focus = RKU_dnipro_hes_dam focus = RKU_development_oil_fields_in_ukraine }
+		x = 4
+		y = 1
+		relative_position_id = RKU_dnipro_hes_dam 
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = RKU_agroprogram
+		}
+	}
+	
+	focus = {
+		id = RKU_agro_appendage
+	    icon = GFX_the_great_black_menace
+		prerequisite = { focus = RKU_agroprogram }
+		mutually_exclusive = { focus = RKU_demographic_program }
+		x = -1
+		y = 1
+		relative_position_id = RKU_agroprogram 
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+	    available = {
+		    NOT = { has_completed_focus = RKU_oun_b }		
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RKU_agroprogram
+				add_idea = RKU_agro_appendage_idea
+			}
+		}
+	}
+
+    focus = {
+		id = RKU_demographic_program
+	    icon = GFX_bread_basketof_europe
+		prerequisite = { focus = RKU_agroprogram }
+		mutually_exclusive = { focus = RKU_agro_appendage }
+		x = 1
+		y = 1
+		relative_position_id = RKU_agroprogram 
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+	    available = {		
+			OR = {
+		        has_completed_focus = RKU_oun_b
+			    has_completed_focus = RKU_oun_m
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RKU_agroprogram
+				add_idea = RKU_demographic_program_idea
+			}
+		}
+	}	
+
+	focus = { 
+		id = RKU_schutzmannschaft
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = RKU_anti_jew_actions }
+		x = -26
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_anti_jew_actions
+		ai_will_do = { 
+			factor = 1
+		}
+
+		available = {  
+			
+		}		
+
+		completion_reward = {
+		    add_ideas = RKU_schutzmannschaft_idea		
+		}
+	}
+	
+	focus = { 
+		id = RKU_ukrainian_liberation_army
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = RKU_schutzmannschaft }
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_schutzmannschaft
+		ai_will_do = { 
+			factor = 1
+		} 
+		
+		available = {  
+			
+		}
+		
+		completion_reward = {
+		    army_experience = 25
+			# Balance research bonus for 2 techs under land_doctrine
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		    add_ideas = RKU_ukrainian_liberation_army_idea				
+		}		
+	}
+	
+	focus = { 
+		id = RKU_rearmament
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = RKU_ukrainian_liberation_army }
+		x = 0
+		y = 2
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_ukrainian_liberation_army
+		ai_will_do = { 
+			factor = 1
+		} 
+		
+		available = {  
+			
+		    OR = {
+		        has_completed_focus = RKU_oun_m
+			    has_completed_focus = RKU_oun_b
+			}
+		}
+	
+		completion_reward = {
+		    add_ideas = RKU_rearmament_idea			
+		}		
+	}
+			
+	focus = {
+		id = RKU_german_war_doctrine
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = RKU_rearmament }
+		mutually_exclusive = { focus = RKU_national_war_doctrine  }
+		x = 1
+		y = 1
+		relative_position_id = RKU_rearmament
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		} 
+		
+		available = {		
+		    has_completed_focus = RKU_oun_m	
+		}
+
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = RKU_german_war_doctrine
+				bonus = 2.0
+				uses = 3
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_national_war_doctrine 
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RKU_rearmament }
+		mutually_exclusive = { focus = RKU_german_war_doctrine }
+		x = -1
+		y = 1
+		relative_position_id = RKU_rearmament
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		}
+		
+		available = {		
+		    has_completed_focus = RKU_oun_b	
+		}
+
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = RKU_national_war_doctrine 
+				bonus = 2.0
+				uses = 3
+				category = cat_mass_assault
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_small_arms
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = RKU_national_war_doctrine focus = RKU_german_war_doctrine }
+		x = 1
+		y = 1
+		relative_position_id = RKU_national_war_doctrine
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {  
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RKU_small_arms
+				bonus = 1.00
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_war_academy
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = RKU_national_war_doctrine focus = RKU_german_war_doctrine }
+		x = 1
+		y = 1
+		relative_position_id = RKU_german_war_doctrine
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		completion_reward = {
+			add_ideas = RKU_war_academy_idea
+		}
+	}
+	
+	focus = {
+		id = RKU_national_guard
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = RKU_national_war_doctrine focus = RKU_german_war_doctrine }
+		x = -1
+		y = 1
+		relative_position_id = RKU_national_war_doctrine 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+			    name = RKU_vanatori_de_munte
+			    bonus = 1.0
+			    uses = 1
+			    category = mountaineers_tech
+			}
+			add_tech_bonus = {
+				name = RKU_form_parachute_battalions
+				bonus = 1.0
+				uses = 1
+				category = para_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_domestic_artillery_production
+		icon =  GFX_goal_generic_army_artillery2
+		prerequisite = { focus = RKU_small_arms }
+		x = -1
+		y = 1
+		relative_position_id = RKU_small_arms
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {  
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RKU_domestic_artillery_production
+				bonus = 1.00
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_organisation_of_division
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = RKU_small_arms }
+		x = 1
+		y = 1
+		relative_position_id = RKU_small_arms
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RKU_independent_engineer_regiments
+				bonus = 3.0
+				uses = 1
+				category = engineers_tech
+			}
+			add_tech_bonus = {
+				name = RKU_motorized_logistics
+				bonus = 1.0
+				uses = 2
+				category = hospital_tech
+				category = logistics_tech
+			}
+			add_tech_bonus = {
+				name = RKU_motorized_recon_companies
+				bonus = 3.0
+				uses = 1
+				category = recon_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_modern_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = RKU_domestic_artillery_production focus = RKU_organisation_of_division }
+		x = 1
+		y = 1
+		relative_position_id = RKU_domestic_artillery_production
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+			}
+		}
+
+		available = {  
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RKU_modern_tanks
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+		
+	focus = {
+		id = RKU_theoretical_air_efforts
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = RKU_rearmament }
+		x = 6
+		y = 1
+		relative_position_id = RKU_rearmament
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {  
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		    air_experience = 25 
+			add_tech_bonus = {
+				name = RKU_theoretical_air_efforts
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_expand_the_air_base
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = RKU_theoretical_air_efforts }
+		x = 0
+		y = 1
+        relative_position_id = RKU_theoretical_air_efforts
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {  
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			air_experience = 25
+			random_state = {
+				limit = {
+					has_state_flag = RKU_expand_the_air_force_AB
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = RKU_expand_the_air_force_AB_2
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+		    
+			air_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					free_building_slots = {
+						building = air_base
+						size > 2
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = RKU_expand_the_air_force_AB
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					free_building_slots = {
+						building = air_base
+						size > 2
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = RKU_expand_the_air_force_AB_2
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_local_development
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = RKU_expand_the_air_base }
+		mutually_exclusive = { focus = RKU_acquire_licenses }
+		mutually_exclusive = { focus = RKU_joint_air_development }
+		x = 0
+		y = 1
+		relative_position_id = RKU_expand_the_air_base
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {  
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = charz
+		}
+	}
+	
+	focus = {
+		id = RKU_acquire_licenses
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = RKU_expand_the_air_base }
+		mutually_exclusive = { focus = RKU_local_development }
+		mutually_exclusive = { focus = RKU_joint_air_development }
+		x = 2
+		y = 1
+		relative_position_id = RKU_expand_the_air_base
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {  
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = RKU_acquire_licenses_idea
+		}
+	}
+	
+	focus = {
+		id = RKU_joint_air_development
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = RKU_expand_the_air_base }
+		mutually_exclusive = { focus = RKU_acquire_licenses }
+		mutually_exclusive = { focus = RKU_local_development }
+		x = -2
+		y = 1
+		relative_position_id = RKU_expand_the_air_base
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			is_in_faction = yes
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_to_tech_sharing_group = RKU_joint_air_development_group
+			every_other_country = {
+				limit = {
+					is_in_faction_with = RKU
+				}
+				add_to_tech_sharing_group = RKU_joint_air_development_group
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_air_superiority
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = RKU_acquire_licenses focus = RKU_local_development focus = RKU_joint_air_development }
+		x = 0
+		y = 1
+		relative_position_id = RKU_local_development
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {  
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_fighter_modernization
+				bonus = 1.0
+				uses = 1
+				category = light_fighter		
+			}
+			add_tech_bonus = {
+				name = JAP_fighter_modernization
+				bonus = 1.0
+				uses = 1
+				category = cat_heavy_fighter	
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_medium_bombers
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = RKU_acquire_licenses focus = RKU_local_development focus = RKU_joint_air_development }
+		x = 2
+		y = 1
+		relative_position_id = RKU_local_development
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {  
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RKU_medium_bombers
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_air_defense
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = RKU_acquire_licenses focus = RKU_local_development focus = RKU_joint_air_development }
+		x = -2
+		y = 1
+		relative_position_id = RKU_local_development
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+
+		available = {  
+			OR = {
+				has_full_control_of_state = 93
+				has_full_control_of_state = 202
+				has_full_control_of_state = 226
+			}
+		}
+		
+		complete_tooltip = {
+			air_experience = 25
+			if = {
+				limit = { has_country_flag = air_defense_focus_built_max }
+				custom_effect_tooltip = RKU_air_defense_tt			
+			}
+			if = {
+				limit = { NOT = { has_country_flag = air_defense_focus_built_max } }
+				every_state = {
+					limit = { has_state_flag = ENG_air_defense_focus_built_2 }
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			air_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							93 = {
+								free_building_slots = {
+									building = anti_air_building
+									size > 1
+								}
+							}
+							202 = {
+								free_building_slots = {
+									building = anti_air_building
+									size > 1
+								}
+							}
+							226 = {
+								free_building_slots = {
+									building = anti_air_building
+									size > 1
+								}
+							}
+						}
+					}
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = anti_air_building
+								size > 1
+							}
+							OR = {
+								region = 1
+								region = 2
+								region = 3
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_air_defense_focus_built_2
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}			
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_air_defense_focus_built_2
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							93 = {
+								free_building_slots = {
+									building = anti_air_building
+									size > 1
+								}
+							}
+							202 = {
+								free_building_slots = {
+									building = anti_air_building
+									size > 1
+								}
+							}
+							226 = {
+								free_building_slots = {
+									building = anti_air_building
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}
+						OR = {
+							region = 1
+							region = 2
+						}
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_air_defense_focus_built_2
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}
+						OR = {
+							region = 1
+							region = 2
+							region = 3
+						}						
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_air_defense_focus_built_2
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}
+						OR = {
+							region = 1
+							region = 2
+						}						
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = ENG_air_defense_focus_built_2
+				}
+			}			
+			if = {
+				limit = {
+					OR = {
+						93 = {
+							free_building_slots = {
+								building = anti_air_building
+								size > 1
+							}
+						}
+						202 = {
+							free_building_slots = {
+								building = anti_air_building
+								size > 1
+							}
+						}
+						226 = {
+							free_building_slots = {
+								building = anti_air_building
+								size > 1
+							}
+						}
+					}
+				}
+				custom_effect_tooltip = RKU_air_defense_tt
+				hidden_effect = {
+					93 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 5
+							instant_build = yes
+						}
+					}
+					202 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 5
+							instant_build = yes
+						}
+					}
+					226 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 5
+							instant_build = yes
+						}
+					}
+					set_country_flag = air_defense_focus_built_max
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_strategic_bomber_force
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = RKU_air_superiority }
+		mutually_exclusive = { focus = RKU_ground_support }
+		x = -1
+		y = 1
+		relative_position_id = RKU_air_superiority
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RKU_strategic_bomber_force
+				bonus = 1.0
+				uses = 1
+				category = cat_strategic_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = RKU_ground_support
+		icon = GFX_goal_poland_goal
+		prerequisite = { focus = RKU_air_superiority }
+		mutually_exclusive = { focus = RKU_strategic_bomber_force }
+		x = 1
+		y = 1
+		relative_position_id = RKU_air_superiority
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {  
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RKU_ground_support
+				bonus = 1.0
+				uses = 1
+				category = battlefield_support_tree
+			}
+		}
+	}
+				
+	focus = {
+		id = RKU_black_sea_dominance
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = RKU_rearmament }
+		x = -5
+		y = 1
+		relative_position_id = RKU_rearmament
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {  
+			has_full_control_of_state = 192
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {			
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = RKU_black_sea_shipping_company
+			196 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			197 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			192 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = RKU_cruisers
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = RKU_black_sea_dominance }
+		x = -1
+		y = 1
+		relative_position_id = RKU_black_sea_dominance
+		mutually_exclusive = { focus = RKU_destroyer }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {  
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 15
+			add_tech_bonus = {
+				name = RKU_cruisers
+				bonus = 2.0
+				uses = 2
+				category = cl_tech
+				category = ca_tech
+			}
+
+		}
+	}
+	
+	focus = {
+		id = RKU_capital_ships
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = RKU_cruisers }
+		x = 0
+		y = 1
+		relative_position_id = RKU_cruisers
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 15
+			add_tech_bonus = {
+				name = RKU_capital_ships
+				bonus = 2.0
+				uses = 2
+				category = bc_tech
+				category = bb_tech
+			}
+
+		}
+	}
+	
+	focus = {
+		id = RKU_destroyer
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = RKU_black_sea_dominance }
+		x = 1
+		y = 1
+		relative_position_id = RKU_black_sea_dominance
+		mutually_exclusive = { focus = RKU_cruisers }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 15
+			add_tech_bonus = {
+				name = RKU_destroyer
+				bonus = 2.0
+				uses = 2
+				category = dd_tech
+			}
+
+		}
+	}
+	
+	focus = {
+		id = RKU_submarines
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = RKU_destroyer }
+		x = 0
+		y = 1
+		relative_position_id = RKU_destroyer
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {  
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 15
+			add_tech_bonus = {
+				name = RKU_submarines
+				bonus = 2.0
+				uses = 2
+				category = ss_tech
+			}
+
+		}
+	}
+	
+	focus = {
+		id = RKU_restauration
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = RKU_capital_ships focus = RKU_submarines }
+		x = 1
+		y = 1
+		relative_position_id = RKU_capital_ships
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {  
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = RKU_restauration
+				bonus = 2.0
+				uses = 3
+				category = cat_fleet_in_being
+			}
+        }			
+	}
+	
+	focus = { 
+		id = RKU_Abwer
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = RKU_ukrainian_liberation_army }
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes 
+		relative_position_id = RKU_ukrainian_liberation_army
+		ai_will_do = { 
+			factor = 1
+		}
+
+		available = {  
+			
+		}		
+
+		completion_reward = {
+		    add_ideas = RKU_abwer_idea		
+		}
+	}
+	
+	focus = { 
+		id = RKU_HJ
+		icon = GFX_hj
+		prerequisite = { focus = RKU_ukrainian_liberation_army }
+		mutually_exclusive = { focus = RKU_plast }
+		x = -4
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_ukrainian_liberation_army
+		ai_will_do = { 
+			factor = 1
+		}
+
+		available = {  			
+			has_completed_focus = RKU_germanization			
+		}		
+
+		completion_reward = {
+		    add_ideas = RKU_hj_idea		
+		}
+	}
+	
+	focus = { 
+		id = RKU_plast
+		icon = GFX_plast
+		prerequisite = { focus = RKU_ukrainian_liberation_army }
+		mutually_exclusive = { focus = RKU_HJ }
+		x = -2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes 
+		relative_position_id = RKU_ukrainian_liberation_army
+		ai_will_do = { 
+			factor = 1
+		}
+
+		available = {  
+			
+			OR = {
+		        has_completed_focus = RKU_oun_m
+			    has_completed_focus = RKU_oun_b
+			}
+			
+		}		
+
+		completion_reward = {
+		    add_ideas = RKU_plast_idea		
+		}
+	}
+	
+    focus = {
+		id = RKU_ostwall
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = RKU_ukrainian_liberation_army }
+		available = {  
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+				OR = {
+					has_full_control_of_state = 202
+					has_full_control_of_state = 203
+					has_full_control_of_state = 226
+					has_full_control_of_state = 200
+				}
+			}
+		}
+		x = 4
+		y = 1
+		relative_position_id = RKU_ukrainian_liberation_army
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = GER_ostwall_idea
+			custom_effect_tooltip = RKU_ostwall_forts
+			custom_effect_tooltip = RKU_ostwall_forts_2
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = RKU
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 202 
+					}
+				}
+				hidden_effect = {
+					202 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9568
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3543
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 525
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3494
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 203 
+					}
+				}
+				hidden_effect = {
+					203 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11454
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 488
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 3468
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6478
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 226 
+					}
+				}
+				hidden_effect = {
+					226 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9433
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11437
+							instant_build = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 200 
+					}
+				}
+				hidden_effect = {
+					200 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11405
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6596
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 11700
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}	
+}    

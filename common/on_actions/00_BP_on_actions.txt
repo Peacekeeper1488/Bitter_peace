@@ -1,0 +1,13 @@
+on_actions = {
+	#ROOT is subject FROM is previous overlord
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = {
+					tag = YAK
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+}

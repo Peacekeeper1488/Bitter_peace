@@ -1,0 +1,20 @@
+state={
+	id=795
+	name="STATE_795"
+	manpower = 400
+	state_category = enclave
+
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = POL
+
+	}
+	
+	provinces={
+		13226 
+	}
+}

@@ -1,0 +1,108 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
+#State scope
+is_controlled_by_ROOT_or_subject = {
+	custom_trigger_tooltip = {
+		tooltip = is_controlled_by_ROOT_or_subject
+		CONTROLLER = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+			}
+		}
+	}
+}
+
+#State scope
+is_full_controlled_by_ROOT_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = is_full_controlled_by_ROOT_or_ally
+		CONTROLLER = { 
+			OR = { 
+				tag = ROOT is_subject_of = ROOT 
+				is_in_faction_with = ROOT 
+			} 
+			has_full_control_of_state = PREV 
+		}
+	}
+}
+
+#Japan control China
+china_is_controlled_by_jap_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = BP_Japan_controls_China_tt
+		608 = { is_controlled_by_ROOT_or_ally = yes } #Beijing	
+		614 = { is_controlled_by_ROOT_or_ally = yes } #Hebei
+		615 = { is_controlled_by_ROOT_or_ally = yes } #Shanxi			
+		746 = { is_controlled_by_ROOT_or_ally = yes } #Ordos
+		if = {
+			limit = {
+				PRC = {
+					OR = {
+						exists = no
+						has_capitulated = yes 
+					}							
+				}
+			}
+			622 = { is_controlled_by_ROOT_or_ally = yes } #Shaanxi
+		}
+		616 = { is_controlled_by_ROOT_or_ally = yes } #Ningxia
+		756 = { is_controlled_by_ROOT_or_ally = yes }  #Jiuquan
+		755 = { is_controlled_by_ROOT_or_ally = yes } #Haixi
+		604 = { is_controlled_by_ROOT_or_ally = yes } #Qinghai
+		754 = { is_controlled_by_ROOT_or_ally = yes } #Golog
+		283 = { is_controlled_by_ROOT_or_ally = yes } #Gansu
+		753 = { is_controlled_by_ROOT_or_ally = yes } #Gannan
+		752 = { is_controlled_by_ROOT_or_ally = yes } #Chamdo
+		if = {
+			limit = {
+				TIB = {
+					OR = {
+						exists = no
+						has_capitulated = yes 
+						NOT = { 601 = { is_controlled_by = TIB } }
+					}							
+				}
+			}
+			601 = { is_controlled_by_ROOT_or_ally = yes } #Xikang
+		}
+		597 = { is_controlled_by_ROOT_or_ally = yes } #Shandong
+		743 = { is_controlled_by_ROOT_or_ally = yes } #Qingdao
+		598 = { is_controlled_by_ROOT_or_ally = yes } #Jiangsu
+		606 = { is_controlled_by_ROOT_or_ally = yes } #Anhui
+		607 = { is_controlled_by_ROOT_or_ally = yes } #Henan	
+		744 = { is_controlled_by_ROOT_or_ally = yes } #Hian
+		605 = { is_controlled_by_ROOT_or_ally = yes } #Sichuan				
+		751 = { is_controlled_by_ROOT_or_ally = yes } #Liangshan
+		620 = { is_controlled_by_ROOT_or_ally = yes } #Hubei
+		613 = { is_controlled_by_ROOT_or_ally = yes } #Snanghai
+		749 = { is_controlled_by_ROOT_or_ally = yes } #Huangshan
+		596 = { is_controlled_by_ROOT_or_ally = yes } #Zhejiang
+		595 = { is_controlled_by_ROOT_or_ally = yes } #Fujian
+		600 = { is_controlled_by_ROOT_or_ally = yes } #Jiangxi
+		602 = { is_controlled_by_ROOT_or_ally = yes } #Hunan
+		750 = { is_controlled_by_ROOT_or_ally = yes } #Changde
+		748 = { is_controlled_by_ROOT_or_ally = yes } #Zunyi
+		603 = { is_controlled_by_ROOT_or_ally = yes } #Guizhou
+		593 = { is_controlled_by_ROOT_or_ally = yes } #Guangdong
+		599 = { is_controlled_by_ROOT_or_ally = yes } #Guangxi
+		592 = { is_controlled_by_ROOT_or_ally = yes } #Guangzhou
+		594 = { is_controlled_by_ROOT_or_ally = yes } #Nanning
+		591 = { is_controlled_by_ROOT_or_ally = yes } #Nainan
+		747 = { is_controlled_by_ROOT_or_ally = yes } #Dali
+		325 = { is_controlled_by_ROOT_or_ally = yes } #Yunnan
+	}		
+}
