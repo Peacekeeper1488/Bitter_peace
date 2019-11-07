@@ -1,0 +1,288 @@
+﻿l_GErman: 
+
+ ### Basic political branch ###
+ RKU_german_administration:0 "Besatzungs Verwaltung"
+ RKU_german_administration_desc:0 "Nach der Vertreibung der Bolschewiki aus der Ukraine müssen wir eine wirksame administrative und politische Verwaltung dieser Gebiete organisieren, um dem Reich eine verlässliche wirtschaftliche Rückendeckung zu sichern."
+ 
+ RKU_anti_jew_actions:0 "Initiierung anti-Jüdischer Pogrome"
+ RKU_anti_jew_actions_desc:0 "Bolschewismus und Judentum sind untrennbar miteinander verbunden. Die ukrainische Bevölkerung hat bereits stark unter der bolschewistischen Kollektivierung und Massenunterdrückung gelitten. Es ist notwendig, die antikommunistischen und antisemitischen Gefühle der lokalen Bevölkerung auszunutzen, um erneut nicht im Blut schmutzig zu werden."
+ 
+ RKU_german_propaganda:0 "Deutsche propaganda"
+ RKU_german_propaganda_desc:0 "Um die öffentliche Meinung der Bevölkerung effektiv zu steuern, ist es notwendig, eine starke Kontrolle über Radio, Druckereien und alle Medien zu etablieren, die unsere ideologischen Feinde jedoch nicht innerhalb und außerhalb des Landes taten."
+
+ RKU_ukranization:0 "Ukrainisierung des öffentlichen Lebens"
+ RKU_ukranization_desc:0 "Jahrhunderte der russischen Präsenz und der sowjetischen Kulturrevolution trugen dazu bei, dass die ukrainische Sprache aus dem öffentlichen Leben verdrängt und nur auf dem Land verbreitet wurde. Um die Unterstützung der Ukrainer zu gewinnen, müssen der Gebrauch der ukrainischen Sprache in der frühen Schule, in einigen Bildungseinrichtungen, in der Basisverwaltung, in der Presse und im kulturellen Leben ausgeweitet werden."
+ 
+ RKU_ukrainian_central_committee:0 "Ukrainisches Zentralkomitee"
+ RKU_ukrainian_central_committee_desc:0 "Gesellschaftspolitische Organisation ukrainischer Kollaborateure, die 1939-1945 ihre Interessen vertrat. Der Leiter der UCC während seiner Existenz war V. Kubiyovych. Die Aktivitäten und die Struktur des UCC wurden durch die Besatzungspolitik bestimmt. UCC beteiligte sich an der Bildung der SS-Division "Galizien"."
+ 
+ RKU_ukrainian_national_council:0 "Ukrainisches Nationalkomitee"
+ RKU_ukrainian_national_council_desc:0 "Um die Ukraine effektiv verwalten zu können, müssen wir eine Regierung aus Vertretern der ukrainischen politischen und kulturellen Intelligenz bilden, die unter der lokalen Bevölkerung eine größere Loyalität genießt. Die Frage ist nur, auf wen man wetten kann. Die ukrainische Nationalbewegung ist in feindliche Fraktionen aufgeteilt."
+ RKU_legitimization:0 "Die Schaffung des Nationalkomitees legitimiert uns in den Augen der Mehrheit der Ukrainer. Die meisten von uns kontrollierten Gebiete werden für uns Staatsangehörige."
+ 
+ RKU_oun_m:0 "Bewerten Sie die OUN(m)"
+ RKU_oun_m_desc:0 "Die von Andrey Melnyk angeführte OUN (m) ist zwar pro-deutscher ausgerichtet, erfreut sich jedoch bei den Einwohnern der Ukraine, der OUN (b), geringerer Beliebtheit. Gleichzeitig genießen die Vertreter der OUN (m) eine stärkere Unterstützung unter den ukrainischen politischen Einwanderern."
+ 
+ RKU_oun_b:0 "Bewerten Sie die OUN (b)" 
+ RKU_oun_b_desc:0 "Die von Stepan Bandera angeführte OUN (b) und die von Roman Shukhevych angeführte ukrainische Aufständische Armee erfreuen sich in der Bevölkerung größerer Beliebtheit. Gleichzeitig kann die extrem antikoloniale Natur dieser Bewegung zu erheblichen Schwierigkeiten in den Beziehungen zu der aus ihnen gebildeten Regierung führen."
+ 
+ ### OUN (m) branch ###
+ RKU_ukrainian_national_army:0 "Ukrainische Nationalarmee"
+ RKU_ukrainian_national_army_desc:0 "Nach der Bildung der ukrainischen Regierung im Land begann die Rückkehr in die ukrainischen politischen Exilanten, darunter ehemalige Offiziere der UNR und der ZUNR, die sich aktiv an der Neubildung der ukrainischen Armee beteiligen."
+
+ RKU_reintegration_transnistria_and_bukovina:0 "Reintegration von Transnistrien"
+ RKU_reintegration_transnistria_and_bukovina_desc:0 "Interne politische Probleme, Niederlagen an den Fronten führten zu einer Abnahme der Subjektivität des rumänischen Staates und in der Folge zu der Unfähigkeit, auch das eigene Territorium zu kontrollieren. Die Wiederaufnahme unserer Kontrolle über eine Reihe von Regionen wird die Ordnung in ihnen wiederherstellen." 
+ 
+ RKU_reintegration_carpathian_ukraine:0 "Reintegration der Karpatenukraine" 
+ RKU_reintegration_carpathian_ukraine_desc:0 "In Transkarpatien kommt es ständig zu Zusammenstößen zwischen der ungarischen Minderheit und der ukrainischen Mehrheit. Wir können die Kontrolle über die Region übernehmen, um die Autonomie der ungarischen Gemeinschaft zu gewährleisten."
+ 
+ RKU_crimean_question:0 "Die Krim Frage"
+ RKU_crimean_question_desc:0 "Die Krim ist uns geografisch näher als die deutsche Metropole. Folglich fällt die Last der wirtschaftlichen Probleme tatsächlich und so auf unsere Schultern. Es ist notwendig, Deutschland anzubieten, um unsere Versuche in Bezug auf diese Region zu formalisieren."
+ 
+ RKU_ukrainian_state:0 "Der Ukrainische Staat"
+ RKU_ukrainian_state_desc:0 "Durch die Konsolidierung der ukrainischen Länder in einem Staat können wir eine neue Ebene der politischen Subjektivität erreichen."
+ 
+ ### OUN (b) branch ###
+ RKU_national_mobilization:0 "Volksmobilmachung"
+ RKU_national_mobilization_desc:0 "Es ist von entscheidender Bedeutung, unser Volk mit Propaganda und Verwaltungsinstrumenten für den nationalen Befreiungskrieg zu mobilisieren und vorzubereiten."
+ 
+ RKU_ukrainian_insurgent_army:0 "Ukrainische Aufständische Armee"
+ RKU_ukrainian_insurgent_army_desc:0 "Untergrundorganisation, bewaffneter Flügel der OUN. Handelte in den Gebieten des Generalgouverneurs (Galizien, Cholmeschtschina), des Reichskomissariats der Ukraine (Wolhynien) und des rumänischen Transnistrien (Transnistrien, Nordbukowina) der Kuban."
+ 
+ RKU_security_service:0 "Sicherheitsdienst"
+ RKU_security_service_desc:0 "Um die Sicherheit des Staates zu gewährleisten, muss eine eigene Abteilung gebildet werden, die die deutsche Sicherheitspolizei, SD und Gestapo ersetzen soll."
+ 
+ RKU_arest_melnyk:0 "Verhaftung von A.Melnyk"
+ RKU_arest_melnyk_desc:0 "Trotz der Tatsache, dass ein bedeutender Teil des Melnykov-Flügels der OUN nach der Errichtung unserer Regierung an unsere Seite kam, nahm Melnyk selbst mit seinen Mitarbeitern eine konfrontative Position gegenüber unserem Regime ein. Es ist notwendig, Oppositionsgruppen zu verhaften, sonst werden sie sich auflehnen."
+ 
+ RKU_proclamation_to_the_peoples_of_russia:0 "Appell an die Völker Russlands"
+ RKU_proclamation_to_the_peoples_of_russia_desc:0 "Wir stellen uns die Aufgabe, jeden Imperialismus zu zerschlagen, sei es in der deutschen oder in der sowjetisch-russischen Auslegung, und müssen den nationalen Bewegungen Russlands, die unsere Überzeugungen teilen, ein Manifest verkünden. Als Zentrum der politischen Auswanderung können wir eine bedeutende militärische und politische Hilfe in unserem Kampf erhalten."
+ 
+ RKU_great_ukraine:0 "Die große Ukraine"
+ RKU_great_ukraine_desc:0 "«Одна, єдина, нероздільна, вільна, самостійна Україна від Карпат аж по Кавказ»\n \n«Eine vereinte, untrennbare, freie, unabhängige Ukraine von den Karpaten bis zum Kaukasus»"
+ RKU_bandera_claim:0 "Wir werden die Rechtfertigung eines Krieges mit allen Nachbarn haben, die unsere nationalen Territorien und Ansprüche halten."
+ ### OUN political branch ###
+ RKU_ukrainian_propaganda:0 "Kammer für Volksbildung"
+ RKU_ukrainian_propaganda_desc:0 "Nachdem wir eine relativ unabhängige Regierung gebildet haben, können wir beginnen, eine spezialisierte Abteilung zu bilden, die eine profitablere Informationsagenda in der Gesellschaft bilden würde."
+ 
+ RKU_reintegration_of_galicia:0 "Reintegration von Galizien"
+ RKU_reintegration_of_galicia_desc:0 "Wir haben die Fähigkeit bewiesen, unsere Gebiete konstruktiv zu verwalten. Jetzt ist es an der Zeit, einen Dialog mit der deutschen Regierung und diplomatischen Kreisen über die Rückkehr von Galizien aufzunehmen, das in den Tagen von Österreich-Ungarn den Status des ukrainischen Piemont erlangt hat."
+ 
+ RKU_ukrainian_constitution:0 "Ukrainische Verfassung"
+ RKU_ukrainian_constitution_desc:0 "Um die Grundlagen unserer Regierung zu stärken, ist es notwendig, ein Regulierungsdokument zu erstellen, das die Grundlagen unserer Staatlichkeit legt."
+ ### Branch of Germanization ###
+ RKU_germanization:0 "Germanisierung"
+ RKU_germanization_desc:0 "Die Zukunft der von uns eroberten Ostgebiete liegt nicht in der Schaffung nationaler Marionettenregime, die von uns kontrolliert werden, sondern in ihrer direkten Entwicklung und Besiedlung durch ethnische Deutsche."
+ 
+ RKU_hilfspolizei:0 "Hilfspolizei" 
+ RKU_hilfspolizei_desc:0 "In den besetzten Gebieten wurde Hilfspolizei gebildet, in der Regel aus Freiwilligen, Kriegsgefangenen (vor allem in Großstädten) und der lokalen Bevölkerung. Ähnliche Polizeiorganisationen gab es in allen besetzten Ländern. Zeichnet sich durch eine Vielzahl von Organisationsformen aus." 
+ 
+ RKU_ss_division_galichina:0 "SS Division «Galichina»"
+ RKU_ss_division_galichina_desc:0 "Militärstreitkräfte, angeworben von ukrainischen Freiwilligen während des Zweiten Weltkriegs. Die Division war Teil der SS-Truppen von Nazideutschland und wurde im April 1945 offiziell in die Ukrainische Nationalarmee eingegliedert, die dem Ukrainischen Nationalkomitee unterstellt war."
+ ss_division_galizien_created:0 "Die SS-Division 'Galizische Nr. 1 'Abteilung war bereits gegründet worden."
+ 
+ RKU_autobahn_2:0 "Entwicklung der Infrastruktur"
+ RKU_autobahn_2_desc:0 "Militärische Zusammenstöße haben den Status der bereits unterentwickelten Straßen- und Eisenbahnknotenpunkte erheblich untergraben. Um eine effiziente Transportlogistik zu gewährleisten, sind Bauarbeiten unerlässlich."
+ RKU_autobahn_tt_2:0 "Add §Y1 infrastructure§! в §YВолынь§!, §YProskurov§!,§YZhytomyr§!,§YKiev§!,§YCherkasy§!,§YPoltava§!,§YDnipropetrovsk§!,§YZaporozhye§!,§YKherson§!"
+ 
+ RKU_slave_economic_system:0 "Sklavenwirtschaftssystem"
+ RKU_slave_economic_system_desc:0 "Um die wirtschaftlichen Bedürfnisse des Reiches zu sichern, müssen wir ein Wirtschaftssystem aufbauen, das auf die maximale Ausbeutung der lokalen Bevölkerung, der Industrie und der Bodenschätze ausgerichtet ist, obwohl dadurch die Einheimischen in den Rang eines zweitklassigen Volkes versetzt werden."
+ 
+ RKU_balanced_economic_system:0 "Ausgewogenes Wirtschaftssystem"
+ RKU_balanced_economic_system_desc:0 "Wir können ein Wirtschaftssystem schaffen, das es ermöglicht, die menschlichen und produktiven Ressourcen weniger rücksichtsvoll zu nutzen. Einerseits wird dadurch die Wahrscheinlichkeit des Widerstands der Anwohner verringert, und andererseits wird ihr wirksameres Engagement in unserem Bereich gesteigert Produktionshierarchie."
+ 
+ RKU_general_plan_ost:0 "Generalplan «Ost»"
+ RKU_general_plan_ost_desc:0 "Ein umfangreiches Programm zur Festigung der Herrschaft des Dritten Reiches in Osteuropa. Dieser Plan zur Kolonialisierung und Germanisierung der Ostgebiete wurde auf der Grundlage der Rassenlehre und des Konzepts des «Lebensraums» unter der Schirmherrschaft des Reichsführers SS Heinrich entwickelt Himmler."
+ GER_ukranian_germanization_not_finished:0 "§RATTENTION! Die Germanisierung ist noch nicht abgeschlossen, warten Sie auf zukünftige Updates§!"
+ 
+ RKU_ostarbeiter_2:0 "Weitere Ostarbeiter für das Reich"
+ RKU_ostarbeiter_2_desc:0 "Die militärische und politische Lage an den Fronten und der Aufbau der Kontrolle über die Ukraine zwingen uns dazu, die Humanressourcen dieser dicht besiedelten Regionen im wirtschaftlichen Interesse des Deutschen Reiches einzusetzen."
+ 
+ RKU_kz_2:0 "Erweitern Sie das Lager System"
+ RKU_kz_2_desc:0 "Um die wirtschaftlichen Bedürfnisse des Reiches zu sichern, profitieren wir vom System der Sklavenarbeit der am wenigsten rassisch wertvollen Elemente der Gesellschaft."
+ 
+ RKU_lebensraum:0 "Lebensraum"
+ RKU_lebensraum_desc:0 "Die alte deutsche Kolonialpolitik galt als merkantil und unter jüdischem Einfluss. Platz wurde für eine «gesamtdeutsch» orientierte «Siedlungspolitik im großen Stil» für notwendig erachtet. Zu diesem Zweck wurden nicht außereuropäische Kolonien in Betracht gezogen, sondern der direkt an das deutsche Vaterland grenzende Osten."
+ 
+ RKU_rsha_department:0 "Abteilung für RSHA in der Ukraine"
+ RKU_rsha_department_desc:0 "Die Umsetzung der Germanisierungspolitik in der Ukraine erfordert die Bildung einer Fachabteilung der Sicherheitspolizei, die die Umsetzung der Neuen Ordnung sicherstellen kann."
+ 
+ RKU_demand_oun_upa:0 "Anklammern auf OUN-UIA"
+ RKU_demand_oun_upa_desc:0 "In den Wäldern von Galizien, Wolhynien und dem ukrainischen Polesien gibt es zahlreiche bewaffnete Gruppen der ukrainischen Aufständischen Armee unter dem Kommando von Roman Shukhevych. Zusammen mit dem politischen Flügel der OUN stellen sie eine ernsthafte Bedrohung für unser Regime dar."
+ 
+ RKU_get_rid_of_bandera:0 "Beseitige S. Bandera" 
+ RKU_get_rid_of_bandera_desc:0 "Auf dem Weg zur deutschen Herrschaft in der Ukraine müssen wir die Vertreter und Führer jener gesellschaftspolitischen Bewegungen eliminieren, die die Oppositionskräfte in Bezug auf uns bilden und führen können. Zunächst muss Stepan Bandera eliminiert werden."
+ 
+ RKU_get_rid_of_melnyk:0 "Beseitigen Sie A. Melnyk"
+ RKU_get_rid_of_melnyk_desc:0 "Andrey Melnyk ist die zweite bedeutende Figur in der ukrainischen Nationalbewegung. Und lassen Sie uns sagen, dass seine Anhänger mehr pro-deutsche Orientierung haben. Für uns gibt es keinen Sinn und kein Interesse, mit denen übereinzustimmen, die uns auf dem Weg zur Herrschaft über die Ukraine auf jeden Fall stören werden."
+ 
+ RKU_communist_underground:0 "Unterdrücke den kommunistischen Untergrund"
+ RKU_communist_underground_desc:0 "Am linken Ufer der Ukraine und in der ukrainischen Polesie befinden sich aktive Kampfgruppen des kommunistischen Untergrunds, die unter den feindlichen Schichten der Gesellschaft an Popularität gewinnen."
+ 
+ RKU_get_rid_kovpak:0 "Beseitigen Sie S. Kovpak"
+ RKU_get_rid_kovpak_desc:0 "Sidor Kovpak ist eine prominente und maßgebliche Figur des kommunistischen Untergrunds. Und auf dem Weg zur Beseitigung oppositioneller kommunistischer Gruppen müssen wir ihre charismatischen Führer zerstören."
+ 
+ RKU_reichsgau:0 "Reichsgau gründen"
+ RKU_reichsgau_desc:0 "Für eine effektivere Verwaltung der besetzten Gebiete müssen wir den administrativen und politischen Bereich reformieren: Die Einführung des Postens der kaiserlichen Statthalter in den ihnen anvertrauten Gebieten optimiert die öffentliche Verwaltung und das Wirtschaftsleben."
+ ### Germanization - OUN (m) branch ###
+ RKU_arest_bandera:0 "Verhaftung von S. Bandera"
+ RKU_arest_bandera_desc:0 "Trotz der Tatsache, dass ein bedeutender Teil des Bandera-Flügels der OUN nach der Errichtung unserer Regierung auf unsere Seite überging, nahm Bandera selbst mit seinen Mitarbeitern eine konfrontative Position in Bezug auf unser Regime ein. Oppositionsgruppen müssen festgenommen werden, sonst revoltieren sie."
+ 
+ RKU_racial_decrees:0 "Rassenverordnungen"
+ RKU_racial_decrees_desc:0 "Bei der Abstimmung unserer Maßnahmen mit Deutschland sind wir gezwungen, eine Reihe von Gesetzen gegen Juden und Roma zu erlassen, die die Beteiligung dieser Völker am sozialen, wirtschaftlichen und politischen Leben erheblich verringern würden. Im Gegenzug können wir viel Gefallen von den Deutschen bekommen."
+ 
+ RKU_take_ostarbeiter_citizenship:0 "Staatsbürgerschaft für Ostarbeiter"
+ RKU_take_ostarbeiter_citizenship_desc:0 "Viele Arbeiter aus dem Osten, die sich in Deutschland niederließen, zeigten außergewöhnliche Effizienz und Sorgfalt. Vielleicht sollten wir denjenigen, die unseren rassischen, biologischen und eugenischen Standards besser entsprechen, eingeschränkte Bürgerrechte einräumen."
+ 
+ RKU_integrate_war_economy:0 "Kriegswirtschaft integrieren" 
+ RKU_integrate_war_economy_desc:0 "Die Schaffung einer mächtigen Militärwirtschaft erfordert eine überregionale Zusammenarbeit."
+ ### Economical Branch ###
+ RKU_restoration_of_kolkhoz_system:0 "Wiederherstellung des Kolkhoz-Systems"
+ RKU_restoration_of_kolkhoz_system_desc:0 "Das kollektivwirtschaftliche System ist wirtschaftlich ineffizient. Gleichzeitig müssen wir in einem heruntergekommenen Land alle möglichen wirtschaftlichen Methoden für die wirtschaftliche Erholung der Region anwenden."
+ 
+ RKU_kz:0 "System der Konzentrationslager"
+ RKU_kz_desc:0 "Trotz der Verbrechen des Stalinismus setzt ein bedeutender Teil der lokalen Bevölkerung aus Angst und blindem Glauben an die proletarische Mystik die ideologische und mentale Unterstützung der bolschewistischen Ideologie fort. Unter anderem befanden sich in unserer Gefangenschaft viele sowjetische Soldaten. Es ist notwendig, ein Konzentrationssystem für die Umerziehung illoyaler Elemente zu schaffen."
+ 
+ RKU_ostarbeiter:0 "Ostarbeiter"
+ RKU_ostarbeiter_desc:0 "Die militärpolitische Lage an den Fronten und der Aufbau der Kontrolle über die Ukraine zwingen uns dazu, die Humanressourcen in diesen dicht besiedelten Regionen im wirtschaftlichen Interesse des Deutschen Reiches einzusetzen."
+ RKU_align_germany:0 "Deutschland braucht Arbeiter"
+ 
+ RKU_war_economy:0 "Kriegswirtschaft"
+ RKU_war_economy_desc:0 "Der Krieg zwingt uns zu einer umfassenden Umstrukturierung unseres industriellen Potenzials, die auf langwierigen militärischen Aktionen beruht."
+
+ RKU_extra_tech_slot:0 "Restaurierung der Kyiv-Mogylyan Academy"
+ RKU_extra_tech_slot_desc:0 "Es muss eine Bildungseinrichtung geschaffen werden, in der die geistigen Ressourcen des Landes gebündelt werden können."
+ 
+ RKU_german_science_cooperation:0 "Deutsche Wissenschaftskooperation"
+ RKU_german_science_cooperation_desc:0 "Für den Ausbau unserer technologischen Leistungsfähigkeit konnten wir in unserem Forschungszentrum deutsche Experten für die Durchführung gemeinsamer Projekte gewinnen, was unsere Fortschritte auf verschiedenen Gebieten der Wissenschaft und Technik erheblich beschleunigte." 
+ 
+ RKU_dnipro_hes_dam:0 "[Root.GetDniproHesDamName]"
+ RKU_dnipro_hes_dam_desc:0 "[Root.GetDniproHesDamDesc]"
+ RKU_DAM_WAS_DESTROYED_NAME:0 "Restoration of DneproGES"
+ RKU_DAM_WAS_DESTROYED_DESC:0 "At the beginning of the Great Patriotic war, in August 18, 1941, after the breakthrough of German troops in the area of Zaporozhye, Dnieper Dam was blown up. To restore the crossing of the Dnieper and the power plant, the destroyed part of the dam was restored by German construction units."
+ RKU_DAM_WASNT_DESTROYED_NAME:0 "Exploitation of DneproGES"
+ RKU_DAM_WASNT_DESTROYED_DESC:0 "The rapid breakthrough of the German armed forces were allowed to take a significant portion of the Soviet troops near Dnepropetrovsk captured. Military success was convertible into economic: as it turned out, the Soviets were ordered to blow up Dneprostroi Dam. But the rapid breakthrough and rout of the Red Army in the region have prevented the disaster. We will be able to use the dam to provide energy for our economic needs."
+ RKU_dam_restored:0 "Add §Y1 infrastructure§! in §YDnepropetróvsk§! and §YZaporozhye§!"
+ 
+ RKU_donetsk_dnieper_economic_region:0 "Wirtschaftsviertel Donezk-Dnepr"
+ RKU_donetsk_dnieper_economic_region_desc:0 "Das Wirtschaftsviertel Donezk-Dnepr war eines der größten in der Zeit des Russischen Reiches. Militäraktionen, ineffizientes sowjetisches Wirtschaftsmanagement haben diese Region zu erheblicher Verwüstung geführt. Es ist notwendig, diese Situation zu korrigieren."
+ 
+ RKU_economic_department:0 "Kammer für Wirtschaftspolitik"
+ RKU_economic_department_desc:0 "Die weitere Entwicklung des Wirtschaftsraums des Staates erfordert die Schaffung einer Fachabteilung, die sich auf einer spezialisierteren Ebene mit relevanten Fragen befasst."
+ 
+ RKU_autobahn:0 "Wiederaufbau der Infrastruktur"
+ RKU_autobahn_desc:0 "Militärische Zusammenstöße haben den Status der bereits unterentwickelten Straßen- und Eisenbahnknotenpunkte erheblich untergraben. Um eine effiziente Transportlogistik zu gewährleisten, sind Bauarbeiten unerlässlich."
+ RKU_autobahn_tt:0 "Add §Y1 infrastructure§! in §YKiev§!,§YCherkasy§!,§YDnipropetrovsk§!,§YZaporozhye§!,§YStalino§!,§YVoroshilovgrad§!"
+ 
+ RKU_development_oil_fields_in_ukraine:0 "Entwicklung von Ölfeldern"
+ RKU_development_oil_fields_in_ukraine_desc:0 "Einige Regionen der Ukraine verfügen über natürliche Ölvorkommen, deren Entwicklung unser Ressourcenpotential und unsere Militärindustrie erheblich steigern wird."
+ 
+ RKU_synthetic_oil:0 "Synthetisches Öl"
+ RKU_synthetic_oil_desc:0 "Wir können deutsche Technologien und Projekte zur Entwicklung von synthetischen Kraftstoffen und Kautschuk ausleihen, um den Mangel an diesen Ressourcen in der Region auszugleichen."
+ 
+ RKU_oil_in_drohobych:0 "Drogobych Ölfelder"
+ RKU_oil_in_drohobych_desc:0 "In der zweiten Hälfte des 19. Jahrhunderts begann im galizischen Borislav der erste Ölrausch. 1930 wurden 5% des weltweiten Öls gefördert. Es ist notwendig, diese Ressourcen zu nutzen, obwohl wir zuerst die Kontrolle über Galizien wiedererlangen müssen."
+ 
+ RKU_agroprogram:0 "Landwirtschaftliches Programm"
+ RKU_agroprogram_desc:0 "Die Ausweitung der Lebensmittelprogramme wird dazu beitragen, den Import von Lebensmitteln nach Deutschland sicherzustellen und gleichzeitig unsere eigenen Bedürfnisse zu befriedigen."
+ 
+ RKU_agro_appendage:0 "Getreidevorräte an das Reich"
+ RKU_agro_appendage_desc:0 "In der Ukraine gibt es ein einzigartiges «Tschernozem», mit dem Sie landwirtschaftliche Großprogramme organisieren können, die Deutschland mit Lebensmitteln versorgen."
+ 
+ RKU_demographic_program:0 "Demografisches Programm"
+ RKU_demographic_program_desc:0 "Der Export von Arbeitskräften, Militär und Zivilisten hat zu einem deutlichen Rückgang der Bevölkerung unseres Landes geführt. Wir müssen staatliche Leistungen in Anspruch nehmen, um die Geburtenrate anzukurbeln und unsere demografischen Verluste auszugleichen."
+ ### Army Branch ###
+ RKU_schutzmannschaft:0 "Schutzmannschaft"
+ RKU_schutzmannschaft_desc:0 "Schutzmannschaft - eine Spezialeinheit, zunächst die Hilfspolizei des Dritten Reiches in den besetzten Gebieten während des Zweiten Weltkriegs, die Strafbataillone, die unter dem direkten Kommando der Deutschen operierten. In der Regel wurden aus der lokalen Bevölkerung und Kriegsgefangenen gebildet. "
+ 
+ RKU_ukrainian_liberation_army:0 "Ukrainische Befreiungsarmee"
+ RKU_ukrainian_liberation_army_desc:0 "Die ULA war eine Freiwilligenformation, die aus Gefangenen der sowjetischen Armee ukrainischer Nationalität gegründet wurde und der Wehrmacht unterstellt war."
+ 
+ RKU_rearmament:0 "Wiederbewaffnung"
+ RKU_rearmament_desc:0 "Die militärische Situation zwingt uns, die militärische Produktion und die Ausbildung von Fachpersonal zu erhöhen."
+ 
+ RKU_german_war_doctrine:0 "Deutsche Militärdoktrin"
+ RKU_german_war_doctrine_desc:0 "Bei der Festlegung unserer landesmilitärischen Strategie und Taktik können wir die bereits in der Praxis erprobte deutsche Militärdoktrin anwenden."
+ 
+ RKU_national_war_doctrine:0 "Nationale Militärdoktrin"
+ RKU_national_war_doctrine_desc:0 "Unsere Militärdoktrin muss die Besonderheiten der militärischen Erfahrung, der nationalen Mentalität und die Besonderheiten des Standorts unseres Landes berücksichtigen."
+
+ RKU_small_arms:0 "Kleinarm-Anstrengung"
+ RKU_small_arms_desc:0 "Die Infanterie bleibt die Hauptmacht jeder Armee, und wir müssen sie mit der besten Ausrüstung ausstatten. Wir müssen die Entwicklung neuer, moderner Modelle von Infanteriewaffen beschleunigen."
+ 
+ RKU_war_academy:0 "Ivan Bohun Militärakademie"
+ RKU_war_academy_desc:0 "Wir möchten talentierte Generäle an der Spitze unserer Streitkräfte sehen, und dafür müssen wir die Militärakademie erweitern."
+ 
+ RKU_national_guard:0 "Nationalgarde"
+ RKU_national_guard_desc:0 ""
+ 
+ RKU_domestic_artillery_production:0 "Inländische Artillerieindustrie"
+ RKU_domestic_artillery_production_desc:0 "Unterstützung für die innere Entwicklung moderne Artillerie-Teile geben unseren Truppen eine angemessene Feuerunterstützung."
+ 
+ RKU_organisation_of_division:0 "Abteilungsorganisation"
+ RKU_organisation_of_division_desc:0 "" 
+ 
+ RKU_modern_tanks:0 "Moderne Rüstung"
+ RKU_modern_tanks_desc:0 "Die Installation von großkalibrigen Kanonen hat die Aufgaben unserer gepanzerten Fahrzeuge weit über den einfachen Transport von Kräften von Punkt A nach Punkt B hinaus erweitert. Wir müssen unsere eigenen Modelle von Panzern entwickeln, die den Waffen unserer Nachbarn nicht unterlegen sind."
+ 
+ RKU_theoretical_air_efforts:0 "Theorien der Luftkriegsführung"
+ RKU_theoretical_air_efforts_desc:0 "Wir müssen beträchtliche Mittel in die Entwicklung neuer Theorien über die Kriegsführung in der Luft investieren. Im Falle eines echten Krieges wird dies uns einen unschätzbaren Vorteil verschaffen."
+ 
+ RKU_expand_the_air_base:0 "Erweitern Sie die Flughäfen"
+ RKU_expand_the_air_base_desc:0 "Ein Sieg in der modernen Kriegsführung ist ohne Luftherrschaft unmöglich. Wir müssen die Luftwaffe um jeden Preis entwickeln!"
+ 
+ RKU_local_development:0 "Häusliche Entwicklung"
+ RKU_local_development_desc:0 "Wir werden uns auf die einheimische Flugzeugindustrie verlassen, um die Truppen mit Flugzeugen zu versorgen."
+ 
+ RKU_joint_air_development:0 "Gemeinsame Luftfahrtentwicklung"
+ RKU_joint_air_development_desc:0 "Der beste Weg, um neue Flugzeugtypen zu entwickeln, ist die enge Zusammenarbeit mit unseren Verbündeten. Indem wir die Anstrengungen der größten Köpfe unserer Nationen kombinieren, werden wir die besten Ergebnisse erzielen."
+ 
+ RKU_air_superiority:0 "Lufthoheit"
+ RKU_air_superiority_desc:0 "Die Fähigkeit, den Himmel zu kontrollieren, ist ein Schlüsselelement der Kriegsführung. Wir müssen uns auf diesen Aspekt der Luftkriegsführung konzentrieren."
+ 
+ RKU_medium_bombers:0 "Bomber-Fokus"
+ RKU_medium_bombers_desc:0 "Gone are the days when soldiers could fight without the sky. We must develop tactical bombers to provide the troops with the necessary air support." 
+ 
+ RKU_air_defense:0 "Flugabwehr"
+ RKU_air_defense_desc:0 "Es besteht kein Zweifel, woher der Feind kommen wird; Wir müssen den Luftraum mit starken Luftabwehrbatterien schützen."
+ RKU_air_defense_tt:0 "Add maximum §YAnti-Air§! in §YVolyn§!, §YKiev§! and §YDnepropetróvsk§!\n"
+ RKU_air_defense_focus_bypass_tt:0 "Not enough building slots for §YAnti-Air§!"
+ RKU_air_defense_focus_desc:0 "Es besteht kein Zweifel, woher der Feind kommen wird; Wir müssen den Luftraum mit starken Luftabwehrbatterien schützen."
+ 
+ RKU_strategic_bomber_force:0 "Strategische Bomberflotte"
+ RKU_strategic_bomber_force_desc:0 "Die erste Aufgabe von Militäreinsätzen ist die Zerstörung von Produktionsanlagen und Infrastruktur des Feindes. Diese Aufgabe wird effektiv durch strategische Bomber ausgeführt."
+
+ RKU_ground_support:0 "Luftunterstützungsaufwand"
+ RKU_ground_support_desc:0 "Die Ideologie des modernen Krieges basiert auf gemeinsamen Aktionen verschiedener Waffen. Unser Kampfflugzeug muss bei Bedarf Bodentruppen unterstützen können."
+ 
+ RKU_black_sea_dominance:0 "Dominanz am Schwarzen Meer"
+ RKU_black_sea_dominance_desc:0 "Der Mangel an Ressourcen sollte uns nicht daran hindern, die Vorherrschaft im Schwarzen Meer zu erlangen. Mit dem richtigen politischen Willen wird die Ukraine in der Lage sein, diesen mutigen Plan umzusetzen."
+ 
+ RKU_cruisers:0 "Cruiser Aufwand"
+ RKU_cruisers_desc:0 "Egal wie stark eine Flotte ist, es ist wertlos, wenn sie keinen Feind findet oder sich gegen Flugzeuge wehrt. Die Entwicklung neuer leichter und schwerer Kreuzer wird uns helfen, eine Gruppe von Schiffen in eine echte Flotte zu verwandeln."
+ 
+ RKU_capital_ships:0 "Kapitalschiffsaufwand"
+ RKU_capital_ships_desc:0 "Die Hauptunterstützung der Flotte sind Schlachtschiffe. Um die verlorene Zeit auszugleichen, müssen wir so bald wie möglich neue Schiffe bauen."
+ 
+ RKU_destroyer:0 "Zerstörer-Bemühung"
+ RKU_destroyer_desc:0 "Trotz ihrer Unauffälligkeit sind Zerstörer ein kritischer Bestandteil jeder Flotte. Darüber hinaus sind sie aufgrund ihrer geringen Kosten eine ausgezeichnete Wahl für den Beginn der Entwicklung unserer Navy Forces."
+ 
+ RKU_submarines:0 "U-Boot-Aufwand"
+ RKU_submarines_desc:0 "Im vorigen Krieg hatten die U-Boote fast eine der mächtigsten Flotten geschafft. Um in der modernen Welt nicht zum Gespött zu werden, brauchen wir unsere eigenen Unterwasserkräfte."
+ 
+ RKU_restauration:0 "Wiederbelebung der Marine Streitkräfte"
+ RKU_restauration_desc:0 "Nachdem wir den Zugang zum Meer wiedererlangt haben, müssen wir uns auf die Schaffung einer Flotte konzentrieren, die internationalen Standards entspricht."
+ 
+ RKU_Abwer:0 "Abwehr-Geheimdienstschule"
+ RKU_Abwer_desc:0 "Mit dem Einsatz von Militäreinsätzen begann der deutsche Geheimdienst, das Netzwerk von Aufklärungs- und Sabotageschulen für die Ausbildung qualifizierter Agenten auszubauen. Agenten für die Ausbildung wurden hauptsächlich unter Kriegsgefangenen, dem den Deutschen überlieferten antisowjetischen Element und den im besetzten Gebiet der UdSSR verbliebenen antisowjetischen Bürgern rekrutiert."
+ 
+ RKU_HJ:0 "Hitlerjugend"
+ RKU_HJ_desc:0 "Die Politik der Germanisierung erfordert die Erziehung der rassisch wertvollsten Vertreter des ukrainischen Volkes zu den Idealen des Nationalsozialismus."
+ 
+ RKU_plast:0 "Plast"
+ RKU_plast_desc:0 "Art der ukrainischen Pfadfinderbewegung, die nach den europäischen Jugendbewegungen im Jahr 1911 auf dem Territorium der Ukraine auftrat, die zu dieser Zeit zu Österreich-Ungarn gehörte. Für die Bildung des patriotischen Geistes ist es notwendig, die Bewegung wiederherzustellen, die der deutschen «Hitlerjugend» analog wäre, jedoch mit ukrainischer nationaler Konnotation."
+ 
+ RKU_ostwall:0 "Ostwall"
+ RKU_ostwall_desc:0 "Trotz unseres Fortschritts nach Osten müssen wir Maßnahmen ergreifen, falls sich die Situation nicht zu unseren Gunsten ändert. Sollte Verteidigungslinien «Panther» und «Wotan» entlang des Dnjepr errichten."
+ RKU_ostwall_forts:0 "Place §YLand Forts§! along the Dnieper river in each your own following states that are fully controlled by your faction:"
+ RKU_ostwall_forts_2:0 "\n§YKiev§!\n§YCherkasy§!\n§YDnipropetrovsk§!\n§YZaporozhe§!\n"

@@ -657,7 +657,7 @@ sub_units = {
 		
 		priority = 599
 		ai_priority = 200
-		active = yes
+		active = no
 
 		type = {
 			motorized
@@ -733,7 +733,7 @@ sub_units = {
 		
 		priority = 301
 		ai_priority = 10
-		active = yes
+		active = no
 
 		type = {
 			motorized
@@ -807,7 +807,7 @@ sub_units = {
 		
 		priority = 1198
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			motorized
@@ -894,7 +894,7 @@ sub_units = {
 		
 		priority = 1199
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			motorized
@@ -979,7 +979,7 @@ sub_units = {
 		
 		priority = 1197
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			motorized
@@ -1067,7 +1067,7 @@ sub_units = {
 		
 		priority = 610
 		ai_priority = 200
-		active = yes
+		active = no
 
 		type = {
 			mechanized

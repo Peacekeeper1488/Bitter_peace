@@ -15,6 +15,28 @@ SS_recruitment = {
 	available = {
 		has_government = fascism
 	}
+
+	visible = {
+		has_idea = heinrich_himmler
+	}
+}
+SS_german_recruitment = {
+
+	icon = GFX_decision_category_ger_schutzstaffeln
+
+	picture = GFX_decision_cat_schutzstaffel
+ 
+	allowed = {
+		original_tag = GER
+	}
+
+	available = {
+
+	}
+	
+	visible = {
+		has_government = fascism
+	}
 }
 wehrmacht_demands = {
 	allowed = {

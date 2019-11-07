@@ -1,1707 +1,546 @@
-SS_recruitment = {
-	SS_recruitment_denmark = {
+SS_german_recruitment = { 
+	allgemeine_ss = { 
 
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			99 = {
-				CONTROLLER = {
-					OR = {
-						original_tag = GER
-						is_subject_of = GER
-					}
-				}
-			}
-			37 = {
-				CONTROLLER = {
-					OR = {
-						original_tag = GER
-						is_subject_of = GER
-					}
-				}
-			}
-		}
-		visible = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				DEN = {
-					is_subject_of = GER
-				}
-				has_war_with = DEN
-				AND = {
-					has_war = yes
-					DEN = {
-						exists = no
-					}
-				}
-			}
-		}
-
-		cost = 25
+		icon = allgemeine_ss
+		
 		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event.1
-		}
-	}
-	SS_recruitment_norway = {
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			110 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			142 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			143 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			144 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-		}
-		visible = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				NOR = {
-					is_subject_of = GER
-				}
-				has_war_with = NOR
-				NOR = { exists = no }
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event.2
-		}
-	}
-	SS_recruitment_netherlands = {
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			36 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			7 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			35 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				HOL = {
-					is_subject_of = GER
-				}
-				has_war_with = HOL
-				HOL = { exists = no }
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event.3
-		}
-	}
-	SS_recruitment_belgium = {
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			6 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			34 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}	
-		}
-		visible = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				BEL = {
-					is_subject_of = GER
-				}
-				has_war_with = BEL
-				BEL = { exists = no }
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event.4
-		}
-	}
-	SS_recruitment_france = {
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			29 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			16 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			15 = {
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			14 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-		}
-		visible = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				FRA = {
-					is_subject_of = GER
-				}
-				has_war_with = FRA
-				FRA = { exists = no }
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event.5
-		}
-	}
-	SS_recruitment_estonia = {
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			13 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			191 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-		}
-		visible = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				EST = {
-					is_subject_of = GER
-				}
-				has_war_with = EST
-				AND = {
-					has_war = yes
-					EST = {
-						exists = no
-					}
-				}
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event.6
-		}
-	}
-	SS_recruitment_latvia = {
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			12 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			190 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-		}
-		visible = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				LAT = {
-					is_subject_of = GER
-				}
-				has_war_with = LAT
-				AND = {
-					has_war = yes
-					LAT = {
-						exists = no
-					}
-				}
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event.7
-		}
-	}
-	SS_recruitment_lithuania = {
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			11 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			189 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-		}
-		visible = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				LIT = {
-					is_subject_of = GER
-				}
-				has_war_with = LIT
-				AND = {
-					has_war = yes
-					LIT = {
-						exists = no
-					}
-				}
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event.8
-		}
-	}
-	SS_recruitment_britain = {
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			126 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			127 = {
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			123 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			338 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-		}
-		visible = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				ENG = {
-					is_subject_of = GER
-				}
-				has_war_with = ENG
-				AND = {
-					has_war = yes
-					ENG = {
-						exists = no
-					}
-				}
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_alternate.1
-		}
-	}
-	SS_recruitment_scotland = {
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				AND = {
-					121 = { is_controlled_by = GER }
-					133 = { is_controlled_by = GER }
-					136 = { is_controlled_by = GER }
-					120 = { is_controlled_by = GER }
-				}
-				AND = {
-					121 = { CONTROLLER = { is_subject_of = GER } }
-					133 = { CONTROLLER = { is_subject_of = GER } }
-					136 = { CONTROLLER = { is_subject_of = GER } }
-					120 = { CONTROLLER = { is_subject_of = GER } }
-				}
-			}
-		}
-		visible = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				AND = {
-					121 = { is_controlled_by = GER }
-					133 = { is_controlled_by = GER }
-					136 = { is_controlled_by = GER }
-					120 = { is_controlled_by = GER }
-				}
-				AND = {
-					121 = { CONTROLLER = { is_subject_of = GER } }
-					133 = { CONTROLLER = { is_subject_of = GER } }
-					136 = { CONTROLLER = { is_subject_of = GER } }
-					120 = { CONTROLLER = { is_subject_of = GER } }
-				}
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_alternate.2
-		}
-	}
-	SS_recruitment_sweden = {
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			141 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			139 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			138 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-			140 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-					} 
-				} 
-			}
-		}
-		visible = {
-			OR = {
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				SWE = {
-					is_subject_of = GER
-				}
-				has_war_with = SWE
-				AND = {
-					has_war = yes
-					SWE = {
-						exists = no
-					}
-				}
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_alternate.3
-		}
-	}
-	
-###############################################################################################################	
-###############################################################################################################
-###############################################################################################################
-
-	#Ukraine
-	BP_SS_recruitment_galizien = { 
-
-		icon = generic_army_support
+		cost = 25		
 
 		allowed = {
 			tag = GER
-		}
-
+		}		
+		
 		available = {
-			has_tech = interwar_antiair 
-			has_tech = interwar_antitank 
-			any_country = {
-				OR = {
-					original_tag = GER 
-					is_subject_of = GER 
-					is_in_faction_with = GER				
-				}
-				has_full_control_of_state = 91
-				has_full_control_of_state = 89
-				has_full_control_of_state = 793				
-			}		
+			has_tech = tech_military_police
 		}
 
 		visible = {
-			date > 1943.03.28
 			has_government = fascism
-			NOT = { has_country_flag = ss_division_galizien_created }
-			793 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
+		}		
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 50
+			}
+		}		
+		
+		complete_effect = {
+			set_technology = {
+				GER_allgemeine_ss_tech = 1
+			}
+			custom_effect_tooltip = allgemeine_ss_tt
+			hidden_effect = {
+				load_oob = "Allgemeine_SS"
+			}
+		}	
+	}
+###############################################################################################################
+###############################################################################################################
+###############################################################################################################	
+	lssah_upgrade1 = { 
+
+		icon = lssah_ss
+		
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			command_power > 5
+			has_political_power > 10
+		}
+		custom_cost_text = SS_CP_5_PP_10		
+
+		allowed = {
+			tag = GER
+		}		
+		
+		available = {
+			has_tech = tech_signal_company
+			has_tech = interwar_antitank
+		}
+
+		visible = {
+			has_government = fascism
+			date > 1939.10.1
+		}		
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 50
 			}
 		}
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
+		
+		days_remove = 20
+		
 		complete_effect = {
-			country_event = BP_ss_recruitment_event.1
+			delete_unit_template_and_units = {
+				division_template = "'LSSAH' (mot.)"
+			}
+			hidden_effect = {
+				add_command_power = -15
+				add_political_power = -15
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = lssah1_tt
+			set_country_flag = lssah1_complete
+			hidden_effect = {
+				load_oob = "LSSAH_1"
+			}
 		}
 	}
+	lssah_upgrade2 = { 
+
+		icon = lssah_ss
+		
+		fire_only_once = yes
+		
+		custom_cost_trigger = {
+			command_power > 5
+			has_political_power > 10
+		}
+		custom_cost_text = SS_CP_5_PP_10			
 	
-	SS_recruitment_CAF11 = { #POLEN
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			85 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				POL = {
-					is_subject_of = GER
-				}
-				has_war_with = POL
-				POL = { exists = no }
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.1
-		}
-	}
+		allowed = {
+			tag = GER
+		}	
 	
-		SS_recruitment_CAF2 = { #CZE
-
-		icon = generic_army_support
-
 		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			9 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER 
-					} 
-				} 
-			}
-				
-			
+			has_tech = tech_military_police
+			has_tech = interwar_antiair 
 		}
+
 		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
+			has_government = fascism
+			has_country_flag = lssah1_complete
+			date > 1940.6.22
+		}		
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 50
 			}
-			OR = {
-				CZE = {
-					is_subject_of = GER
-				}
-				has_war_with = CZE
-				CZE = { exists = no }
+		}
+		
+		days_remove = 20
+		
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "'LSSAH' (mot.)"
+			}
+			hidden_effect = {
+				add_command_power = -15
+				add_political_power = -15
 			}
 		}
 
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.2
+		remove_effect = {
+			custom_effect_tooltip = lssah2_tt
+			set_country_flag = lssah2_complete
+			clr_country_flag = lssah1_complete
+			hidden_effect = {
+				load_oob = "LSSAH_2"
+			}
 		}
 	}
+	lssah_upgrade3 = { 
+
+		icon = lssah_ss
+		
+		fire_only_once = yes
+		
+		custom_cost_trigger = {
+			command_power > 5
+			has_political_power > 10
+		}
+		custom_cost_text = SS_CP_5_PP_10			
 	
-		SS_recruitment_CAF3 = { #Sudenten
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			69 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			OR = {
-				69 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.3
-		}
-	}
+		allowed = {
+			tag = GER
+		}	
 	
-		SS_recruitment_CAF4 = { #Slovakia
-
-		icon = generic_army_support
-
 		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			70 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
+			has_tech = tech_field_hospital
 		}
+
 		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
+			has_government = fascism
+			has_country_flag = lssah2_complete
+			date > 1941.5.1
+		}		
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 50
 			}
-			
-			70 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
+		}
+		
+		days_remove = 20
+		
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "'LSSAH' (mot.)"
+			}
+			hidden_effect = {
+				add_command_power = -15
+				add_political_power = -15
 			}
 		}
 
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.4
+		remove_effect = {
+			custom_effect_tooltip = lssah3_tt
+			set_country_flag = lssah3_complete
+			clr_country_flag = lssah2_complete
+			hidden_effect = {
+				load_oob = "LSSAH_3"
+			}
 		}
 	}
+	lssah_upgrade4 = { 
+
+		icon = lssah_ss
+		
+		fire_only_once = yes
+		
+		custom_cost_trigger = {
+			command_power > 5
+			has_political_power > 10
+		}
+		custom_cost_text = SS_CP_5_PP_10			
 	
-		SS_recruitment_CAF5 = { #Slovenia
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}	
-			102 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-			
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-				
-			102 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-			
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.5
-		}
-	}
+		allowed = {
+			tag = GER
+		}	
 	
-		SS_recruitment_CAF6 = { #Jugoslawiendeutsche
-
-		icon = generic_army_support
-
 		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			45 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
+			has_tech = mechanised_infantry 
+			has_tech = basic_medium_tank  
+			has_tech = basic_medium_td 
 		}
+
 		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
+			has_government = fascism
+			has_country_flag = lssah3_complete
+			date > 1942.11.1
+		}		
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 50
 			}
-			45 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
+		}
+		
+		days_remove = 20
+		
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "SS-Division 'LSSAH'"
+			}
+			hidden_effect = {
+				add_command_power = -15
+				add_political_power = -15
 			}
 		}
 
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.6
+		remove_effect = {
+			custom_effect_tooltip = lssah4_tt
+			set_country_flag = lssah4_complete
+			clr_country_flag = lssah3_complete
+			hidden_effect = {
+				load_oob = "LSSAH_4"
+			}
 		}
 	}
+	lssah_upgrade5 = { 
+
+		icon = lssah_ss
+		
+		fire_only_once = yes
+		
+		custom_cost_trigger = {
+			command_power > 5
+			has_political_power > 10
+		}
+		custom_cost_text = SS_CP_5_PP_10			
 	
-		SS_recruitment_CAF7 = { #Albanian
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			85 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			85 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.7
-		}
-	}
+		allowed = {
+			tag = GER
+		}	
 	
-		SS_recruitment_CAF8 = { #Hungary
-
-		icon = generic_army_support
-
 		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			43 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
+			has_tech = basic_medium_art 
+			has_tech = improved_heavy_tank 
+			has_tech = rocket_artillery 
 		}
+
 		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
+			has_government = fascism
+			has_country_flag = lssah4_complete
+			date > 1943.10.22
+		}		
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 50
 			}
-			43 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
+		}
+		
+		days_remove = 20
+		
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "SS-Division 'LSSAH'"
+			}
+			hidden_effect = {
+				add_command_power = -15
+				add_political_power = -15
 			}
 		}
 
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.8
+		remove_effect = {
+			custom_effect_tooltip = lssah5_tt
+			clr_country_flag = lssah4_complete
+			hidden_effect = {
+				load_oob = "LSSAH_5"
+			}
 		}
 	}
+###############################################################################################################
+###############################################################################################################
+###############################################################################################################
+	das_reich_upgrade1 = { 
+
+		icon = das_reich_ss
+		
+		fire_only_once = yes
+		
+		custom_cost_trigger = {
+			command_power > 5
+			has_political_power > 10
+		}
+		custom_cost_text = SS_CP_5_PP_10			
+
+		allowed = {
+			tag = GER
+		}	
+		
+		available = {
+			has_tech = tech_signal_company
+			has_tech = interwar_antitank
+		}
+
+		visible = {
+			has_government = fascism
+			date > 1939.10.1
+		}		
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 50
+			}
+		}
+		
+		days_remove = 20
+		
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "SS-Verfügungstruppe"
+			}
+			hidden_effect = {
+				add_command_power = -15
+				add_political_power = -15
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = das_reich1_tt
+			set_country_flag = das_reich1_complete
+			hidden_effect = {
+				load_oob = "Das_Reich_1"
+			}
+		}
+	}
+	das_reich_upgrade2 = { 
+
+		icon = das_reich_ss
+		
+		fire_only_once = yes
+		
+		custom_cost_trigger = {
+			command_power > 5
+			has_political_power > 10
+		}
+		custom_cost_text = SS_CP_5_PP_10			
 	
-		SS_recruitment_CAF9 = { #BeloRuss
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			242 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			242 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.9
-		}
-	}
+		allowed = {
+			tag = GER
+		}	
 	
-		SS_recruitment_CAF10 = { #Italia
-
-		icon = generic_army_support
-
 		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			39 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
+			has_tech = tech_field_hospital
+			has_tech = interwar_antiair 
 		}
+
 		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
+			has_government = fascism
+			has_country_flag = das_reich1_complete
+			date > 1941.1.1
+		}		
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 50
 			}
-			39 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
+		}
+		
+		days_remove = 20
+		
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "SS-Verfügungs-Division"
+			}
+			hidden_effect = {
+				add_command_power = -15
+				add_political_power = -15
 			}
 		}
 
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.10
+		remove_effect = {
+			custom_effect_tooltip = das_reich2_tt
+			set_country_flag = das_reich2_complete
+			clr_country_flag = das_reich1_complete
+			hidden_effect = {
+				load_oob = "Das_Reich_2"
+			}
 		}
 	}
+	das_reich_upgrade3 = { 
 
+		icon = das_reich_ss
+		
+		fire_only_once = yes
+		
+		custom_cost_trigger = {
+			command_power > 5
+			has_political_power > 10
+		}
+		custom_cost_text = SS_CP_5_PP_10			
 	
-		SS_recruitment_CAF12 = { #Finland
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			111 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			111 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.12
-		}
-	}
+		allowed = {
+			tag = GER
+		}	
 	
-		SS_recruitment_CAF13 = { #Swiss
-
-		icon = generic_army_support
-
 		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			151 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
+			has_tech = mechanised_infantry 
+			has_tech = basic_medium_tank  
+			has_tech = basic_medium_td 
 		}
+
 		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
+			has_government = fascism
+			has_country_flag = das_reich2_complete
+			date > 1942.11.1
+		}		
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 50
 			}
-			
-			151 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
+		}
+		
+		days_remove = 20
+		
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "SS-Division 'Reich'"
+			}
+			hidden_effect = {
+				add_command_power = -15
+				add_political_power = -15
 			}
 		}
 
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.13
+		remove_effect = {
+			custom_effect_tooltip = das_reich3_tt
+			set_country_flag = das_reich3_complete
+			clr_country_flag = das_reich2_complete
+			hidden_effect = {
+				load_oob = "Das_Reich_3"
+			}
 		}
 	}
+	das_reich_upgrade4 = { 
+
+		icon = das_reich_ss
+		
+		fire_only_once = yes
+		
+		custom_cost_trigger = {
+			command_power > 5
+			has_political_power > 10
+		}
+		custom_cost_text = SS_CP_5_PP_10			
 	
-		SS_recruitment_CAF14 = { #Afrika
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			446 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			446 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.14
-		}
-	}
+		allowed = {
+			tag = GER
+		}	
 	
-		SS_recruitment_CAF15 = { #India
-
-		icon = generic_army_support
-
 		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			229 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			229 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
+			has_tech = basic_medium_art 
+			has_tech = improved_heavy_tank 
+			has_tech = rocket_artillery 
 		}
 
-		cost = 25
-		fire_only_once = yes
+		visible = {
+			has_government = fascism
+			has_country_flag = das_reich3_complete
+			date > 1943.10.22
+		}		
+		
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 50
+			}
 		}
+		
+		days_remove = 20
+		
 		complete_effect = {
-			country_event = ss_recruitment_event_CAF.15
-		}
-	}
-
-
-		SS_recruitment_CAF16 = { #Argentina
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
+			delete_unit_template_and_units = {
+				division_template = "SS-Division 'Reich'"
 			}
-			
-			278 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			278 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
+			hidden_effect = {
+				add_command_power = -15
+				add_political_power = -15
 			}
 		}
 
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.16
-		}
-	}
-
-
-
-	
-		SS_recruitment_CAF17 = { #Brazil
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			503 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			503 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.17
-		}
-	}
-
-
-
-	
-		SS_recruitment_CAF18 = { #USA
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			371 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			371 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.18
-		}
-	}
-
-
-
-	
-		SS_recruitment_CAF19 = { #Canada
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			276 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			276 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.19
-		}
-	}
-
-
-
-	
-		SS_recruitment_CAF20 = { #South Afrika
-
-		icon = generic_army_support
-
-		available = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			
-			275 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-				
-			
-		}
-		visible = {
-			OR = {
-				has_country_flag = SS-Angriff
-				has_idea = heinrich_himmler
-				has_country_leader = { name = "Heinrich Himmler" }
-			}
-			275 = { 
-				CONTROLLER = { 
-					OR = { 
-						original_tag = GER 
-						is_subject_of = GER 
-						is_in_faction_with = GER
-					} 
-				} 
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			country_event = ss_recruitment_event_CAF.20
-		}
-	}
-
-}
-
-SS_demands = {
-	SS_himmler_wants_field_command = {
-
-		icon = generic_army_support
-
-		available = {
-			has_idea = heinrich_himmler
-			has_war = yes
-		}
-		visible = {
-			has_idea = heinrich_himmler
-			has_war = yes
-		}
-		cost = 25
-		fire_only_once = yes
-		complete_effect = {
-			subtract_from_variable = { var = SS_anger value = 10 }
-			add_to_variable = { var = wehrmacht_anger value = 5 } #shitty little upstart
-			create_field_marshal = {
-				name = "Heinrich Himmler"
-				picture = "Portrait_Germany_Heinrich_Himmler.dds"
-	traits = { infantry_officer defensive_doctrine offensive_doctrine old_guard }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 3
+		remove_effect = {
+			custom_effect_tooltip = das_reich4_tt
+			clr_country_flag = das_reich3_complete
+			hidden_effect = {
+				load_oob = "Das_Reich_4"
 			}
 		}
 	}
-}
-wehrmacht_demands = {
-	
 }

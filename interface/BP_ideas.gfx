@@ -265,6 +265,16 @@ spriteTypes = {
 	}
 
 	###Companies
+
+	spriteType = {
+		name = "GFX_idea_kiev_armored_plant"
+		texturefile = "gfx/interface/ideas/companies/RKU_kiev_armored_plant.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_KhPZ"
+		texturefile = "gfx/interface/ideas/companies/RKU_KhPZ.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_black_sea_shipping_company"
@@ -272,8 +282,48 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_nikolaevskiy_shipyard"
+		texturefile = "gfx/interface/ideas/companies/RKU_nikolaevskiy_shipyard.dds"
+	}	
+	
+	spriteType = {
 		name = "GFX_idea_charz"
 		texturefile = "gfx/interface/ideas/companies/RKU_charz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_motor_sich"
+		texturefile = "gfx/interface/ideas/companies/RKU_motor_sich.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_zvezda"
+		texturefile = "gfx/interface/ideas/companies/RKU_zvezda.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_impulse"
+		texturefile = "gfx/interface/ideas/companies/RKU_impulse.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_stroydormash"
+		texturefile = "gfx/interface/ideas/companies/RKU_stroydormash.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_KSZ"
+		texturefile = "gfx/interface/ideas/companies/RKU_KSZ.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_odessa_oil_refinery"
+		texturefile = "gfx/interface/ideas/companies/RKU_odessa_oil_refinery.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_arsenal_factor"
+		texturefile = "gfx/interface/ideas/companies/RKU_arsenal_factory.dds"
 	}
 	
 	#### Soviet Union ####

@@ -52,8 +52,8 @@
  RKU_security_service:0 "Security Service"
  RKU_security_service_desc:0 "To ensure the security of the State, it is necessary to form its own Department, which would replace the German security police, SD and Gestapo."
  
- RKU_arest_melnyk:0 "Arrest of A.Melnyk"
- RKU_arest_melnyk_desc:0 "Despite the fact that a significant part of the Melnykov wing of the OUN came over to our side, after the establishment of our government, Melnyk himself with his associates took a confrontational position towards our regime. It is necessary to arrest opposition groups, otherwise they will revolt."
+ RKU_arrest_melnyk:0 "Arrest of A.Melnyk"
+ RKU_arrest_melnyk_desc:0 "Despite the fact that a significant part of the Melnykov wing of the OUN came over to our side, after the establishment of our government, Melnyk himself with his associates took a confrontational position towards our regime. It is necessary to arrest opposition groups, otherwise they will revolt."
  
  RKU_proclamation_to_the_peoples_of_russia:0 "Appeal to the peoples of Russia"
  RKU_proclamation_to_the_peoples_of_russia_desc:0 "Setting ourselves the task of crushing any imperialism, whether in the German or in the Soviet-Russian interpretation, we must proclaim a Manifesto to the national movements of Russia that share our beliefs. Becoming the center of political emigration we can get a significant military and political help in our struggle."
@@ -125,8 +125,8 @@
  RKU_reichsgau:0 "Establish Reichsgau"
  RKU_reichsgau_desc:0 "For more effective management of the occupied territories, we must reform the administrative and political sphere: the introduction of the post of Imperial stadtholders in the territories entrusted to them optimizes public administration and economic life."
  ### Germanization - OUN (m) branch ###
- RKU_arest_bandera:0 "Arrest of S. Bandera"
- RKU_arest_bandera_desc:0 "Despite the fact that a significant part of the Bandera wing of the OUN went over to our side, after the establishment of our government, Bandera himself with his associates took a confrontational position in relation to our regime. It is necessary to arrest opposition groups, otherwise they will revolt."
+ RKU_arrest_bandera:0 "Arrest of S. Bandera"
+ RKU_arrest_bandera_desc:0 "Despite the fact that a significant part of the Bandera wing of the OUN went over to our side, after the establishment of our government, Bandera himself with his associates took a confrontational position in relation to our regime. It is necessary to arrest opposition groups, otherwise they will revolt."
  
  RKU_racial_decrees:0 "Racial Decrees"
  RKU_racial_decrees_desc:0 "In coordinating our actions with Germany, we are forced to issue a number of Anti-Jewish and Anti-Roma laws that would significantly reduce the participation of these peoples in social, economic and political life. In exchange, we can get a lot of favor from the Germans."
@@ -201,11 +201,11 @@
  RKU_rearmament:0 "Rearmament"
  RKU_rearmament_desc:0 "The military situation pushes us to increase military production and the formation of professional staff."
  
- RKU_german_war_doctrine:0 "Немецкая военная доктрина"
- RKU_german_war_doctrine_desc:0 "При формировании нашей сухопутной военной стратегии и тактики мы можем задействовать уже опробованную на практике немецкую военную доктрину."
+ RKU_german_war_doctrine:0 "German Military Doctrine"
+ RKU_german_war_doctrine_desc:0 "In shaping our land military strategy and tactics, we can use the German military doctrine that has already been tested in practice."
  
- RKU_national_war_doctrine:0 "Национальная военная доктрина"
- RKU_national_war_doctrine_desc:0 "Наша военная доктрина должна учитывать особенности военного опыта, национального менталитета и особенностей расположения нашей страны."
+ RKU_national_war_doctrine:0 "National Nilitary Doctrine"
+ RKU_national_war_doctrine_desc:0 "Our military doctrine should take into account the peculiarities of military experience, national mentality and the peculiarities of the location of our country."
 
  RKU_small_arms:0 "Small Arm Effort"
  RKU_small_arms_desc:0 "Infantry remains the main force of any army, and we must provide it with the best equipment. We need to speed up the development of new, modern models of infantry weapons."
@@ -219,8 +219,8 @@
  RKU_domestic_artillery_production:0 "Domestic Artillery Industry"
  RKU_domestic_artillery_production_desc:0 "Support for domestic development modern artillery pieces will give our troops decent fire support."
  
- RKU_organisation_of_division:0 "Организация дивизий"
- RKU_organisation_of_division_desc:0 "" 
+ RKU_organization_of_division:0 "Organization of Divisions"
+ RKU_organization_of_division_desc:0 "" 
  
  RKU_modern_tanks:0 "Modern Armor"
  RKU_modern_tanks_desc:0 "The installation of large-caliber guns has expanded the tasks of our armored vehicles far beyond the simple transportation of forces from point A to point B. We must develop our own models of tanks that are not inferior to the weapons of our neighbors."
@@ -234,8 +234,11 @@
  RKU_local_development:0 "Domestic Development"
  RKU_local_development_desc:0 "We will rely on the domestic aircraft industry to provide the troops with aircraft."
  
- RKU_joint_air_development:0 "Совместная разработка авиации"
- RKU_joint_air_development_desc:0 "Наилучший способ разработки новых типов самолетов – тесное сотрудничество с нашими союзниками. Объединив усилия величайших умов наших наций, мы добьемся наилучших результатов."
+ RKU_acquire_licenses:0 "License Acquisition"
+ RKU_acquire_licenses_desc:0  "In the aviation technology, we are noticeably inferior to other countries. It is necessary to think about the acquisition of licenses for the production of the most innovative aircraft in our country."
+ 
+ RKU_joint_air_development:0 "Joint Development of Aviation"
+ RKU_joint_air_development_desc:0 "The best way to develop new types of aircraft is to work closely with our allies. By combining the efforts of the greatest minds of our Nations, we will achieve the best results."
  
  RKU_air_superiority:0 "Air Superiority"
  RKU_air_superiority_desc:0 "The ability to control the skies is a key element of warfare. We need to focus on this aspect of air warfare."

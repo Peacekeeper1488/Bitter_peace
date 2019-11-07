@@ -120,4 +120,14 @@ spriteTypes = {
 	    texturefile = "gfx/interface/goals/GFX_the_great_black_menace.dds"			
 	}
 
+	SpriteType = {
+	    name = "GFX_arrest_of_bandera"
+	    texturefile = "gfx/interface/goals/GFX_arrest_of_bandera.dds"			
+	}
+	
+	SpriteType = {
+	    name = "GFX_arrest_of_melnyk"
+	    texturefile = "gfx/interface/goals/GFX_arrest_of_melnyk.dds"			
+	}
+
 }

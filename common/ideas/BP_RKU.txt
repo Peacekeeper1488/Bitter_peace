@@ -166,7 +166,7 @@ ideas = {
 		    }
 		}
 		
-		RKU_arest_oun_b = {
+		RKU_arrest_oun_b = {
 		
 			allowed_civil_war = {
 				has_government = fascism
@@ -176,32 +176,35 @@ ideas = {
 			
 			picture = upa_rebellion
 			
-			modifier = {
-				stability_factor = -0.1
-				drift_defence_factor = -0.15
-				monthly_population = -0.02
-				neutrality_drift = 0.02
-			}
-		}
-		
-		RKU_arest_oun_b_0 = {
-		
-			allowed_civil_war = {
-				has_government = fascism
-			}
-	
-			removal_cost = -1
-			
-			picture = upa_rebellion
-			
-			modifier = {
+			modifier = { 
+			    political_power_factor = -0.03
 				stability_factor = -0.05
-				drift_defence_factor = -0.05
-				monthly_population = -0.01
+				drift_defence_factor = -0.1
+				monthly_population = -0.03
+				neutrality_drift = 0.01
 			}
 		}
 		
-		RKU_arest_oun_m = {
+		RKU_arrest_oun_b_0 = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+	
+			removal_cost = -1
+			
+			picture = upa_rebellion
+			
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = -0.1
+				drift_defence_factor = -0.2
+				monthly_population = -0.08
+				neutrality_drift = 0.01
+			}
+		}
+		
+		RKU_arrest_oun_m = {
 		
 			allowed_civil_war = {
 				has_government = fascism
@@ -212,9 +215,9 @@ ideas = {
 			picture = oun_unrest
 			
 			modifier = {
-				political_power_factor = -0.05
+				political_power_factor = -0.03
 				stability_factor = -0.05
-				drift_defence_factor = -0.05
+				drift_defence_factor = -0.1
 				neutrality_drift = 0.01
 			}
 		}
@@ -233,7 +236,7 @@ ideas = {
 				stability_factor = -0.1
 				monthly_population = -0.03
 				drift_defence_factor = -0.15
-				communism_drift = 0.05
+				communism_drift = 0.01
 			}
 		}
 
@@ -248,9 +251,9 @@ ideas = {
 			picture = communist_partizans
 			
 			modifier = {
-				stability_factor = -0.05
-				monthly_population = -0.01
-				drift_defence_factor = -0.05
+				stability_factor = -0.15
+				monthly_population = -0.08
+				drift_defence_factor = -0.25
 				communism_drift = 0.01
 			}
 		}
@@ -1539,6 +1542,201 @@ ideas = {
 			}
 		}	
 	}
+	
+	industrial_concern = {
+		
+		opz = {
+		
+		    picture = odessa_oil_refinery
+			
+			available = {
+				has_completed_focus = RKU_development_oil_fields_in_ukraine
+				controls_state = 192
+			}
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+        machine_tool_industry = {
+		
+		    picture = KSZ 
+			
+			available = {
+				has_completed_focus = RKU_war_economy
+				controls_state = 227
+			}
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			research_bonus = {
+				industry = 0.10
+				
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		rku_arsenal = {
+		
+		    picture = arsenal_factor 
+			
+			available = {
+				has_completed_focus = RKU_extra_tech_slot
+				controls_state = 202
+			}
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+	
+	    zvezda = {
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			picture = zvezda
+			
+			available = {
+				has_completed_focus = RKU_rearmament
+				controls_state = 225
+			}
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		
+		impuls = {
+	
+			allowed = {
+				original_tag = RKU
+			}
+			
+			picture = impulse
+			
+			available = {
+				has_completed_focus = RKU_rearmament
+				controls_state = 225
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		stroydormash = {
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			picture = stroydormash
+			
+			available = {
+				has_completed_focus = RKU_rearmament
+				controls_state = 202
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	tank_manufacturer = {
+	
+	    tank_repair_plant_7 = {
+
+			picture = kiev_armored_plant
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				has_completed_focus = RKU_rearmament
+				controls_state = 202
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+        
+        xpz_im_comminterna = {
+
+			picture = KhPZ
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				has_completed_focus = RKU_rearmament
+				controls_state = 221
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { fast_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}  			
+	}
 
 	aircraft_manufacturer = {	
 		
@@ -1562,14 +1760,34 @@ ideas = {
 			}
 			
 			traits = { aircraft_repair_workshop }
-		}		
+		}
+
+        motor_sich = {
+		
+			picture = motor_sich
+			
+			allowed = {
+				original_tag = RKU
+			}
+			
+			available = {
+				has_completed_focus = RKU_local_development
+				controls_state = 200
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}					
 	}
 	
     naval_manufacturer = { 			
 		
 		designer = yes
 
-		RKU_black_sea_shipping_company = {
+		black_sea_shipping_company = {
 			
 			picture = black_sea_shipping_company
 
@@ -1589,6 +1807,32 @@ ideas = {
 			}
 			
 			traits = { coastal_defence_naval_manufacturer  }
+			
+			modifier = {
+
+			}
+		}
+	
+        niikolaev_shipbuilding_plant = {
+			
+			picture = nikolaevskiy_shipyard
+
+			cost = 100
+
+			allowed = {		
+				original_tag = RKU
+			}
+
+			available = {				
+				has_completed_focus = RKU_black_sea_dominance
+				controls_state = 197
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
 			
 			modifier = {
 

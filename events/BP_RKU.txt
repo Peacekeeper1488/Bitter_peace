@@ -83,7 +83,7 @@ country_event = {
 		name = BP_RKU.3.a
 		add_political_power = -100
 		custom_effect_tooltip = RKU_oun_b_banned
-		set_global_flag = RKU_bandera_was_arested
+		set_global_flag = RKU_bandera_was_arrested
 	}
 	option = {
 		name = BP_RKU.3.b
@@ -129,14 +129,14 @@ country_event = {
 		add_stability = -0.05
 		add_war_support = -0.05
 		custom_effect_tooltip = RKU_oun_m_banned
-		set_global_flag = RKU_melnik_was_arested	
+		set_global_flag = RKU_melnik_was_arrested	
 	}
 	option = {
 		name = BP_RKU.4.b	
 		add_political_power = -50
 		custom_effect_tooltip = RKU_oun_m_supported
 		set_global_flag = RKU_germanization_was_rejected
-		set_global_flag = RKU_bandera_was_arested
+		set_global_flag = RKU_bandera_was_arrested
 	}	
 }
 # Babi Yar
@@ -419,8 +419,8 @@ country_event = {
 	option = {
 		name = BP_RKU.13.a
 		add_ideas = {
-			RKU_arest_oun_b	
-			RKU_arest_oun_m
+			RKU_arrest_oun_b	
+			RKU_arrest_oun_m
 			RKU_communist_underground_idea
 		}
 		hidden_effect = {

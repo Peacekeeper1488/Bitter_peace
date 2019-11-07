@@ -1,7 +1,17 @@
 ﻿l_russian:
 
-GER_SS_units_tech:0 "Waffen-SS Troops"
-GER_SS_units_tech_desc:0 "Enables the recruitment of elite Waffen-SS troops.\nAlso Allgemeine-SS anti-partisan units that are strong in defensive abilities, but weak attackers."
+### Cost ###
+SS_CP_5_PP_10:0 "£pol_power §Y10§! £command_power §Y5§!"
+SS_CP_5_PP_10_blocked:0 "£pol_power §R10§! £command_power §R5§!"
+
+GER_allgemeine_ss_tech:0 "Allgemeine SS"
+GER_allgemeine_ss_tech_desc:0 "Позволяет вербовать элитные войска Allgemeine-SS - антипартизанские отряды, которые сильны в борьбн против партизан и обороне, но слабы в атаке."
+
+GER_ss_units_tech:0 "Waffen-SS"
+GER_ss_units_tech_desc:0 "Позволяет вербовать элитные войска Ваффен-СС."
+
+SS_german_recruitment:0 "Schutzstaffeln"
+SS_german_recruitment_desc:0 "СС (нем. «Die SS» от «Die Schutzstaffel») - «гвардейский отряд» - это вспомогательная военизированная организация НСДАП (до 1934 года подчинялась другой вспомогательной партийной организации - СА), считавшая себя «организацией политических солдат партии». Первоначально ее функция заключалась в охране руководителей партии (она была организована на базе «штаб-гвардии 'Адольф Гитлер'», предназначенной для охраны фюрера);\nВпоследствии этой организации были переданы самые разнообразные функции (от обеспечения функционирования системы учреждений внесудебного содержания под стражей и перевоспитания-концлагерей до обучения молодежи в специальных партийных школах, т.е национальных политических академиях).\n \nСвою миссию с момента назначения ее лидером Генриха Гиммлера, СС видела в воссоздании «новой Арийской цивилизации», еще до прихода нацистов к власти, приобретшего в глазах как собственных членов, так и посторонних образ «элитной» части нацистской партии. Часть членов (в конце войны наиболее значительная) служила в структурах по образцу армейских соединений, частей и дивизий (вплоть до штаба армии), начиная с 1939 г. оперативно подчинялись немецким вооруженным силам и де-факто входили в их состав как четвертый компонент Вермахта (в 1940 году они назывались «Ваффен СС», войска СС)."
 
 group_schutzstaffel_infantry_title:0 "SS Infantry Battalions"
 group_schutzstaffel_mobile_title:0 "SS Mobile Battalions"
@@ -93,6 +103,30 @@ SS_modern_sp_anti_air_brigade1:0 "SS-Moderner Flugabwehrpanzer"
 SS_modern_sp_artillery_brigade1:0 "SS-Moderne Selbstfahrlafette"  
 SS_modern_tank_destroyer_brigade1:0 "SS-Moderner Jagdpanzer"
 #####################################################################
+
+allgemeine_ss:0 "Allgemeine SS"
+allgemeine_ss_desc:0 "Общие СС (нем. Allgemeine SS) — одна из двух основных частей СС (наряду с войсками СС). В задачи «общих СС» входило главным образом осуществление административно-хозяйственных функций на территории третьего Рейха. Члены «общих СС» не считались состоящими на военной службе в нацистской партии и не получали довольствия и обмундирования, а выполняли свои партийные обязанности параллельно с основной работой. В то же время многие государственные учреждения нацистской Германии комплектовались преимущественно кадрами из «общих СС», что обеспечивало жесткий партийный контроль над государственным аппаратом."
+allgemeine_ss_tt:0 "§RПозволяет вербовать элитные войска Allgemeine-SS - антипартизанские отряды, которые сильны в борьбн против партизан и обороне, но слабы в атаке.§!\n§Y3 бригады Allgemeine SS§! появятся в §YБранденбурге§!"
+
+lssah_upgrade1:0 "Infanterie-Regiment 'LSSAH' (мот.): модернизация I"
+lssah1_tt:0 "Улучшенная §YInfanterie-Regiment 'LSSAH' (mot.)§! появится без техники, но с полным личным составом."
+lssah_upgrade2:0 "Infanterie-Regiment 'LSSAH' (мот.): модернизация II"
+lssah2_tt:0 "Моторизованная бригада §YInfanterie-Regiment 'LSSAH' (mot.)§! появится без техники, но с полным личным составом."
+lssah_upgrade3:0 "SS-Division (mot.) 'LSSAH': модернизация III"
+lssah3_tt:0 "Моторизованная дивизия §YSS-Division (mot.) 'LSSAH'§! появится без техники, но с полным личным составом."
+lssah_upgrade4:0 "SS-Panzer-Grenadier-Division 'LSSAH': модернизация IV"
+lssah4_tt:0 "Механизированная дивизия §YSS-Panzer-Grenadier-Division 'LSSAH'§! появится без техники, но с полным личным составом."
+lssah_upgrade5:0 "1. SS-Panzer-Division 'LSSAH': модернизация V"
+lssah5_tt:0 "Танковая дивизия §1. SS-Panzer-Division 'LSSAH'§! появится без техники, но с полным личным составом."
+
+das_reich_upgrade1:0 "SS-Verfügungs: модернизация I"
+das_reich1_tt:0 "Моторизованная дивизия §YSS-Verfügungs-Division§! появится без техники, но с полным личным составом."
+das_reich_upgrade2:0 "SS-Division 'Reich': модернизация II"
+das_reich2_tt:0 "Улучшенная моторизованная дивизия §YSS-Division (mot.) 'Reich'§! появится без техники, но с полным личным составом."
+das_reich_upgrade3:0 "Panzer-Grenadier-Division 'Das Reich': модернизация III"
+das_reich3_tt:0 "Механизированная дивизия §YPanzer-Grenadier-Division 'Das Reich'§! появится без техники, но с полным личным составом."
+das_reich_upgrade4:0 "2. SS-Panzer-Division 'Das Reich': модернизация IV"
+das_reich4_tt:0 "Танковая дивизия §Y2. SS-Panzer-Division 'Das Reich'§! появится без техники, но с полным личным составом."
 
 BP_SS_recruitment_galizien:0 "14-я гренадерская дивизия СС «Галичина»"
 

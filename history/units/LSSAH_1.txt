@@ -1,0 +1,33 @@
+﻿division_template = {
+	name = "'LSSAH' (mot.)"					# SS regiment + (elite equipment & training)
+	is_locked = yes
+	division_names_group = SS_MOT_01
+
+	regiments = {
+		SS_motorized0 = { x = 0 y = 0 }
+	    SS_motorized0 = { x = 0 y = 1 }
+		SS_motorized0 = { x = 0 y = 2 }
+		
+		SS_motorized0 = { x = 1 y = 0 }
+		SS_mot_artillery_brigade0 = { x = 1 y = 1 } 
+		SS_mot_anti_tank_brigade0 = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	    artillery = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+
+	division= {	
+		name = "Infanterie-Regiment'LSSAH' (mot.)"
+		location = 6521
+		division_template = "'LSSAH' (mot.)"
+		start_equipment_factor = 0.01
+		start_experience_factor = 0.6
+	}
+	
+}

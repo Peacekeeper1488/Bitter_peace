@@ -5,7 +5,32 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_cat_greater_german_reich"
 		texturefile = "gfx/interface/decisions/decision_cat_greater_german_reich.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_ger_schutzstaffeln"
+		texturefile = "gfx/interface/decisions/decision_category_schutzstaffeln.dds"
 	}	
+	
+	spriteType = {
+		name = "GFX_decision_cat_schutzstaffel"
+		texturefile = "gfx/interface/decisions/decision_cat_schutzstaffel.dds"
+	}
+
+	spriteType = {
+		name = "allgemeine_ss"
+		texturefile = "gfx/interface/decisions/decision_allgemeine_ss.dds"
+	}
+	
+	spriteType = {
+		name = "lssah_ss"
+		texturefile = "gfx/interface/decisions/decision_lssah_ss.dds"
+	}
+	
+	spriteType = {
+		name = "das_reich_ss"
+		texturefile = "gfx/interface/decisions/decision_das_reich_ss.dds"
+	}
 
 	### Italy	
 	

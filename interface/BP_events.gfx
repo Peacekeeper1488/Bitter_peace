@@ -610,6 +610,31 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_ita_via_balbia.dds"
 	}	
 	
+	spriteType = {
+		name = "GFX_report_event_ita_mussolini_victory_speech"
+		texturefile = "gfx/event_pictures/report_event_ita_mussolini_victory_speech.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_ita_dubat"
+		texturefile = "gfx/event_pictures/report_event_ita_dubat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_ita_graziani_in_ethiopia"
+		texturefile = "gfx/event_pictures/report_event_ita_graziani_in_ethiopia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_ita_duke_of_aosta"
+		texturefile = "gfx/event_pictures/report_event_ita_duke_of_aosta.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_ita_banka_ditalia"
+		texturefile = "gfx/event_pictures/report_event_ita_banka_ditalia.dds"
+	}	
+
 	#### Asia ####
 	
 	spriteType = {

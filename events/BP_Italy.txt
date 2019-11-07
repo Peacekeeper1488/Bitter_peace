@@ -4,84 +4,96 @@
 
 add_namespace = BP_italy
 
-# Establish Africa Orientale Italiana
+# Mussolini Victory Speech
 country_event = {
 	id = BP_italy.1
 	title = BP_italy.1.t
 	desc = BP_italy.1.d
+	picture = GFX_report_event_ita_mussolini_victory_speech 
+
+	is_triggered_only = yes
+
+	option = {
+		name = BP_italy.1.a	
+		add_stability = 0.1
+		add_war_support = 0.1
+		country_event = { days = 1 id = BP_italy.2 } 
+	}	
+}
+
+# Africa Orientale Italiana
+country_event = {
+	id = BP_italy.2
+	title = BP_italy.2.t
+	desc = BP_italy.2.d
 	picture = GFX_report_event_ita_AOI 
 
 	is_triggered_only = yes
 
 	option = {
-		name = BP_italy.1.a
-		ai_chance = { factor = 100 }		
-		AOI = {
-			transfer_state = 559
-			transfer_state = 550
-			transfer_state = 271								
-			ITA = { set_autonomy = { target = PREV autonomy_state = autonomy_protectorate } }		
-			hidden_effect = {
-				set_politics = {
-					ruling_party = fascism
-					last_election = "1936.1.1"
-					election_frequency = 48
-					elections_allowed = no
-				}
-				set_popularities = {
-					democratic = 20
-					fascism = 60
-					communism = 20
-				}
-				
-				load_oob = "AOI_colonial_infantry"
-				
-				create_country_leader = {
-					name = "Rodolfo Graziani"
-					desc = "POLITICS_RADOLFO_GRAZIANI_DESC"
-					picture = "gfx/leaders/ITA/portrait_italy_radolfo_graziani.dds"
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
-
-					}				
-				}
-			}
-		}	
+		name = BP_italy.2.a		
 	}	
-	option = {
-		name = BP_italy.1.b
-		ai_chance = { factor = 0 }
-	}
 }
-# Appoint Duke of Aosta as New Viceroy in 'Africa Orientale Italiana
+# Recruit 'Dubats' in Colonial Troops
+country_event = {
+	id = BP_italy.3
+	title = BP_italy.3.t
+	desc = BP_italy.3.d
+	picture = GFX_report_event_ita_dubat 
+
+	is_triggered_only = yes
+
+	option = {
+		name = BP_italy.3.a		
+	}	
+}
+# Assassination Attempt on Graziani
+country_event = {
+	id = BP_italy.4
+	title = BP_italy.4.t
+	desc = BP_italy.4.d
+	picture = GFX_report_event_ita_graziani_in_ethiopia 
+
+	is_triggered_only = yes
+
+	option = {
+		name = BP_italy.4.a		
+	}	
+}
+# Appoint Duke of Aosta as New Viceroy in 'Africa Orientale Italiana'
 country_event = {
 	id = BP_italy.5
 	title = BP_italy.5.t
 	desc = BP_italy.5.d
-	picture = GFX_report_event_ita_AOI 
+	picture = GFX_report_event_ita_duke_of_aosta 
 
 	is_triggered_only = yes
 
 	option = {
-		name = BP_italy.5.a
-		ai_chance = { factor = 100 }		
-		retire_country_leader = yes	
-		create_country_leader = {
-			name = "Amedeo Giovanni di Savoia"
-			desc = ""
-			picture = "gfx/leaders/ITA/Portrait_Italy_Amadeo_di_Savoia.dds"
-			expire = "1965.1.1"
-			ideology = fascism_ideology
-			traits = {
+		name = BP_italy.5.a		
+	}	
+}
+# Subsidize 'Africa Orientale Italiana' Development
+country_event = {
+	id = BP_italy.6
+	title = BP_italy.6.t
+	desc = BP_italy.6.d
+	picture = GFX_report_event_ita_banka_ditalia 
 
-			}				
-		}
+	is_triggered_only = yes
+
+	option = {
+		name = BP_italy.6.a		
 	}	
 	option = {
-		name = BP_italy.5.b
-		ai_chance = { factor = 0 }
+		name = BP_italy.6.b	
 	}
+	option = {
+		name = BP_italy.6.c
+	}	
+	option = {
+		name = BP_italy.6.e	
+	}	
 }
 # Germany accepts our demands for Vichy Tunisia
 country_event = {
@@ -125,9 +137,9 @@ country_event = {
 }
 # Via Balbia 
 country_event = {
-	id = BP_italy.10
-	title = BP_italy.10.t
-	desc = BP_italy.10.d
+	id = BP_italy.20
+	title = BP_italy.20.t
+	desc = BP_italy.20.d
 	picture = GFX_report_event_ita_via_balbia
 
 	fire_only_once = yes
@@ -141,7 +153,7 @@ country_event = {
 	mean_time_to_happen = { days = 7 } 	
 
 	option = {
-		name = BP_italy.10.a
+		name = BP_italy.20.a
 		unlock_decision_tooltip = ITA_build_the_Via_Balbia
 		set_country_flag = via_balbia
 	}

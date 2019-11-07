@@ -150,24 +150,110 @@ BP_germany.143.a:0 "Allow Oswald Mosley to lead the new Britain."
 BP_germany.143.b:0 "Allow Oswald Mosley to lead Britain, but occupy Dover."
 BP_germany.143.c:0 "Let's review the other plans before making this choice."
 
-### RK Ukraine
+### РК Украина
 
-BP_RKU.6.t:0 ""
-BP_RKU.6.d:0 ""
+BP_RKU.1.t:0 "Сотрудничество с ОУН"
+BP_RKU.1.d:0 "Сотрудничество украинских националистов из УВО-ОУН с германскими спецслужбами началось задолго до прихода нацистов к власти и продолжалось вплоть до Второй мировой войны и нападения Германии на СССР.\n \nРуководство разведки Веймарской республики проявляло интерес к любым силам, которые можно было использовать в реализации своей геополитической стратегии. С этой целью абвером было создано «Бюро по подготовке войны с помощью национальных меньшинств», а также сформирован специальный фонд, через который финансировались различные организации за пределами Германии, в том числе УВО, а позднее и ОУН. Рико Ярый, являвшийся правой рукой Коновальца, одновременно был помощником руководителя «Бюро».\n \nС 1934 года ОУН переносит свою резиденцию в Берлин. В Германии создаются разведывательно-диверсионные курсы и школы для членов ОУН. По согласованию с Коновальцем, в предместьях Берлина были построены казармы для курсантов из числа украинских националистов. С 1 июня 1934 года ОУН получала ежемесячное финансирование от заграничного отдела НСДАП, а также выплаты от германского генштаба и гестапо.\n \nПосле аншлюса Австрии ОУН получила для своих нужд замок близ села Завберсдорф в районе Виннер-Нойнштадта к югу от Вены. Здесь члены ОУН получили возможность пройти начальную военную подготовку, которая, по воспоминаниям Евгена Стахива, включала в себя «вопросы военной теории, немного стратегии, международной политики»."
+BP_RKU.1.a:0 "Они будут нам полезны..."
+
+BP_RKU.2.t:0 "Раскол ОУН"
+BP_RKU.2.d:0 "Накопившиеся разногласия внутри руководства ОУН — в частности, по поводу событий в Карпатской Украине — привели к тому, что в мае 1939 года Андрей Мельник объявил о приостановлении своих полномочий до созыва съезда и официальных выборов главы украинских националистов. Фактически с этого момента западноукраинское подполье перестало получать из эмигрантского центра какие-либо указания относительно действий в условиях обостряющейся внешнеполитической ситуации. Инструкций и рекомендаций не поступало и в первые дни и недели после нападения Германии на Польшу.\n \n5 апреля 1940 года Бандера вновь встретился с Мельником в Риме, проинформировал его о деятельности Революционного Провода и потребовал передачи ему руководства организацией на основании «Акта от 10 февраля», однако Мельник отказался и 6-7 апреля письменно уведомил Бандеру, что сам Бандера и Ярослав Стецько должны будут предстать перед Главным революционным трибуналом ОУН.\nБандера, в свою очередь, заявил о снятии с Мельника всех полномочий и объявил ПУН вне закона. 8 апреля Мельник распространил обращение, в котором обвинил Бандеру и Стецько в заранее спланированном расколе организации. Даже после этого обмена взаимными обвинениями контакты между сторонами продолжились, и окончательное размежевание произошло лишь в августе-сентябре 1940 г.\n \nРаскол ОУН фактически завершил затянувшийся на долгие годы конфликт между эмигрантским руководством и молодыми активистами, участвовавшими в непосредственной подпольной работе на территории Западной Украины, — конфликт, который удавалось сглаживать лишь благодаря авторитету создателя и руководителя УВО и ОУН Евгения Коновальца."
+BP_RKU.2.a:0 "Им что – делать нечего!?"
+
+BP_RKU.3.t:0 "Провозглашения Украинского Государства"
+BP_RKU.3.d:0 "Продвижение немецких войск по территории Украины привело к активизации антибольшевистского подполья,представители которог  являются убеждёнными сторонниками украинской  независимости. Документ, оглашённый на Законодательном собрании Западноукраинских земель,созванном членами ОУН(б) во главе с Ярославом Стецько во Львове постановляет создание «нового украинского государства на материнских украинских землях», которое «будет тесно сотрудничать с национал-социалистической Великой Германией под руководством вождя Адольфа Гитлера, создающего новый порядок в Европе и всём мире».\n \nМногие представители украинского национального движения влились в Абвер и наши вооружённые силы в обмен на наше обещание создать украинское национальное государство.\nНыне мы стоим перед выбором - арестовать зачинщиков, поддержать их или попытаться отложить переговоры."
+BP_RKU.3.a:0 "Арестовать мятежников!"
+RKU_oun_b_banned:0 "\n§RИсторичный вариант.§!\nЛидеры ОУН (б) будут §Rарестованы.§! Сотрудничество со сторонниками Бандеры больше будет §Rневозможно.§!"
+RKU_bandera_was_arrested:0 "Деятельность ОУН (б) была запрещена Германией."
+BP_RKU.3.b:0 "Поддержать их"
+RKU_oun_b_supported: "\nМы поддержим националистов ОУН(б) в их стремлении независимости для Украины.\n§RПроект «германизации» Восточных земель в Украине будет закрыт.§!"
+RKU_germanization_was_rejected: "Германия поддержала провозглашения Украинского Государства."
+BP_RKU.3.c:0 "Пойти на переговоры"
+RKU_oun_b_question_was_postponed:0 "\nДоговорившись с ОУН(б), мы сможем отложить этот вопрос, но если дальше мы не оправдаем их надежд, они могут начать против нас §Rагрессивные действия...§!"
+
+BP_RKU.4.t:0 "Украинская Национальная Рада"
+BP_RKU.4.d:0 "Нам приходят тревожные вести о том, что члены ОУН(м) провозгласили о создание Украинской Национальной Рады в Киеве.\nЗаявление Величковского было кратким: «Украина в 1918 г. провозгласила независимость, которая была признана всем миром и, в частности, Германией. В 1920 Украина была незаконно оккупирована большевистскими бандами, которые на протяжении 20 лет терроризировали страну, морили голодом, уничтожали село, вывезли в Сибирь национальную элиту. Теперь, когда оккупанты сбежали из Украины под ударами немецких войск, Украина восстанавливает порядки, существовавшие до её оккупации, на основе Конституции УНР 1918 г., которая считается самой демократической в мире. Имущество, награбленное коммунистами у народа, возвращается ему».\nНа конференции были вновь сформированы и озвучены тезисы построения Украинской Державы учитывая актуальную политическую и военную обстановку. Величковский и Багазий заявили оо формировании Рады с ядром в виде ОУН-б во главе с Мельником, который ратует за формирование Украинского Государства при Немецком содействии.\n \nДанное происшествие является самовольным актом со стороны Мельника и ОУН. Как в данном случаи должны реагировать представители немецкое оккупационной администрации?"
+BP_RKU.4.a:0 "Арестовать мятежников!"
+RKU_oun_m_banned:0 "\nЛидеры ОУН (м) будут §Rарестованы.§! Сотрудничество со сторонниками Мельника больше будет §Rневозможно.§!"
+RKU_melnik_was_arrested:0 "Деятельность ОУН (м) была запрещена Германией."
+BP_RKU.4.b:0 "Следить, но не вмешиваться..."
+RKU_oun_m_supported:0 "\nМы поддержим националистов ОУН(м) в их стремлении создание Украины в качестве §Gнашего протектората.§!"
+
+BP_RKU.5.t:0 "Бабий Яр"
+BP_RKU.5.d:0 "Несмотря на серьёзные антибольшевистские настроения местного населения, в обществе находится очень много нелояльных нам общественных групп. Именно поэтому необходимо провести ряд показательных расстрельных акций. Можно использовать урочище в северо-западной части Киева, между районами Лукьяновка и Сырец. Данное место уже использовалось карательными органами НКВД для расправы над антикоммунистами."
+BP_RKU.5.a:0 "Провести расстрельные акции"
+BP_RKU.5.b:0 "Это нечеловечно и негуманно"
+
+BP_RKU.6.t:0 "Подрыв «Днепрогэс»"
+BP_RKU.6.d_germany:0 "После прорыва войск Вермахта в районе Запорожья и Днепропетровска, войсками Красной Армии и НКВД была взорвана дамба ДнепроГЭСа. Разрушения частично замедлили продвижение военных частей в этом районе. В тоже время, подрыв плотины привёл к масштабным разрушениям и жертвам."
+BP_RKU.6.d_ussr:0 "При отступлении в районе Днепропетровска, немцы произвели подрыв плотины Днепрогэс, чтобы задержать наше наступление. Приказ был отдан командующим 1-й танковой армией вермахта Макензеном, а непосредственная ответственность за подрыв заряда, состоявшего из 300 тонн самой различной взрывчатки, возлагается на командира 40-го танкового корпуса генерала Г. Хейнрици. Благодаря отважным действиям наших саперов и разведчиков мы успели повредить часть проводов, шедших к детонаторам и удалось избежать полного уничтожения плотины."
 BP_RKU.6.a:0 ""
 
-BP_RKU.5.t:0 ""
-BP_RKU.5.d:0 ""
-BP_RKU.5.a:0 ""
-BP_RKU.5.b:0 ""
+BP_RKU.7.t:0 "ОУН (б)"
+BP_RKU.7.d:0 "Одна из фракций Организации украинских националистов, возникшая в результате раскола ОУН в результате внутреннего конфликта между возглавляемыми Андреем Мельником консервативными членами этой организации и радикальной молодёжью, котору возглавил Степан Бандера. После нападения Германии на СССР, планы украинских националистов стали претворяться в жизнь.\n \nК началу Великой Отечественной войны Краевому проводу ОУН на ЗУЗ (Западноукраинских землях) удалось мобилизовать до 10 тысяч оуновцев, которые начали бои сотступающими советскими частями. Вслед за фронтом, быстро двигавшимся на восток, были отправлены, сформированные бандеровцами так называемые «походные группы», маршрут продвижения которых был заранее согласован с абвером. ОУН (б) во главе со Степаном Бандерой и Украинская Повстанческая Армия во главе с Романом Шухевичем пользуются более широкой популярностью среди населения.\n \nВ тоже время крайне антиколониальный характер этого движения может привести к существенным трудностям во взаимоотношениях со сформированным из них правительством"
+BP_RKU.7.a:0 "Учредить правительство"
 
-BP_RKU.7.t:0 ""
-BP_RKU.7.d:0 ""
-BP_RKU.7.a:0 ""
+BP_RKU.8.t:0 "ОУН (м)"
+BP_RKU.8.d:0 "Одна из двух фракций, возникших в результате раскола Организации украинских националистов в начале 1940 года. Объединила сторонников А. А. Мельника, утверждённого II Большим Сбором украинских националистов на посту председателя Провода украинских националистов 27 августа 1939 года.\n \nПосле оккупации немцами Киева, ОУН(м) провозгласила создание Украинской Национальной Рады, не поддержанной немцами, которые вскоре её распустили, а членов репрессировали и расстреляли. После перехода ОУН(б) на полулегальное положение осенью 1941 года, ОУН(м) оставалась вполне легальной организацией, действовавшей в Третьем рейхе. В 1943−1944 годах УЦК принимал участие в формировании дивизии СС «Галичина».\n \nОУН (м) во главе с Андреем Мельником, хотя отличается более прогерманской направленностью, в тоже время пользуется меньшей популярностью среди жителей Украины, чем ОУН (б). Представители ОУН (м) в тоже время пользуются большей поддержкой среди украинских политических эмигрантов."
+BP_RKU.8.a:0 "Учредить правительство"
 
-BP_RKU.8.t:0 ""
-BP_RKU.8.d:0 ""
-BP_RKU.8.a:0 ""
+BP_RKU.9.t:0 "Украинская Держава"
+BP_RKU.9.d:0 "Повысив свою политическую субъектность, представители украинского правительства просят нас выступить гарантами их государственности. В свою очередь они обещаю координировать свою внешнюю и внутреннюю политику с нами."
+BP_RKU.9.a:0 "Они доказали свою лояльность"
+RKU_loyal_servant:0 "[From.GetName] получит статус §YСателлита.§! Ни мы, ни они, §Rне сможем§! повысить или понизить этот §Yстатус§!."
+
+BP_RKU.10.t:0 "Великая Украина"
+BP_RKU.10.d:0 "Повысив свою политическую субъектность, представители украинского правительства поставили себе за цель создание «великого, суверенного украинского государства без немцев и советов». Нет никаких сомнений, что такой шаг неминуемо приведёт их к столкновению с нашими интересами, а следовательно – и к войне."
+BP_RKU.10.a:0 "Значит война..."
+
+BP_RKU.11.t:0 "Подданство для остарбайтеров"
+BP_RKU.11.d:0 "Многие рабочие с Востока, осевшие в Германии продемонстрировали исключительную эффективность и трудолюбие. Пожалуй, стоит дать ограниченные гражданские права тем, кто более других соответствует нашим расово-биологическим и евгеническим стандартам."
+BP_RKU.11.a:0 "Отлично!"
+
+BP_RKU.12.t:0 "Эксплуатация Днепрогэс"
+BP_RKU.12.d:0 "Активное использование Днепровской гидроэлектростанции благотворно повлияла на экономику бассейна реки Днепр. Дешевая электроэнергия способствовало организации новых предприятий в регионе."
+BP_RKU.12.a:0 "Отлично!"
+
+BP_RKU.13.t:0 "Ратификация Плана Ost"
+BP_RKU.13.d:0 "После вторжения в Советский Союз в 1941 году многие местные жители изначально видели в Германии потенциального освободителя от репрессивного режима СССР. Однако оккупационная политика, проводимая их потенциальными спасителями против коммунизма, совершенно ясно показала, что внешняя политика Гитлера не имела в виду сотрудничества.\nРазочарованные и обескураженные, многие из этих группировок подняли оружие против оккупирующих немцев на территориях Прибалтики, Украины, Белоруссии и Польши. Одним из основных последствий этих движений сопротивления было разрушение и без того перегруженных немецких линий снабжения, что привело к хаосу и нехватке снабжения на линии фронта. Позже в ходе войны Красная Армия координировала нападения с партизанскими ячейками, делая их жизненно важным компонентом в своей войне против Рейха.\n \nЛиквидация сопротивления этих партизанских групп является первоначальной целью для администрации. Должна быть обеспечена безопасность для немецких поселенцев и их семей. Сейчас наши войска готовы приступить к усмирению местного населения на завоеванной территории. Как только этот этап Генерального плана Ost будет завершен, мы можем начать колонизировать и развивать инфраструктуру.\nЭто событие обязательно вызовет сильное сопротивление против нас. Мы уже получаем сообщения о том, что подпольные партизанские движения сотрудничают в подготовке крупномасштабного восстания в ответ на развертывание наших сил. Обязательно хорошо охраняйте восточные территории, иначе эти восстания могут выйти из-под контроля! Мы не сможем осуществить наши планы, если какая-либо из наших территорий окажется под контролем партизан."
+BP_RKU.13.a:0 "Пусть поймут, что теперь эта земля принадлежит Рейху."
+
+BP_RKU.14.t:0 "Реинтеграция Галиции"
+BP_RKU.14.d:0 "По договору о формировании национального правительства Украины, мы обязуемся передать Галицию в сотав Украинского протектората."
+BP_RKU.14.a:0 "Договор есть договор"
+
+BP_RKU.15.t:0 "Реинтеграция Транснистрия"
+BP_RKU.15.d:0 "Украинское правительство желает вернуть Транснистриюю – историческию территорию проживания украинцев. В качестве аргументации приводится невозможность Румынии навести порядок на этих землях, из-за внутренних проблем. С одной стороны – их притязания обоснованы. С другой стороны – это испортит наши отношения с Румынией."
+BP_RKU.15.a:0 "Мы готовы на всё ради мира"
+BP_RKU.15.b:0 "Они уже получили Галицию"
+
+BP_RKU.16.t:0 "Реинтеграция Транснистрии: Немецкий ответ"
+BP_RKU.16.d_ger_say_yes:0 "Крах румынского государства более чем очевиден немецкими правительственными и дипломатическими кругами. Дабы минимизировать масштабы нарастающего хаоса, немцы решили передать нам Трансистрию."
+BP_RKU.16.d_ger_say_no:0 "Нарастание конфликта вокруг Трансистрии заставило немецкое правительство серьёзно рассмотреть вопрос справедливого решения конфликта. Ожидаемо, немцы стали на сторону своего верного союзника... Теперь, однако, большое количество этнических украинцев оказываются под юрисдикцией иностранного правительства, что может снизить нашу легитимность в глазах украинского народа."
+BP_RKU.16.a:0 "Слава Украине!"
+BP_RKU.16.b:0 "Это провал..."
+
+BP_RKU.17.t:0 "Реинтеграция Карпатской Русинии"
+BP_RKU.17.d:0 "Представители нового украинского правительства, желая присоединить Закарпатье, спекулируют на этническом противостоянии венгров и украинцев в этом регионе. Мы можем пойти им на встречу, однако это сильно испортит наши отношение с венгерским правительством..."
+BP_RKU.17.a:0 "Мы готовы на всё ради мира"
+BP_RKU.17.b:0 "Они уже получили Галицию"
+
+BP_RKU.18.t:0 "Реинтеграция Карпатской Русинии: Немецкий ответ"
+BP_RKU.18.d_ger_say_yes:0 "Нарастание конфликта вокруг Закарпатья заставило немецкое правительство серьёзно рассмотреть вопрос справедливого решения конфликта. Карпатская Украина станет нашей, однако нам придётся закрепить нормативно-правовые гарантии венгерскому этническому меньшинству."
+BP_RKU.18.d_ger_say_no:0 "Нарастание конфликта вокруг Закарпатья заставило немецкое правительство серьёзно рассмотреть вопрос справедливого решенияконфликта. Ожидаемо, немцы стали на сторону своего верного союзника... Теперь, однако, большое количество этнических украинцев оказываются под юрисдикцией иностранного правительства, что может снизить нашу легитимность в глазах украинского народа."
+BP_RKU.18.a:0 "Слава героям Карпатской Русинии!"
+BP_RKU.18.b:0 "Это провал..."
+
+BP_RKU.19.t:0 "Крымский вопрос"
+BP_RKU.19.d:0 "Новое украинское правительство настаивает на том, что берёт на себя большинство хозяйственно-экономических вопросов крымского полуострова. Следовательно, они просят нас передать им формальные права над этим регионом."
+BP_RKU.19.a:0 "Хм...а они правы..."
+BP_RKU.19.b:0 "Никаких украинцев на исторической земле готов!"
+
+BP_RKU.20.t:0 "Крымский вопрос: Немецкий ответ"
+BP_RKU.20.d_ger_say_yes:0 "Рассмотрев вопрос возвращения Крыма, немецкое правительство нашло разумными наши аргументы в пользу передачи этой территории."
+BP_RKU.20.d_ger_say_no:0 "Рассмотрев вопрос возвращения Крыма, немецкое правительство ответило категорическим отказом, мотивируя его желанием вернуть территории, издревле принадлежавшие германским племенам."
+BP_RKU.20.a:0 "Крым наш!"
+BP_RKU.20.b:0 "Крым не наш..."
 
 ###############################################################################################################
 #Balkans ######################################################################################################
@@ -768,10 +854,33 @@ BP_USA.3.a:0 "Great"
 
 ### Italy
 
-BP_italy.1.t:0 "Italian East Africa"
-BP_italy.1.d:0 "After the conquest of Ethiopia, the 'Africa Orientale Italiana' colony (or Italian East Africa) was formed through the merger of Italian Somaliland and Italian Eritrea with the former Ethiopian Empire. Victor Emmanuel III of Italy consequently adopted the title of 'Emperor of Ethiopia'. The territory was divided into the six governorates of Italian East Africa, each under the authority of an Italian governor, answerable to the Italian Viceroy, who represented the Emperor Victor Emmanuel. Through reconstruction efforts after the war, the regime encouraged colonization by creating agriculture and small industries there. Local armed irregular bands would also be employed by the Royal Corps of Colonial Troops to counter insurgency by native Ethiopians."
-BP_italy.1.a:0 "Create"
-BP_italy.1.b:0 "Not now"
+BP_italy.1.t:0 "Mussolini Victory Speech"
+BP_italy.1.d:0 "When victory in Ethiopia was announced by Mussolini from the balcony of the Palazzo Venezia in Rome, the Italian population was jubilant.\nFrom his balcony, Mussolini proclaimed: 'During the thirty centuries of our history, Italy has known many solemn and memorable moments. This is unquestionably one of the most solemn, the most memorable. People of Italy, people of the world, peace has been restored.'\nThe crowds would not let him go - ten times they recalled Mussolini to the balcony and cheered and waved while the boys of various Fascist youth organizations sang the newly composed 'Hymn of the Empire' (Inno dell'impero).\n \nFour days later, the same scene was repeated when Il Duce in a speech about the 'shining sword' and the 'fatal hills of Rome' announced: 'At last Italy has her Empire.' And he then added: 'The Italian people have created an empire with their blood. They will fertilize it with their work. They will defend it against anyone with their weapons. Will you be worthy of it?'\nThis was Mussolini's hour of glory. Fascism was never so popular and the shouts of military victory drowned out the muttered grumbles about some underlying economic ills."
+BP_italy.1.a:0 "Great"
+
+
+BP_italy.2.t:0 "Italian East Africa"
+BP_italy.2.d:0 "After the conquest of Ethiopia, the 'Africa Orientale Italiana' colony (or Italian East Africa) was formed through the merger of Italian Somaliland and Italian Eritrea with the former Ethiopian Empire. Victor Emmanuel III of Italy consequently adopted the title of 'Emperor of Ethiopia'. The territory was divided into the six governorates of Italian East Africa, each under the authority of an Italian governor, answerable to the Italian Viceroy, who represented the Emperor Victor Emmanuel. Through reconstruction efforts after the war, the regime encouraged colonization by creating agriculture and small industries there. Local armed irregular bands would also be employed by the Royal Corps of Colonial Troops to counter insurgency by native Ethiopians."
+BP_italy.2.a:0 "Great"
+
+BP_italy.3.t:0 "Recruit 'Dubats' in Colonial Troops"
+BP_italy.3.d:0 "Dubats was the designation given to local armed irregular bands employed by the Italian Royal Corps of Colonial Troops (Regio Corpo di Truppe Coloniali) in Italian Somaliland from 1924 to 1941. The word dubats was derived from a Somali phrase meaning 'white turbans'.\nFirst raised in July 1924 by Colonel Bechi, they mainly served as light infantry and developed a reputation as effective fighters. Dubats were maintained as permanent units and were better trained and armed than the tribal banda employed as auxiliaries as needed by the Italian authorities in Somalia and other colonies. Camel mounted detachments were also employed for patrol work.\n \nNearly 20,000 Dubats and other irregulars served with the Italian forces during the 1936 conquest of Ethiopia. With the occupation of Ethiopia, the Dubats were re-deployed in the Ogaden Desert and along the frontiers of French and British Somaliland.\nThey saw ongoing action against Ethiopian guerrillas in Hararghe. On the eve of Italy's entry into World War II, the Dubats underwent reorganization, becoming more closely integrated with the regular Somali units of the Royal Corps of Colonial Troops. During the East African Campaign of 1941, the Dubats served with the Pietro Gazzera army group."
+BP_italy.3.a:0 "Good"
+
+BP_italy.4.t:0 "Assassination Attempt on Graziani"
+BP_italy.4.d:0 "During the Second Italo-Abyssinian War, Rodolfo Graziani was the commander of the southern front. His army invaded Ethiopia from Italian Somaliland and he commanded the Italian forces at the Battles of Genale Doria and the Ogaden. However, Graziani's efforts in the south were secondary to the main invasion launched from Eritrea by Generale Emilio De Bono, later continued by Marshal of Italy Pietro Badoglio. It was Badoglio and not Graziani who entered Addis Ababa in triumph after his 'March of the Iron Will'. But it was Graziani who said: 'The Duce will have Ethiopia, with or without the Ethiopians.' After the war, Graziani was made Viceroy of Italian East Africa and Governor-General of Shewa / Addis Ababa. On 19 February 1937, during a public ceremony at the Viceregal Palace in Addis Ababa (the former Imperial residence), two Eritreans attempted to kill Graziani with a number of grenades. The Italian security guards fired indiscriminately into the crowd of civilian onlookers. After the unsuccessful assassination attempt, Graziani ordered a bloody and indiscriminate reprisal upon the conquered country. He became known as 'the Butcher of Ethiopia.'"
+BP_italy.4.a:0 "Damn!"
+
+BP_italy.5.t:0 "Appoint Duke of Aosta as New Viceroy in 'Africa Orientale Italiana'"
+BP_italy.5.d:0 "After the conquest of Ethiopia, the 'Africa Orientale Italiana' colony (or Italian East Africa) was formed through the merger of Italian Somaliland and Italian Eritrea with the former Ethiopian Empire. Victor Emmanuel III of Italy consequently adopted the title of 'Emperor of Ethiopia'.\n \nThe colony was administered by a Viceroy of Ethiopia and Governor General, appointed by the Italian monarch, to which each of the six Governorates had to answer.\nOn 11 June 1936, Graziani was made Viceroy of Italian East Africa and Governor-General of Shewa / Addis Ababa.\n \nAfter the unsuccessful assassination attempt against him, Graziani ordered a bloody and indiscriminate reprisal upon the conquered country. In the end, his harsh policies did not pacify the country.\nTherefore, on 21 December 1937, Rome appointed Amedeo, 3rd Duke of Aosta, as the new Viceroy and Governor General of Italian East Africa and instructed him to adopt a more flexible line. Accordingly, large-scale public works projects were undertaken."
+BP_italy.5.a:0 "Great!"
+
+BP_italy.6.t:0 "Subsidize 'Africa Orientale Italiana' Development"
+BP_italy.6.d:0 "When established, Italian East Africa was divided into the six governorates: Italian Eritrea and Italian Somaliland, plus four provinces of Ethiopia (Amhara, Galla-Sidamo, Scioa, Harar) each under the authority of an Italian governor, answerable to the Italian Viceroy.\n \nThrough reconstruction efforts after the war, the regime encouraged Italian peasants to colonize the colony by creating agriculture and small industries there. However few Italians came to the Ethiopian colony, with most going to Eritrea. By 1940, only 3200 farmers had arrived to Ethiopia, less than ten percent of the regime's goal.\nContinued insurgency by native Ethiopians, lack of natural resources, rough terrain, and uncertainty of political and military conditions discouraged development and settlement in the countryside.\n \nHowever, Italian Eritrea enjoyed a huge development, supported by nearly 80,000 Italian colonists. The colony proved to be extremely expensive to maintain the budget in 1936-37 requested from Italy 19.136 billion lire to create the necessary infrastructure for the colony.\nAt the time Italy's entire revenue that year was only 18.581 billion lire. There was an urbanistic project for the enlargement of Addis Ababa, in order to become the state-of-the-art capital of the Africa Orientale Italiana, but these architectural plans -like all the other developments- were stopped by the war."
+BP_italy.6.a:0 "Develop Eritrea"
+BP_italy.6.b:0 "Develop Addis Adeba"
+BP_italy.6.c:0 "Develop Somalia"
+BP_italy.6.e:0 "Develop Ethiopian Countryside"
 
 BP_italy.8.t:0 "Germany Supports our Demands"
 BP_italy.8.d:0 "Germany has seen the wisdom of supporting our demands for Vichy territory. Vichy has surrendered Gabes and Tunisia to us."
@@ -782,9 +891,9 @@ BP_italy.9.d:0 "Germany has seen fit to thwart our modest, fair and reasonable d
 BP_italy.9.a:0 "Unacceptable. We can do better alone"
 BP_italy.9.b:0 "We will earn their respect"
 
-BP_italy.10.t:0 "Construction of The Via Balbia"
-BP_italy.10.d:0 "From 1934-1939, Libya became an integral part of the Kingdom of Italy's plan to combat large population growth, poverty and unemployment in the South. Back in 1911, the Italian government decided to "liberate" the former Roman province from the Ottoman Turks, which led to the Italian-Turkish war and the acquisition of the Ottoman colonies of Cyrenaica, Tripolitan and Fezzan. In 1934, they were merged into Italian Libya, which included concessions from British Sudan and territorial changes with Egypt.\n \nWith the appointment of Italian Governor Italo Balbo, Italian Libya flourished - Italians in Libya numbered 108 419 (12.37 percent of the total population) at the time of the 1939 census, and Italians in less than thirty years (1911-1940) built huge public works (roads, buildings, ports, Railways and opened vast tracts of agricultural land).\n \nIn March 1937, Mussolini made a state visit to Libya, where he opened a new military highway running throughout the colony (Via Balbia). On the border of Cyrenaica and Tripolitania was built a large architectural structure called Fileni Arch, marking the completion of the road.\n \nDuring the Second world war, the road was of strategic importance, in fact, being the main communication line of supply to the warring parties.\n \nWhen Balbo died in a plane crash in 1940, the Italian government named the 1822-kilometer road after him."
-BP_italy.10.a:0 "Great"
+BP_italy.20.t:0 "Construction of The Via Balbia"
+BP_italy.20.d:0 "From 1934-1939, Libya became an integral part of the Kingdom of Italy's plan to combat large population growth, poverty and unemployment in the South. Back in 1911, the Italian government decided to "liberate" the former Roman province from the Ottoman Turks, which led to the Italian-Turkish war and the acquisition of the Ottoman colonies of Cyrenaica, Tripolitan and Fezzan. In 1934, they were merged into Italian Libya, which included concessions from British Sudan and territorial changes with Egypt.\n \nWith the appointment of Italian Governor Italo Balbo, Italian Libya flourished - Italians in Libya numbered 108 419 (12.37 percent of the total population) at the time of the 1939 census, and Italians in less than thirty years (1911-1940) built huge public works (roads, buildings, ports, Railways and opened vast tracts of agricultural land).\n \nIn March 1937, Mussolini made a state visit to Libya, where he opened a new military highway running throughout the colony (Via Balbia). On the border of Cyrenaica and Tripolitania was built a large architectural structure called Fileni Arch, marking the completion of the road.\n \nDuring the Second world war, the road was of strategic importance, in fact, being the main communication line of supply to the warring parties.\n \nWhen Balbo died in a plane crash in 1940, the Italian government named the 1822-kilometer road after him."
+BP_italy.20.a:0 "Great"
 
 BP_italy.80.t:0 "Independent state of Croatia"
 BP_italy.80.d:0 "The independent state of Croatia (ISC), which occupied most of the territory of present-day Croatia and Bosnia and Herzegovina, was under the occupation of German and Italian troops. In April 17 from Italy to Zagreb arrived Poglavnik (chief or leader) Ante Pavelic. Nominally, the state since may 18 under the throne name of Tomislav II was headed by the Duke of Aosta, Aimone Roberto Margherita Maria Giuseppe di Torino, Prince of the Italian Royal house. The enthronement of the newly created state of the representative of the Italian dynasty was intended to designate the Italian protectorate over him. The role of Tomislav II in the new state was purely nominal, as all the real power was in the hands of the Croatian fascist movement ustasha and its leader Ante Pavelic. The monarch never visited the territory of the ISC. In June 15, 1941 ISC joined the Berlin Pacr and in June 26 — to the Anti-Comintern Pact, in December 14 declared war on Britain and the United States. Because of the active guerrilla movement of Yugoslavia, the ISC did not control the entire declared territory for a single day during its existence.\n \nIt seems that the Germans are not interested in Croatia, its control is entirely in our hands."

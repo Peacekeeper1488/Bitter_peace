@@ -94,7 +94,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Infanterie-Regiment SS-Division 'LSSAH' (mot.)"					# SS regiments (elite equipment & training)
+	name = "'LSSAH' (mot.)"					# SS regiment (elite equipment & training)
 	is_locked = yes
 	division_names_group = SS_MOT_01
 
@@ -110,9 +110,9 @@ division_template = {
 	priority = 2
 }
 division_template = {
-	name = "SS-Verfügungstruppe"					# SS regiments (elite equipment & training)
+	name = "SS-Verfügungstruppe"					# SS regiment (elite equipment & training)
 	is_locked = yes
-	division_names_group = SS_Inf_01
+	division_names_group = SS_MOT_01
 
 	regiments = {
 		SS_motorized0 = { x = 0 y = 0 }
@@ -200,17 +200,17 @@ units = {
 	}
 
 	division= {	
-		name = "Infanterie-Regiment SS-Division 'LSSAH' (mot.)"
+		name = "Infanterie-Regiment 'LSSAH' (mot.)"
 		location = 6521
-		division_template = "Infanterie-Regiment SS-Division 'LSSAH' (mot.)"
-		start_experience_factor = 0.4
+		division_template = "'LSSAH' (mot.)"
+		start_experience_factor = 0.2		
 	}
 	
 	division= {	
 		name = "SS-Verfügungstruppe"
 		location = 6521
 		division_template = "SS-Verfügungstruppe"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.2
 	}
 
 	division= {	

@@ -2340,9 +2340,9 @@ country_event = {
 		SWE = {
 			
 			create_country_leader = {
-				name = "Martin Ekström"
+				name = "Olov Lindholm"
 				desc = ""
-				picture = "gfx/leaders/GER/Portrait_Germany_Martin_Ekstrom.dds"
+				picture = "gfx/leaders/GER/Portrait_Germany_Olov_Lindholm.dds"
 				expire = "1965.1.1"
 				ideology = nazism
 				traits = {
@@ -2470,9 +2470,9 @@ country_event = {
 		SWE = {
 			
 			create_country_leader = {
-				name = "Martin Ekström"
+				name = "Olov Lindholm"
 				desc = ""
-				picture = "gfx/leaders/GER/Portrait_Germany_Martin_Ekstrom.dds"
+				picture = "gfx/leaders/GER/Portrait_Germany_Olov_Lindholm.dds"
 				expire = "1965.1.1"
 				ideology = nazism
 				traits = {

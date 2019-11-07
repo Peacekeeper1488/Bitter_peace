@@ -1,14 +1,23 @@
 ﻿l_english:
 
-GER_SS_units_tech:0 "Waffen-SS Troops"
-GER_SS_units_tech_desc:0 "Enables the recruitment of elite Waffen-SS troops.\nAlso Allgemeine-SS anti-partisan units that are strong in defensive abilities, but weak attackers."
+SS_CP_5_PP_10:0 "£pol_power §Y10§! £command_power §Y5§!"
+SS_CP_5_PP_10_blocked:0 "£pol_power §R10§! £command_power §R5§!"
+
+GER_allgemeine_ss_tech:0 "Allgemeine SS"
+GER_allgemeine_ss_tech_desc:0 "Enables the recruitment of elite anti-partisan Allgemeine-SS units with strong defensive capabilities but low attack power"
+
+GER_ss_units_tech:0 "Waffen-SS Troops"
+GER_ss_units_tech_desc:0 "Enables the recruitment of elite Waffen-SS troops."
+
+SS_german_recruitment:0 "Schutzstaffeln"
+SS_german_recruitment_desc:0 "SS (German «Die SS», from «Die Schutzstaffel») - «guard detachment» - is a subsidiary paramilitary organization of the NSDAP (until 1934 subordinated to another subsidiary party organization-SA), which considered itself an «organization of political soldiers of the party». Initially, Its function was to protect the leaders of the party (it was organized on the basis of the «Headquarters guard 'Adolf Hitler'», intended to protect the Fuhrer);\nSubsequently, this organization was given a variety of functions (from ensuring the functioning of the system of institutions of extrajudicial detention and re - education-concentration camps to the training of young people in special party schools, ie. national political academies).\n \nIts mission since the appointment of its leader Heinrich Himmler, the SS saw in the reconstruction of the «new Aryan humanity», even before the Nazis came to power, acquired in the eyes of both its own members and outsiders the image of the «elite» part of the Nazi party. Part of the members (at the end of the war, the most significant) served in structures modeled on army formations, units and divisions (up to the army headquarters), since 1939. operatively subordinated to the German armed forces and de facto included in their composition as the fourth component of the Wehrmacht (in 1940, they were called «Waffen SS», SS troops)."
 
 group_schutzstaffel_infantry_title:0 "SS Infantry Battalions"
 group_schutzstaffel_mobile_title:0 "SS Mobile Battalions"
 group_schutzstaffel_armor_title:0 "SS Panzer Battalions"
 #####################################################################
 SS_police:0 "SS-Allgemeine"
-SS_police_desc:0 "Anti-partisan unit. Troops specialising in defense against partisan activity. Strong against partisans, but weak attackers."
+SS_police_desc:0 "Anti-partisan units specialised in the suppression of partisan activity. Strong against partisans, but weak attackers."
 SS_marine:0 "SS-Marine"
 SS_mountaineers:0 "SS-Gebirgsjäger"
 SS_paratrooper:0 "SS-Fallschirmjäger"
@@ -93,6 +102,30 @@ SS_modern_sp_anti_air_brigade1:0 "SS-Moderner Flugabwehrpanzer"
 SS_modern_sp_artillery_brigade1:0 "SS-Moderne Selbstfahrlafette"  
 SS_modern_tank_destroyer_brigade1:0 "SS-Moderner Jagdpanzer"
 #####################################################################
+
+allgemeine_ss:0 "Allgemeine SS"
+allgemeine_ss_desc:0 "General SS (German Allgemeine SS) - was one of the two main parts of the overall SS (alongside the waffen combat troops). The tasks of the «General SS» were mainly the implementation of administrative and economic functions within Reich territory. Members of the «General SS» were not considered to be in military service of the Nazi party, and therefore did not receive allowances or uniforms. Thus they performed their party duties in parallel with other work. At the same time, many state institutions of Nazi Germany were staffed mostly by cadres from the «General SS», which ensured strict party control over the state apparatus."
+allgemeine_ss_tt:0 "§Enables the recruitment of elite anti-partisan Allgemeine-SS units with strong defensive capabilities but low attack power.§!\n§Y3 brigades of Allgemeine SS§! will appear in §YBrandenburg§!"
+
+lssah_upgrade1:0 "Infanterie-Regiment 'LSSAH' (mot.): modernization I"
+lssah1_tt:0 "Improved §YInfanterie-Regiment 'LSSAH' (mot.)§! will appear without equipment but full manpower strength."
+lssah_upgrade2:0 "Infanterie-Regiment 'LSSAH' (mot.): modernization II"
+lssah2_tt:0 "Motorized brigade §YInfanterie-Regiment 'LSSAH' (mot.)§! will appear without equipment but full manpower strength."
+lssah_upgrade3:0 "SS-Division (mot.) 'LSSAH': modernization III"
+lssah3_tt:0 "Motorized division §YSS-Division (mot.) 'LSSAH'§! will appear without equipment but full manpower strength."
+lssah_upgrade4:0 "SS-Panzer-Grenadier-Division 'LSSAH': modernization IV"
+lssah4_tt:0 "Mechanized division §YSS-Panzer-Grenadier-Division 'LSSAH'§! will appear without equipment but full manpower strength."
+lssah_upgrade5:0 "1. SS-Panzer-Division 'LSSAH': modernization V"
+lssah5_tt:0 "Tank division §1. SS-Panzer-Division 'LSSAH'§! will appear without equipment but full manpower strength.w"
+
+das_reich_upgrade1:0 "SS-Verfügungs-Division: modernization I"
+das_reich1_tt:0 "Motorized division §YSS-Verfügungs-Division§! will appear without equipment but full manpower strength."
+das_reich_upgrade2:0 "SS-Division 'Reich': modernization II"
+das_reich2_tt:0 "Improved motorized division §YSS-Division (mot.) 'Reich'§! will appear without equipment but full manpower strength."
+das_reich_upgrade3:0 "Panzer-Grenadier-Division 'Das Reich': modernization III"
+das_reich3_tt:0 "Mechanized division §YPanzer-Grenadier-Division 'Das Reich'§! will appear without equipment but full manpower strength."
+das_reich_upgrade4:0 "2. SS-Panzer-Division 'Das Reich': modernization IV"
+das_reich4_tt:0 "Tank division §Y2. SS-Panzer-Division 'Das Reich'§! will appear without equipment but full manpower strength."
 
 BP_SS_recruitment_galizien:0 "14. Waffen-Grenadier-Division der SS (galizische Nr. 1)"
 

@@ -1,0 +1,371 @@
+#########################
+### GERMAN - Gewar 98 ###
+#########################
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_G98_right_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_G98_mesh"
+	scale = 1
+}
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_G98_left_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_G98_mesh"
+	scale = 1
+	
+	get_state_from_parent = yes
+	default_state = "idle"
+	state = { name = "idle" }
+	state = { name = "move"	}
+	
+	state = { 
+	name = "attack"	
+	event = { time = 1.15 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" sound = { soundeffect = infantry_rifle_attack } }
+	event = { time = 1.15 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes sound = { soundeffect = infantry_rifle_cartridge } }
+	}
+	
+	state = { 
+	name = "defend"
+	event = { time = 0 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" sound = { soundeffect = infantry_rifle_attack } } 
+	event = { time = 0 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes sound = { soundeffect = infantry_rifle_cartridge } }
+	event = { time = 1.015 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" } 
+	event = { time = 1.015 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes }
+	}
+	
+	state = { 
+	name = "support_attack"	animation = "support_attack" 
+	event = { time = 0 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" sound = { soundeffect = infantry_rifle_attack } }  
+	event = { time = 0 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes sound = { soundeffect = infantry_rifle_cartridge } }
+	event = { time = 1.015 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" }
+	event = { time = 1.015 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_G98_long_idle_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_G98_mesh"
+	scale = 1
+}	
+
+#############################
+### GERMAN - Karbiner 98k ###
+#############################
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_98k_right_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_98k_mesh"
+	scale = 1
+}
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_98k_left_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_98k_mesh"
+	scale = 1
+	
+	get_state_from_parent = yes
+	default_state = "idle"
+	state = { name = "idle" }
+	state = { name = "move"	}
+	
+	state = { 
+	name = "attack"	
+	event = { time = 1.15 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" sound = { soundeffect = infantry_rifle_attack } }
+	event = { time = 1.15 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes sound = { soundeffect = infantry_rifle_cartridge } }
+	}
+	
+	state = { 
+	name = "defend"
+	event = { time = 0 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" sound = { soundeffect = infantry_rifle_attack } } 
+	event = { time = 0 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes sound = { soundeffect = infantry_rifle_cartridge } }
+	event = { time = 1.015 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" } 
+	event = { time = 1.015 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes }
+	}
+	
+	state = { 
+	name = "support_attack"	animation = "support_attack" 
+	event = { time = 0 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" sound = { soundeffect = infantry_rifle_attack } }  
+	event = { time = 0 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes sound = { soundeffect = infantry_rifle_cartridge } }
+	event = { time = 1.015 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" }
+	event = { time = 1.015 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_98k_long_idle_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_98k_mesh"
+	scale = 1
+}	
+
+#########################
+### GERMAN - Gewar 43 ###
+#########################
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_G43_right_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_G43_mesh"
+	scale = 0.9
+}
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_G43_left_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_G43_mesh"
+	scale = 0.9
+	
+	get_state_from_parent = yes
+	default_state = "idle"
+	state = { name = "idle" }
+	state = { name = "move"	}
+	
+	state = { 
+	name = "attack"	
+	event = { time = 1.15 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" sound = { soundeffect = infantry_rifle_attack } }
+	event = { time = 1.15 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes sound = { soundeffect = infantry_rifle_cartridge } }
+	}
+	
+	state = { 
+	name = "defend"
+	event = { time = 0 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" sound = { soundeffect = infantry_rifle_attack } } 
+	event = { time = 0 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes sound = { soundeffect = infantry_rifle_cartridge } }
+	event = { time = 1.015 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" } 
+	event = { time = 1.015 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes }
+	}
+	
+	state = { 
+	name = "support_attack"	animation = "support_attack" 
+	event = { time = 0 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" sound = { soundeffect = infantry_rifle_attack } }  
+	event = { time = 0 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes sound = { soundeffect = infantry_rifle_cartridge } }
+	event = { time = 1.015 node="muzzle" particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" }
+	event = { time = 1.015 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_G43_long_idle_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_G43_mesh"
+	scale = 0.9
+}	
+
+######################
+### GERMAN - MP 28 ###
+######################
+
+entity = {
+	name = "GER_SS_infantry_weapon_mg_MP28_left_entity"
+	pdxmesh = "SS_infantry_weapon_mg_MP28_mesh"
+	scale = 1.0
+}
+	
+entity = {
+	name = "GER_SS_infantry_weapon_mg_MP28_right_entity"
+	pdxmesh = "SS_infantry_weapon_mg_MP28_mesh"
+	scale = 1.0
+	
+	get_state_from_parent = yes
+	default_state = "idle"
+	state = { name = "idle" }
+	state = { name = "move"	}
+	
+	state = { name = "attack"	animation = "attack" 
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0.5 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
+	}
+	
+	state = { name = "defend"
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
+	}
+	
+	state = { name = "support_attack"	animation = "support_attack" 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "GER_SS_infantry_weapon_mg_MP28_long_idle_entity"
+	pdxmesh = "SS_infantry_weapon_mg_MP28_mesh"
+	scale = 1.0
+}
+
+######################
+### GERMAN - MP 35 ###
+######################
+
+entity = {
+	name = "GER_SS_infantry_weapon_mg_MP35_left_entity"
+	pdxmesh = "SS_infantry_weapon_mg_MP35_mesh"
+	scale = 1.0
+}
+	
+entity = {
+	name = "GER_SS_infantry_weapon_mg_MP35_right_entity"
+	pdxmesh = "SS_infantry_weapon_mg_MP35_mesh"
+	scale = 1.0
+	
+	get_state_from_parent = yes
+	default_state = "idle"
+	state = { name = "idle" }
+	state = { name = "move"	}
+	
+	state = { name = "attack"	animation = "attack" 
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0.5 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
+	}
+	
+	state = { name = "defend"
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
+	}
+	
+	state = { name = "support_attack"	animation = "support_attack" 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "GER_SS_infantry_weapon_mg_MP35_long_idle_entity"
+	pdxmesh = "SS_infantry_weapon_mg_MP35_mesh"
+	scale = 1.0
+}
+
+#########################
+### GERMAN - Erma EMP ###
+#########################
+
+entity = {
+	name = "GER_SS_infantry_weapon_mg_EMP_left_entity"
+	pdxmesh = "SS_infantry_weapon_mg_EMP_mesh"
+	scale = 1.0
+}
+	
+entity = {
+	name = "GER_SS_infantry_weapon_mg_EMP_left_entityinfantry_weapon_mg_EMP_right_entity"
+	pdxmesh = "SS_infantry_weapon_mg_EMP_mesh"
+	scale = 1.0
+	
+	get_state_from_parent = yes
+	default_state = "idle"
+	state = { name = "idle" }
+	state = { name = "move"	}
+	
+	state = { name = "attack"	animation = "attack" 
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0.5 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
+	}
+	
+	state = { name = "defend"
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
+	}
+	
+	state = { name = "support_attack"	animation = "support_attack" 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "GER_SS_infantry_weapon_mg_EMP_long_idle_entity"
+	pdxmesh = "SS_infantry_weapon_mg_EMP_mesh"
+	scale = 1.0
+}
+
+######################
+### GERMAN - FG 42 ###
+######################
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_FG42_left_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_FG42_mesh"
+	scale = 1.0
+}
+	
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_FG42_right_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_FG42_mesh"
+	scale = 1.0
+	
+	get_state_from_parent = yes
+	default_state = "idle"
+	state = { name = "idle" }
+	state = { name = "move"	}
+	
+	state = { name = "attack"	animation = "attack" 
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0.5 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
+	}
+	
+	state = { name = "defend"
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
+	}
+	
+	state = { name = "support_attack"	animation = "support_attack" 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_FG42_long_idle_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_FG42_mesh"
+	scale = 1.0
+}
+
+######################
+### GERMAN - MP 44 ###
+######################
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_MP44_left_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_MP44_mesh"
+	scale = 1.0
+}
+	
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_MP44_right_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_MP44_mesh"
+	scale = 1.0
+	
+	get_state_from_parent = yes
+	default_state = "idle"
+	state = { name = "idle" }
+	state = { name = "move"	}
+	
+	state = { name = "attack"	animation = "attack" 
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0.5 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
+	}
+	
+	state = { name = "defend"
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
+	}
+	
+	state = { name = "support_attack"	animation = "support_attack" 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "GER_SS_infantry_weapon_rifle_MP44_long_idle_entity"
+	pdxmesh = "SS_infantry_weapon_rifle_MP44_mesh"
+	scale = 1.0
+}

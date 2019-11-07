@@ -158,8 +158,8 @@ focus_tree = {
 		available = {  
 			NOT = {
 				AND = {
-					has_global_flag = RKU_melnik_was_arested 
-					has_global_flag = RKU_bandera_was_arested
+					has_global_flag = RKU_melnik_was_arrested 
+					has_global_flag = RKU_bandera_was_arrested
 				}
 			}
 		}
@@ -251,7 +251,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_global_flag = RKU_melnik_was_arested }
+			NOT = { has_global_flag = RKU_melnik_was_arrested }
 		}
 
         completion_reward = {
@@ -275,7 +275,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_global_flag = RKU_bandera_was_arested }
+			NOT = { has_global_flag = RKU_bandera_was_arrested }
 		}
 
         completion_reward = {
@@ -478,8 +478,8 @@ focus_tree = {
 	}
 	
 	focus = { 
-		id = RKU_arest_melnyk
-		icon = GFX_get_rid_of_melnyk
+		id = RKU_arrest_melnyk
+		icon = GFX_arrest_of_melnyk
 		prerequisite = { focus = RKU_security_service }
 		x = 0
 		y = 1
@@ -497,7 +497,7 @@ focus_tree = {
 
         completion_reward = {
 			add_timed_idea = {
-			idea = RKU_arest_oun_m	
+			idea = RKU_arrest_oun_m	
 			days = 90
             }
 			hidden_effect = {
@@ -523,12 +523,12 @@ focus_tree = {
 	focus = { 
 		id = RKU_proclamation_to_the_peoples_of_russia
 		icon = GFX_proclamation_to_the_peoples_of_russia
-		prerequisite = { focus = RKU_arest_melnyk }
+		prerequisite = { focus = RKU_arrest_melnyk }
 		x = 0
 		y = 1
 		cost = 5
 		available_if_capitulated = yes 
-		relative_position_id = RKU_arest_melnyk
+		relative_position_id = RKU_arrest_melnyk
 		ai_will_do = { 
 			factor = 1
 		} 
@@ -1245,8 +1245,8 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = { ideology = neutrality popularity = -0.05 }
 			swap_ideas = {
-				remove_idea = RKU_arest_oun_b
-				add_idea = RKU_arest_oun_b_0
+				remove_idea = RKU_arrest_oun_b
+				add_idea = RKU_arrest_oun_b_0
 			}
 		}
 	}
@@ -1270,7 +1270,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = RKU_arest_oun_b_0	
+			remove_ideas = RKU_arrest_oun_b_0	
 		}
 	}
 	
@@ -1289,7 +1289,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = RKU_arest_oun_m	
+			remove_ideas = RKU_arrest_oun_m	
 		}		
 	}
 
@@ -1367,8 +1367,8 @@ focus_tree = {
 	}
 
 	focus = { 
-		id = RKU_arest_bandera
-		icon = GFX_get_rid_of_bandera
+		id = RKU_arrest_bandera
+		icon = GFX_arrest_of_bandera
 		prerequisite = { focus = RKU_oun_m }
 		x = -2
 		y = 2
@@ -1386,7 +1386,7 @@ focus_tree = {
 
         completion_reward = {
 			add_timed_idea = {
-				idea = RKU_arest_oun_b	
+				idea = RKU_arrest_oun_b	
 				days = 90
             }
 			hidden_effect = {
@@ -1412,12 +1412,12 @@ focus_tree = {
 	focus = { 
 		id = RKU_racial_decrees
 		icon = GFX_racial_decrees
-		prerequisite = { focus = RKU_arest_bandera focus = RKU_slave_economic_system focus = RKU_balanced_economic_system}
+		prerequisite = { focus = RKU_arrest_bandera focus = RKU_slave_economic_system focus = RKU_balanced_economic_system}
 		x = -2
 		y = 1
 		cost = 5
 		available_if_capitulated = yes 
-		relative_position_id = RKU_arest_bandera
+		relative_position_id = RKU_arrest_bandera
 		
 		available = {  
 			
@@ -2564,7 +2564,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RKU_organisation_of_division
+		id = RKU_organization_of_division
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = RKU_small_arms }
 		x = 1
@@ -2619,7 +2619,7 @@ focus_tree = {
 	focus = {
 		id = RKU_modern_tanks
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = RKU_domestic_artillery_production focus = RKU_organisation_of_division }
+		prerequisite = { focus = RKU_domestic_artillery_production focus = RKU_organization_of_division }
 		x = 1
 		y = 1
 		relative_position_id = RKU_domestic_artillery_production
@@ -2812,6 +2812,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = charz
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = motor_sich
 		}
 	}
 	
@@ -3279,7 +3281,7 @@ focus_tree = {
 			}
 		}
 	}
-				
+	
 	focus = {
 		id = RKU_black_sea_dominance
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -3308,7 +3310,9 @@ focus_tree = {
 		
 		completion_reward = {			
 			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = RKU_black_sea_shipping_company
+			show_ideas_tooltip = black_sea_shipping_company
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = niikolaev_shipbuilding_plant
 			196 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {

@@ -19,8 +19,12 @@ spriteTypes = {
 	#Units
 	###
 	SpriteType = {
-		name = "GFX_GER_SS_units_tech_medium"
-		texturefile = "gfx/interface/technologies/GER_SS_units_tech.dds"
+		name = "GFX_GER_allgemeine_ss_tech_medium"
+		texturefile = "gfx/interface/technologies/GER_ss_units_tech.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_ss_units_tech_medium"
+		texturefile = "gfx/interface/technologies/GER_ss_units_tech.dds"
 	}
 	###
 	spriteType = {

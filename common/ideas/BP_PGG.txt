@@ -1,0 +1,39 @@
+ideas = {
+    
+	country = {
+	
+	    PGG_hans_frank_administration = {
+			
+		    allowed = {
+			    original_tag = RKU
+		    }
+
+		    allowed_civil_war = {
+			    has_government = fascism
+		    }
+			
+			picture = generic_pp_unity_bonus
+
+		    removal_cost = -1
+			
+		    modifier = {
+                political_power_factor = 0.05				
+		    }
+	    }
+		
+		PGG_polish_elite_demand = {
+		
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			picture = juden
+			
+			modifier = {
+				monthly_population = -0.1
+			}
+		}		
+	}
+}

@@ -1,6 +1,6 @@
 technologies = {
 
-	GER_SS_units_tech = {
+	GER_allgemeine_ss_tech = {
 
 		research_cost = 1
 
@@ -10,6 +10,18 @@ technologies = {
 		
 		enable_subunits = {
 			SS_police
+		}	
+	}
+
+	GER_ss_units_tech = {
+
+		research_cost = 1
+
+		allow = {
+			always = no
+		}
+		
+		enable_subunits = {
 			SS_marine
 			SS_mountaineers
 			SS_paratrooper

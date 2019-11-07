@@ -32,7 +32,7 @@ ITA_grande_italia_cat = {
 		}
 
 		complete_effect = {
-			country_event = BP_italy.1			
+			country_event = BP_italy.2			
 		}
 	}	
 	#### Claims on France ####

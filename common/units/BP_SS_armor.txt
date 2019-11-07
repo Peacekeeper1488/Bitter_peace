@@ -1576,7 +1576,7 @@ sub_units = {
 		
 		priority = 2501
 		ai_priority = 2000
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -1653,7 +1653,7 @@ sub_units = {
 
 		priority = 301
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -1729,7 +1729,7 @@ sub_units = {
 		
 		priority = 1795
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -1802,7 +1802,7 @@ sub_units = {
 	
 		priority = 1795
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -1877,7 +1877,7 @@ sub_units = {
 		
 		priority = 2502
 		ai_priority = 3500
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -1957,7 +1957,7 @@ sub_units = {
 
 		priority = 301
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -2036,7 +2036,7 @@ sub_units = {
 
 		priority = 1796
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -2112,7 +2112,7 @@ sub_units = {
 	
 		priority = 1796
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -2192,7 +2192,7 @@ sub_units = {
 		
 		priority = 2503
 		ai_priority = 2503
-		active = yes
+		active = no
 
 		type = {
 			armor
@@ -2275,7 +2275,7 @@ sub_units = {
 	
 		priority = 301
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -2354,7 +2354,7 @@ sub_units = {
 		
 		priority = 1797
 		ai_priority = 100
-		active = yes
+		active = no
 	
 		
 		type = {
@@ -2431,7 +2431,7 @@ sub_units = {
 		special_forces = yes
 		
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -2512,7 +2512,7 @@ sub_units = {
 		
 		priority = 2520
 		ai_priority = 2520
-		active = yes
+		active = no
 
 		type = {
 			armor
@@ -2595,7 +2595,7 @@ sub_units = {
 		
 		priority = 301
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		group = schutzstaffel_armor
 		
@@ -2674,7 +2674,7 @@ sub_units = {
 		
 		priority = 1798
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -2750,7 +2750,7 @@ sub_units = {
 		
 		priority = 1798
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -2831,7 +2831,7 @@ sub_units = {
 		
 		priority = 2510
 		ai_priority = 3510
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -2911,7 +2911,7 @@ sub_units = {
 		
 		priority = 301
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -2990,7 +2990,7 @@ sub_units = {
 		
 		priority = 1796
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor
@@ -3066,7 +3066,7 @@ sub_units = {
 		
 		priority = 1796
 		ai_priority = 100
-		active = yes
+		active = no
 		
 		type = {
 			armor

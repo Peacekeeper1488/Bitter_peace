@@ -135,11 +135,11 @@ RKU_oun_melnic_government:0 "Government of Andrey Melnik"
 RKU_racial_decrees_idea:0 "Racial Decrees"
 RKU_racial_decrees_idea_desc:0 "In coordinating our actions with Germany, we are forced to issue a number of Anti-Jewish and Anti-Roma laws that would significantly reduce the participation of these peoples in social, economic and political life. In exchange, we can get a lot of favor from the Germans."
 
-RKU_arest_oun_b:0 "Problems with OUN (b)" 
-RKU_arest_oun_b_desc:0 "Despite the fact that a significant part of the Bandera wing of the OUN went over to our side, after the establishment of our government, Bandera himself with his associates took a confrontational position in relation to our regime. It is necessary to arrest opposition groups, otherwise they will revolt"
+RKU_arrest_oun_b:0 "Problems with OUN (b)" 
+RKU_arrest_oun_b_desc:0 "Despite the fact that a significant part of the Bandera wing of the OUN went over to our side, after the establishment of our government, Bandera himself with his associates took a confrontational position in relation to our regime. It is necessary to arrest opposition groups, otherwise they will revolt"
 
-RKU_arest_oun_m:0 "Problems with OUN (m)" 
-RKU_arest_oun_m_desc:0 "Despite the fact that a significant part of the Melnikov wing of the OUN came over to our side, after the establishment of our government, Melnik himself with his associates took a confrontational position towards our regime. It is necessary to arrest opposition groups, otherwise they will revolt"
+RKU_arrest_oun_m:0 "Problems with OUN (m)" 
+RKU_arrest_oun_m_desc:0 "Despite the fact that a significant part of the Melnikov wing of the OUN came over to our side, after the establishment of our government, Melnik himself with his associates took a confrontational position towards our regime. It is necessary to arrest opposition groups, otherwise they will revolt"
 
 RKU_communist_underground:0 "Communist Guerrillas"
 RKU_communist_underground_desc:0 "The implementation of plans for Germanization intensified the activities of Pro-Communist guerrilla groups"
