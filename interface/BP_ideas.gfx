@@ -326,6 +326,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/companies/RKU_arsenal_factory.dds"
 	}
 	
+	#### Italy ####
+	
+	spriteType = {
+		name = "GFX_idea_ITA_dubats"
+		texturefile = "gfx/interface/ideas/ideas/ITA_dubats.dds"
+	}	
+	
 	#### Soviet Union ####
 	
 	spriteType = {

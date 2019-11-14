@@ -17,7 +17,6 @@ country_event = {
 		name = BP_italy.1.a	
 		add_stability = 0.1
 		add_war_support = 0.1
-		country_event = { days = 1 id = BP_italy.2 } 
 	}	
 }
 
@@ -44,74 +43,122 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = BP_italy.3.a		
+		name = BP_italy.3.a	
+		add_ideas = ITA_dubats
 	}	
+	
 }
-# Assassination Attempt on Graziani
+# Dubats OFF
 country_event = {
 	id = BP_italy.4
 	title = BP_italy.4.t
 	desc = BP_italy.4.d
-	picture = GFX_report_event_ita_graziani_in_ethiopia 
+	picture = GFX_report_event_ita_dubat 
 
-	is_triggered_only = yes
+	hidden = yes
+	fire_only_once = no
+
+	trigger = {
+		tag = ITA
+		has_idea = ITA_dubats
+		NOT = { 
+			controls_state = 550
+			controls_state = 271
+			controls_state = 559
+		}
+	}
+	
+	mean_time_to_happen = { days = 2 }
+
+	immediate = {
+		remove_ideas = ITA_dubats
+		set_country_flag = ITA_lost_AOI
+	}
 
 	option = {
-		name = BP_italy.4.a		
+		name = BP_italy.4.a	
 	}	
+	
 }
-# Appoint Duke of Aosta as New Viceroy in 'Africa Orientale Italiana'
+# Dubats ON
 country_event = {
 	id = BP_italy.5
 	title = BP_italy.5.t
 	desc = BP_italy.5.d
-	picture = GFX_report_event_ita_duke_of_aosta 
+	picture = GFX_report_event_ita_dubat 
 
-	is_triggered_only = yes
+	hidden = yes
+	fire_only_once = no
+	
+	trigger = {
+		tag = ITA
+		NOT = { has_idea = ITA_dubats }
+		controls_state = 550
+		controls_state = 271
+		controls_state = 559
+	}
+	
+	mean_time_to_happen = { days = 2 }
+
+	immediate = {
+		add_ideas = ITA_dubats
+		clr_country_flag = ITA_lost_AOI
+	}
 
 	option = {
-		name = BP_italy.5.a		
-	}	
+		name = BP_italy.5.a	
+	}		
 }
-# Subsidize 'Africa Orientale Italiana' Development
+# Assassination Attempt on Graziani
 country_event = {
 	id = BP_italy.6
 	title = BP_italy.6.t
 	desc = BP_italy.6.d
-	picture = GFX_report_event_ita_banka_ditalia 
+	picture = GFX_report_event_ita_graziani_in_ethiopia 
 
+	hidden = yes
 	is_triggered_only = yes
 
 	option = {
 		name = BP_italy.6.a		
 	}	
+}
+# Appoint Duke of Aosta as New Viceroy in 'Africa Orientale Italiana'
+country_event = {
+	id = BP_italy.7
+	title = BP_italy.7.t
+	desc = BP_italy.7.d
+	picture = GFX_report_event_ita_duke_of_aosta 
+
+	is_triggered_only = yes
+
 	option = {
-		name = BP_italy.6.b	
-	}
-	option = {
-		name = BP_italy.6.c
-	}	
-	option = {
-		name = BP_italy.6.e	
+		name = BP_italy.7.a		
 	}	
 }
-# Germany accepts our demands for Vichy Tunisia
+# Subsidize 'Africa Orientale Italiana' Development
 country_event = {
 	id = BP_italy.8
 	title = BP_italy.8.t
 	desc = BP_italy.8.d
- 
-	picture = GFX_report_event_generic_sign_treaty1
-	
+	picture = GFX_report_event_ita_banka_ditalia 
+
 	is_triggered_only = yes
-	
+
 	option = {
-		name = BP_italy.8.a
-		transfer_state = 665 
-		transfer_state = 458
+		name = BP_italy.8.a		
+	}	
+	option = {
+		name = BP_italy.8.b	
 	}
+	option = {
+		name = BP_italy.8.c
+	}	
+	option = {
+		name = BP_italy.8.e	
+	}	
 }
-# Germany rejects our demands for Vichy Tunisia
+# Germany accepts our demands for Vichy Tunisia
 country_event = {
 	id = BP_italy.9
 	title = BP_italy.9.t
@@ -121,9 +168,25 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	option = {
+		name = BP_italy.9.a
+		transfer_state = 665 
+		transfer_state = 458
+	}
+}
+# Germany rejects our demands for Vichy Tunisia
+country_event = {
+	id = BP_italy.10
+	title = BP_italy.10.t
+	desc = BP_italy.10.d
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
 	option = { # Leave Axis
 		ai_chance = { factor = 10 }
-		name = BP_italy.9.a
+		name = BP_italy.10.a
 		GER = { 
 			remove_from_faction = ITA 
 			country_event = germany.105
@@ -131,7 +194,7 @@ country_event = {
 	}
 	option = { #Variant dlya terpil
 		ai_chance = { factor = 90 }
-		name = BP_italy.9.b
+		name = BP_italy.10.b
 
 	}
 }
@@ -160,15 +223,15 @@ country_event = {
 }
 # Destiny of Croatia 
 country_event = {
-	id = BP_italy.80
-	title = BP_italy.80.t
-	desc = BP_italy.80.d
+	id = BP_italy.90
+	title = BP_italy.90.t
+	desc = BP_italy.90.d
 	picture = GFX_report_event_ger_patrition_of_yugoslavia
 
 	is_triggered_only = yes	
 
 	option = {
-		name = BP_italy.80.a
+		name = BP_italy.90.a
 		CRO = {		
 			transfer_state = 109
 			
@@ -183,7 +246,7 @@ country_event = {
 		trigger = { 
 			103 = { is_controlled_by = CRO }
 		}
-		name = BP_italy.80.a
+		name = BP_italy.90.a
 		CRO = {		
 			transfer_state = 109						
 		}

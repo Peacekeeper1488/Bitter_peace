@@ -1,4 +1,3 @@
-AOI = "countries/AOI - Africa Orientale Italiana.txt"
 BFR = "countries/BFR - Baikal Federal Republic.txt"
 DNZ = "countries/DNZ - Danzig.txt"
 DVR = "countries/DVR - Far Eastern Republic.txt"
